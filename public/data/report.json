@@ -1,0 +1,7292 @@
+{
+  "schemaVersion": 1,
+  "campaign": "周麻婆14周年806储值战报",
+  "generatedAt": "2026-08-06T15:18:38+08:00",
+  "timezone": "Asia/Shanghai",
+  "freshness": {
+    "status": "fresh",
+    "staleAfterMinutes": 45,
+    "message": null
+  },
+  "source": {
+    "type": "bi-excel",
+    "workbook": "806-export-20260806-1518.xlsx",
+    "dashboard": "15_2026版_806活动储值分析",
+    "reconciliation": {
+      "status": "matched",
+      "cumulative": {
+        "official": 2596504,
+        "storeSum": 2596504,
+        "differenceRate": 0
+      },
+      "today": {
+        "official": 604888,
+        "storeSum": 604888,
+        "differenceRate": 0
+      }
+    }
+  },
+  "defaults": {
+    "scope": "hq",
+    "mode": "today",
+    "featuredStoreId": "store-rjyypv"
+  },
+  "hq": {
+    "storeCount": 131,
+    "activeStoreCount": 129,
+    "bonus": 11146,
+    "cumulative": {
+      "amount": 2596504,
+      "orderCount": 2383,
+      "targetOrderCount": 17619.294775,
+      "orderCompletionRate": 0.135249,
+      "targets": {
+        "bet": 12688935,
+        "drive": 13674102,
+        "challenge": 15644433
+      },
+      "rates": {
+        "bet": 0.20462741750982252,
+        "drive": 0.1898847909720141,
+        "challenge": 0.16597
+      }
+    },
+    "today": {
+      "amount": 604888,
+      "orderCount": 601,
+      "targetOrderCount": 979,
+      "orderCompletionRate": 0.613892,
+      "targetAmount": 869243,
+      "completionRate": 0.695879
+    },
+    "delta30": null,
+    "todayDelta30": null,
+    "trend": [
+      {
+        "at": "2026-08-06T15:18:38+08:00",
+        "amount": 2596504
+      }
+    ]
+  },
+  "summary": {
+    "deltaBasis": "waiting-for-next-snapshot",
+    "fastestStoreIds": [],
+    "attentionStoreIds": [
+      "store-1v4xbsy",
+      "store-1vxdmoo",
+      "store-18fsgud"
+    ],
+    "completedRegionIds": [
+      "region-yu9qib",
+      "region-1b3zsou"
+    ],
+    "lowestRegionId": "region-2qwevo",
+    "noGrowthStoreCount": null,
+    "noGrowthRegionCount": null
+  },
+  "regions": [
+    {
+      "id": "region-1b3zsou",
+      "name": "闽东二区",
+      "managerName": null,
+      "storeCount": 9,
+      "ranking": {
+        "cumulativeChallenge": 1,
+        "todayChallenge": 2
+      },
+      "cumulative": {
+        "amount": 251600,
+        "targets": {
+          "bet": 837086,
+          "drive": 902078,
+          "challenge": 1032062
+        },
+        "rates": {
+          "bet": 0.300566,
+          "drive": 0.278912,
+          "challenge": 0.243784
+        },
+        "bonus": 1160
+      },
+      "today": {
+        "amount": 60340,
+        "orderCount": 55,
+        "targetOrderCount": 65,
+        "orderCompletionRate": 0.846154,
+        "targetAmount": 57193,
+        "completionRate": 1.055024
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 251600
+        }
+      ]
+    },
+    {
+      "id": "region-ybqct6",
+      "name": "福州一二区",
+      "managerName": null,
+      "storeCount": 19,
+      "ranking": {
+        "cumulativeChallenge": 2,
+        "todayChallenge": 6
+      },
+      "cumulative": {
+        "amount": 483012,
+        "targets": {
+          "bet": 1881366,
+          "drive": 2027435,
+          "challenge": 2319571
+        },
+        "rates": {
+          "bet": 0.256735,
+          "drive": 0.238238,
+          "challenge": 0.208233
+        },
+        "bonus": 2188
+      },
+      "today": {
+        "amount": 100036,
+        "orderCount": 97,
+        "targetOrderCount": 145,
+        "orderCompletionRate": 0.668966,
+        "targetAmount": 128541,
+        "completionRate": 0.778242
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 483012
+        }
+      ]
+    },
+    {
+      "id": "region-1ipya1f",
+      "name": "闽西二区",
+      "managerName": null,
+      "storeCount": 10,
+      "ranking": {
+        "cumulativeChallenge": 3,
+        "todayChallenge": 3
+      },
+      "cumulative": {
+        "amount": 224172,
+        "targets": {
+          "bet": 951781,
+          "drive": 1025678,
+          "challenge": 1173471
+        },
+        "rates": {
+          "bet": 0.235529,
+          "drive": 0.21856,
+          "challenge": 0.191033
+        },
+        "bonus": 928
+      },
+      "today": {
+        "amount": 59440,
+        "orderCount": 55,
+        "targetOrderCount": 73,
+        "orderCompletionRate": 0.753425,
+        "targetAmount": 65029,
+        "completionRate": 0.914054
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 224172
+        }
+      ]
+    },
+    {
+      "id": "region-1dpc0mi",
+      "name": "闽东一区",
+      "managerName": null,
+      "storeCount": 9,
+      "ranking": {
+        "cumulativeChallenge": 4,
+        "todayChallenge": 5
+      },
+      "cumulative": {
+        "amount": 259696,
+        "targets": {
+          "bet": 1107834,
+          "drive": 1193848,
+          "challenge": 1365871
+        },
+        "rates": {
+          "bet": 0.234418,
+          "drive": 0.217529,
+          "challenge": 0.190132
+        },
+        "bonus": 1170
+      },
+      "today": {
+        "amount": 59440,
+        "orderCount": 55,
+        "targetOrderCount": 86,
+        "orderCompletionRate": 0.639535,
+        "targetAmount": 75691,
+        "completionRate": 0.785298
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 259696
+        }
+      ]
+    },
+    {
+      "id": "region-yu9qib",
+      "name": "武汉区域",
+      "managerName": null,
+      "storeCount": 1,
+      "ranking": {
+        "cumulativeChallenge": 5,
+        "todayChallenge": 1
+      },
+      "cumulative": {
+        "amount": 16744,
+        "targets": {
+          "bet": 64017,
+          "drive": 72869,
+          "challenge": 90573
+        },
+        "rates": {
+          "bet": 0.261556,
+          "drive": 0.229782,
+          "challenge": 0.184867
+        },
+        "bonus": 78
+      },
+      "today": {
+        "amount": 6140,
+        "orderCount": 5,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.833333,
+        "targetAmount": 5328,
+        "completionRate": 1.152402
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16744
+        }
+      ]
+    },
+    {
+      "id": "region-od1ly6",
+      "name": "闽北区域",
+      "managerName": null,
+      "storeCount": 14,
+      "ranking": {
+        "cumulativeChallenge": 6,
+        "todayChallenge": 8
+      },
+      "cumulative": {
+        "amount": 280368,
+        "targets": {
+          "bet": 1367762,
+          "drive": 1470072,
+          "challenge": 1674693
+        },
+        "rates": {
+          "bet": 0.204983,
+          "drive": 0.190717,
+          "challenge": 0.167415
+        },
+        "bonus": 1194
+      },
+      "today": {
+        "amount": 65860,
+        "orderCount": 70,
+        "targetOrderCount": 107,
+        "orderCompletionRate": 0.654206,
+        "targetAmount": 94996,
+        "completionRate": 0.693292
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 280368
+        }
+      ]
+    },
+    {
+      "id": "region-1eaha27",
+      "name": "闽东三区",
+      "managerName": null,
+      "storeCount": 8,
+      "ranking": {
+        "cumulativeChallenge": 7,
+        "todayChallenge": 10
+      },
+      "cumulative": {
+        "amount": 127664,
+        "targets": {
+          "bet": 692598,
+          "drive": 746371,
+          "challenge": 853918
+        },
+        "rates": {
+          "bet": 0.184326,
+          "drive": 0.171046,
+          "challenge": 0.149504
+        },
+        "bonus": 520
+      },
+      "today": {
+        "amount": 27540,
+        "orderCount": 30,
+        "targetOrderCount": 53,
+        "orderCompletionRate": 0.566038,
+        "targetAmount": 47322,
+        "completionRate": 0.58197
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 127664
+        }
+      ]
+    },
+    {
+      "id": "region-4cvvqb",
+      "name": "福州三区",
+      "managerName": null,
+      "storeCount": 11,
+      "ranking": {
+        "cumulativeChallenge": 8,
+        "todayChallenge": 7
+      },
+      "cumulative": {
+        "amount": 158156,
+        "targets": {
+          "bet": 889347,
+          "drive": 958397,
+          "challenge": 1096496
+        },
+        "rates": {
+          "bet": 0.177834,
+          "drive": 0.165021,
+          "challenge": 0.144238
+        },
+        "bonus": 700
+      },
+      "today": {
+        "amount": 43420,
+        "orderCount": 40,
+        "targetOrderCount": 68,
+        "orderCompletionRate": 0.588235,
+        "targetAmount": 60554,
+        "completionRate": 0.717046
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 158156
+        }
+      ]
+    },
+    {
+      "id": "region-1wyuifr",
+      "name": "闽南一区",
+      "managerName": null,
+      "storeCount": 16,
+      "ranking": {
+        "cumulativeChallenge": 9,
+        "todayChallenge": 12
+      },
+      "cumulative": {
+        "amount": 289504,
+        "targets": {
+          "bet": 1693185,
+          "drive": 1824645,
+          "challenge": 2087562
+        },
+        "rates": {
+          "bet": 0.170982,
+          "drive": 0.158663,
+          "challenge": 0.13868
+        },
+        "bonus": 1198
+      },
+      "today": {
+        "amount": 62280,
+        "orderCount": 60,
+        "targetOrderCount": 130,
+        "orderCompletionRate": 0.461538,
+        "targetAmount": 115685,
+        "completionRate": 0.538358
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 289504
+        }
+      ]
+    },
+    {
+      "id": "region-2qwevo",
+      "name": "莆田区域",
+      "managerName": null,
+      "storeCount": 8,
+      "ranking": {
+        "cumulativeChallenge": 10,
+        "todayChallenge": 13
+      },
+      "cumulative": {
+        "amount": 131368,
+        "targets": {
+          "bet": 809884,
+          "drive": 872764,
+          "challenge": 998522
+        },
+        "rates": {
+          "bet": 0.162206,
+          "drive": 0.150519,
+          "challenge": 0.131562
+        },
+        "bonus": 524
+      },
+      "today": {
+        "amount": 21276,
+        "orderCount": 27,
+        "targetOrderCount": 62,
+        "orderCompletionRate": 0.435484,
+        "targetAmount": 55333,
+        "completionRate": 0.384508
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 131368
+        }
+      ]
+    },
+    {
+      "id": "region-1unc3aj",
+      "name": "闽南二区",
+      "managerName": null,
+      "storeCount": 12,
+      "ranking": {
+        "cumulativeChallenge": 11,
+        "todayChallenge": 9
+      },
+      "cumulative": {
+        "amount": 208924,
+        "targets": {
+          "bet": 1323641,
+          "drive": 1426401,
+          "challenge": 1631936
+        },
+        "rates": {
+          "bet": 0.15784,
+          "drive": 0.146469,
+          "challenge": 0.128022
+        },
+        "bonus": 816
+      },
+      "today": {
+        "amount": 57620,
+        "orderCount": 65,
+        "targetOrderCount": 100,
+        "orderCompletionRate": 0.65,
+        "targetAmount": 90437,
+        "completionRate": 0.637129
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 208924
+        }
+      ]
+    },
+    {
+      "id": "region-1xnlpko",
+      "name": "闽西一三区",
+      "managerName": null,
+      "storeCount": 12,
+      "ranking": {
+        "cumulativeChallenge": 12,
+        "todayChallenge": 11
+      },
+      "cumulative": {
+        "amount": 155328,
+        "targets": {
+          "bet": 988430,
+          "drive": 1065173,
+          "challenge": 1218654
+        },
+        "rates": {
+          "bet": 0.157146,
+          "drive": 0.145824,
+          "challenge": 0.127459
+        },
+        "bonus": 632
+      },
+      "today": {
+        "amount": 36944,
+        "orderCount": 38,
+        "targetOrderCount": 77,
+        "orderCompletionRate": 0.493506,
+        "targetAmount": 67531,
+        "completionRate": 0.547067
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 155328
+        }
+      ]
+    },
+    {
+      "id": "region-16704v2",
+      "name": "外卖区域",
+      "managerName": null,
+      "storeCount": 2,
+      "ranking": {
+        "cumulativeChallenge": 13,
+        "todayChallenge": 4
+      },
+      "cumulative": {
+        "amount": 9968,
+        "targets": {
+          "bet": 82004,
+          "drive": 88371,
+          "challenge": 101104
+        },
+        "rates": {
+          "bet": 0.121555,
+          "drive": 0.112797,
+          "challenge": 0.098592
+        },
+        "bonus": 38
+      },
+      "today": {
+        "amount": 4552,
+        "orderCount": 4,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.571429,
+        "targetAmount": 5603,
+        "completionRate": 0.812422
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9968
+        }
+      ]
+    }
+  ],
+  "stores": [
+    {
+      "id": "store-1fmndzl",
+      "name": "宁德福安金山店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 280,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 6,
+        "tier1288": 3,
+        "tier1888": 25
+      },
+      "ranking": {
+        "cumulativeChallenge": 1,
+        "todayChallenge": 4
+      },
+      "cumulative": {
+        "amount": 55580,
+        "orderCount": 35,
+        "targetOrderCount": 85,
+        "orderCompletionRate": 0.411765,
+        "targets": {
+          "bet": 59734,
+          "drive": 64372,
+          "challenge": 73648
+        },
+        "rates": {
+          "bet": 0.930458,
+          "drive": 0.863419,
+          "challenge": 0.754671
+        }
+      },
+      "today": {
+        "amount": 8328,
+        "orderCount": 6,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1.2,
+        "targetAmount": 4081,
+        "completionRate": 2.040676
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 55580
+        }
+      ]
+    },
+    {
+      "id": "store-rjyypv",
+      "name": "福州晋安三盛广场店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 538,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 22,
+        "tier1288": 9,
+        "tier1888": 44
+      },
+      "ranking": {
+        "cumulativeChallenge": 2,
+        "todayChallenge": 22
+      },
+      "cumulative": {
+        "amount": 110964,
+        "orderCount": 78,
+        "targetOrderCount": 181,
+        "orderCompletionRate": 0.430939,
+        "targets": {
+          "bet": 132239,
+          "drive": 142506,
+          "challenge": 163040
+        },
+        "rates": {
+          "bet": 0.839117,
+          "drive": 0.778662,
+          "challenge": 0.680594
+        }
+      },
+      "today": {
+        "amount": 9792,
+        "orderCount": 9,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.9,
+        "targetAmount": 9035,
+        "completionRate": 1.083785
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 110964
+        }
+      ]
+    },
+    {
+      "id": "store-11gt535",
+      "name": "福州鼓楼东水店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 324,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 15,
+        "tier1288": 4,
+        "tier1888": 27
+      },
+      "ranking": {
+        "cumulativeChallenge": 3,
+        "todayChallenge": 12
+      },
+      "cumulative": {
+        "amount": 66836,
+        "orderCount": 47,
+        "targetOrderCount": 198,
+        "orderCompletionRate": 0.237374,
+        "targets": {
+          "bet": 152216,
+          "drive": 160152,
+          "challenge": 176024
+        },
+        "rates": {
+          "bet": 0.439087,
+          "drive": 0.417329,
+          "challenge": 0.379698
+        }
+      },
+      "today": {
+        "amount": 14080,
+        "orderCount": 10,
+        "targetOrderCount": 11,
+        "orderCompletionRate": 0.909091,
+        "targetAmount": 9754,
+        "completionRate": 1.44351
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 66836
+        }
+      ]
+    },
+    {
+      "id": "store-vdujly",
+      "name": "龙岩新罗禹洲店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 120,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 18,
+        "tier1288": 4,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 4,
+        "todayChallenge": 7
+      },
+      "cumulative": {
+        "amount": 30028,
+        "orderCount": 31,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.348315,
+        "targets": {
+          "bet": 64400,
+          "drive": 69400,
+          "challenge": 79400
+        },
+        "rates": {
+          "bet": 0.466273,
+          "drive": 0.43268,
+          "challenge": 0.378186
+        }
+      },
+      "today": {
+        "amount": 8416,
+        "orderCount": 7,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1.4,
+        "targetAmount": 4400,
+        "completionRate": 1.912727
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 30028
+        }
+      ]
+    },
+    {
+      "id": "store-1bt0j6w",
+      "name": "宁德福安赛岐凯旋店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 192,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 10,
+        "tier1288": 2,
+        "tier1888": 16
+      },
+      "ranking": {
+        "cumulativeChallenge": 5,
+        "todayChallenge": 10
+      },
+      "cumulative": {
+        "amount": 41216,
+        "orderCount": 32,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.25,
+        "targets": {
+          "bet": 94471,
+          "drive": 101805,
+          "challenge": 116475
+        },
+        "rates": {
+          "bet": 0.436282,
+          "drive": 0.404852,
+          "challenge": 0.353861
+        }
+      },
+      "today": {
+        "amount": 10392,
+        "orderCount": 9,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 1.285714,
+        "targetAmount": 6455,
+        "completionRate": 1.609915
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 41216
+        }
+      ]
+    },
+    {
+      "id": "store-1s6uw2g",
+      "name": "龙岩新罗夏商店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 254,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 33,
+        "tier1288": 3,
+        "tier1888": 17
+      },
+      "ranking": {
+        "cumulativeChallenge": 6,
+        "todayChallenge": 14
+      },
+      "cumulative": {
+        "amount": 59052,
+        "orderCount": 54,
+        "targetOrderCount": 199,
+        "orderCompletionRate": 0.271357,
+        "targets": {
+          "bet": 146354,
+          "drive": 157717,
+          "challenge": 180443
+        },
+        "rates": {
+          "bet": 0.403487,
+          "drive": 0.374417,
+          "challenge": 0.327261
+        }
+      },
+      "today": {
+        "amount": 13480,
+        "orderCount": 10,
+        "targetOrderCount": 11,
+        "orderCompletionRate": 0.909091,
+        "targetAmount": 9999,
+        "completionRate": 1.348135
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 59052
+        }
+      ]
+    },
+    {
+      "id": "store-4nqrp8",
+      "name": "福州晋安福新中路店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 168,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 14,
+        "tier1288": 0,
+        "tier1888": 14
+      },
+      "ranking": {
+        "cumulativeChallenge": 7,
+        "todayChallenge": 6
+      },
+      "cumulative": {
+        "amount": 36840,
+        "orderCount": 30,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.234375,
+        "targets": {
+          "bet": 91849,
+          "drive": 98980,
+          "challenge": 113242
+        },
+        "rates": {
+          "bet": 0.401093,
+          "drive": 0.372196,
+          "challenge": 0.325321
+        }
+      },
+      "today": {
+        "amount": 12368,
+        "orderCount": 11,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 1.571429,
+        "targetAmount": 6275,
+        "completionRate": 1.970996
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 36840
+        }
+      ]
+    },
+    {
+      "id": "store-1wvq1su",
+      "name": "宁德蕉城东侨亿利城店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 314,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 23,
+        "tier1288": 8,
+        "tier1888": 22
+      },
+      "ranking": {
+        "cumulativeChallenge": 8,
+        "todayChallenge": 13
+      },
+      "cumulative": {
+        "amount": 69216,
+        "orderCount": 57,
+        "targetOrderCount": 238,
+        "orderCompletionRate": 0.239496,
+        "targets": {
+          "bet": 173233,
+          "drive": 186683,
+          "challenge": 213583
+        },
+        "rates": {
+          "bet": 0.399554,
+          "drive": 0.370768,
+          "challenge": 0.324071
+        }
+      },
+      "today": {
+        "amount": 17008,
+        "orderCount": 16,
+        "targetOrderCount": 13,
+        "orderCompletionRate": 1.230769,
+        "targetAmount": 11836,
+        "completionRate": 1.436972
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 69216
+        }
+      ]
+    },
+    {
+      "id": "store-1l6pokl",
+      "name": "龙岩新罗国贸天琴湾店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 102,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 11,
+        "tier1288": 0,
+        "tier1888": 8
+      },
+      "ranking": {
+        "cumulativeChallenge": 9,
+        "todayChallenge": 3
+      },
+      "cumulative": {
+        "amount": 23060,
+        "orderCount": 20,
+        "targetOrderCount": 85,
+        "orderCompletionRate": 0.235294,
+        "targets": {
+          "bet": 58851,
+          "drive": 63421,
+          "challenge": 72559
+        },
+        "rates": {
+          "bet": 0.391837,
+          "drive": 0.363602,
+          "challenge": 0.31781
+        }
+      },
+      "today": {
+        "amount": 8292,
+        "orderCount": 9,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1.8,
+        "targetAmount": 4021,
+        "completionRate": 2.062174
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 23060
+        }
+      ]
+    },
+    {
+      "id": "store-5b0y2a",
+      "name": "龙岩财富广场店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 82,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 8,
+        "tier1288": 1,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 10,
+        "todayChallenge": 1
+      },
+      "cumulative": {
+        "amount": 19284,
+        "orderCount": 18,
+        "targetOrderCount": 71,
+        "orderCompletionRate": 0.253521,
+        "targets": {
+          "bet": 50198,
+          "drive": 54095,
+          "challenge": 61890
+        },
+        "rates": {
+          "bet": 0.384159,
+          "drive": 0.356484,
+          "challenge": 0.311585
+        }
+      },
+      "today": {
+        "amount": 7728,
+        "orderCount": 6,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 1.5,
+        "targetAmount": 3430,
+        "completionRate": 2.253061
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19284
+        }
+      ]
+    },
+    {
+      "id": "store-1wmp974",
+      "name": "宁德蕉城天茂广场店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 176,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 6,
+        "tier1288": 4,
+        "tier1888": 14
+      },
+      "ranking": {
+        "cumulativeChallenge": 11,
+        "todayChallenge": 24
+      },
+      "cumulative": {
+        "amount": 37652,
+        "orderCount": 29,
+        "targetOrderCount": 142,
+        "orderCompletionRate": 0.204225,
+        "targets": {
+          "bet": 100333,
+          "drive": 108123,
+          "challenge": 123703
+        },
+        "rates": {
+          "bet": 0.37527,
+          "drive": 0.348233,
+          "challenge": 0.304374
+        }
+      },
+      "today": {
+        "amount": 7304,
+        "orderCount": 8,
+        "targetOrderCount": 8,
+        "orderCompletionRate": 1,
+        "targetAmount": 6855,
+        "completionRate": 1.0655
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 37652
+        }
+      ]
+    },
+    {
+      "id": "store-12ewoa7",
+      "name": "南平光泽文昌路店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 148,
+      "tierOrders": {
+        "tier388": 6,
+        "tier688": 15,
+        "tier1288": 3,
+        "tier1888": 10
+      },
+      "ranking": {
+        "cumulativeChallenge": 12,
+        "todayChallenge": 28
+      },
+      "cumulative": {
+        "amount": 35392,
+        "orderCount": 34,
+        "targetOrderCount": 135.53,
+        "orderCompletionRate": 0.250867,
+        "targets": {
+          "bet": 110838,
+          "drive": 114008,
+          "challenge": 120350
+        },
+        "rates": {
+          "bet": 0.319313,
+          "drive": 0.310434,
+          "challenge": 0.294076
+        }
+      },
+      "today": {
+        "amount": 7992,
+        "orderCount": 9,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 1,
+        "targetAmount": 7992,
+        "completionRate": 1
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 35392
+        }
+      ]
+    },
+    {
+      "id": "store-10at0zn",
+      "name": "宁德屏南东方名筑店",
+      "regionId": "region-1eaha27",
+      "regionName": "闽东三区",
+      "status": "未完成对赌目标",
+      "bonus": 152,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 14,
+        "tier1288": 4,
+        "tier1888": 10
+      },
+      "ranking": {
+        "cumulativeChallenge": 13,
+        "todayChallenge": 112
+      },
+      "cumulative": {
+        "amount": 34440,
+        "orderCount": 30,
+        "targetOrderCount": 129,
+        "orderCompletionRate": 0.232558,
+        "targets": {
+          "bet": 95318,
+          "drive": 102718,
+          "challenge": 117519
+        },
+        "rates": {
+          "bet": 0.361317,
+          "drive": 0.335287,
+          "challenge": 0.293059
+        }
+      },
+      "today": {
+        "amount": 1376,
+        "orderCount": 2,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.285714,
+        "targetAmount": 6512,
+        "completionRate": 0.211302
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 34440
+        }
+      ]
+    },
+    {
+      "id": "store-198c20k",
+      "name": "宁德福安万利广场店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 136,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 10,
+        "tier1288": 1,
+        "tier1888": 11
+      },
+      "ranking": {
+        "cumulativeChallenge": 14,
+        "todayChallenge": 5
+      },
+      "cumulative": {
+        "amount": 29712,
+        "orderCount": 24,
+        "targetOrderCount": 122,
+        "orderCompletionRate": 0.196721,
+        "targets": {
+          "bet": 84650,
+          "drive": 91223,
+          "challenge": 104367
+        },
+        "rates": {
+          "bet": 0.350998,
+          "drive": 0.325707,
+          "challenge": 0.284688
+        }
+      },
+      "today": {
+        "amount": 11504,
+        "orderCount": 8,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 1.142857,
+        "targetAmount": 5784,
+        "completionRate": 1.988935
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 29712
+        }
+      ]
+    },
+    {
+      "id": "store-ytylvn",
+      "name": "宁德福安溪北洋融和广场店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 186,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 9,
+        "tier1288": 3,
+        "tier1888": 15
+      },
+      "ranking": {
+        "cumulativeChallenge": 15,
+        "todayChallenge": 11
+      },
+      "cumulative": {
+        "amount": 38376,
+        "orderCount": 27,
+        "targetOrderCount": 156,
+        "orderCompletionRate": 0.173077,
+        "targets": {
+          "bet": 110755,
+          "drive": 119354,
+          "challenge": 136552
+        },
+        "rates": {
+          "bet": 0.346495,
+          "drive": 0.321531,
+          "challenge": 0.281036
+        }
+      },
+      "today": {
+        "amount": 11768,
+        "orderCount": 11,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 1.222222,
+        "targetAmount": 7567,
+        "completionRate": 1.555174
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 38376
+        }
+      ]
+    },
+    {
+      "id": "store-cfjno6",
+      "name": "福州马尾君竹店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 162,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 11,
+        "tier1288": 0,
+        "tier1888": 14
+      },
+      "ranking": {
+        "cumulativeChallenge": 16,
+        "todayChallenge": 93
+      },
+      "cumulative": {
+        "amount": 34776,
+        "orderCount": 27,
+        "targetOrderCount": 142,
+        "orderCompletionRate": 0.190141,
+        "targets": {
+          "bet": 100453,
+          "drive": 108252,
+          "challenge": 123851
+        },
+        "rates": {
+          "bet": 0.346192,
+          "drive": 0.32125,
+          "challenge": 0.280789
+        }
+      },
+      "today": {
+        "amount": 2576,
+        "orderCount": 2,
+        "targetOrderCount": 8,
+        "orderCompletionRate": 0.25,
+        "targetAmount": 6863,
+        "completionRate": 0.375346
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 34776
+        }
+      ]
+    },
+    {
+      "id": "store-o48wgy",
+      "name": "龙岩上杭帝豪广场店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 202,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 17,
+        "tier1288": 8,
+        "tier1888": 12
+      },
+      "ranking": {
+        "cumulativeChallenge": 17,
+        "todayChallenge": 16
+      },
+      "cumulative": {
+        "amount": 45044,
+        "orderCount": 38,
+        "targetOrderCount": 181,
+        "orderCompletionRate": 0.209945,
+        "targets": {
+          "bet": 132555,
+          "drive": 142847,
+          "challenge": 163430
+        },
+        "rates": {
+          "bet": 0.339814,
+          "drive": 0.31533,
+          "challenge": 0.275616
+        }
+      },
+      "today": {
+        "amount": 11644,
+        "orderCount": 13,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 1.3,
+        "targetAmount": 9057,
+        "completionRate": 1.285635
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 45044
+        }
+      ]
+    },
+    {
+      "id": "store-1aow1av",
+      "name": "漳浦永嘉天地店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 224,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 21,
+        "tier1288": 7,
+        "tier1888": 14
+      },
+      "ranking": {
+        "cumulativeChallenge": 18,
+        "todayChallenge": 42
+      },
+      "cumulative": {
+        "amount": 51448,
+        "orderCount": 46,
+        "targetOrderCount": 213,
+        "orderCompletionRate": 0.215962,
+        "targets": {
+          "bet": 152353,
+          "drive": 164181,
+          "challenge": 187839
+        },
+        "rates": {
+          "bet": 0.337689,
+          "drive": 0.313361,
+          "challenge": 0.273894
+        }
+      },
+      "today": {
+        "amount": 8804,
+        "orderCount": 8,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.666667,
+        "targetAmount": 10409,
+        "completionRate": 0.845807
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 51448
+        }
+      ]
+    },
+    {
+      "id": "store-96g1xr",
+      "name": "漳州漳浦麦市街店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 144,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 15,
+        "tier1288": 9,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 19,
+        "todayChallenge": 86
+      },
+      "cumulative": {
+        "amount": 34016,
+        "orderCount": 32,
+        "targetOrderCount": 144,
+        "orderCompletionRate": 0.222222,
+        "targets": {
+          "bet": 103933,
+          "drive": 112003,
+          "challenge": 128141
+        },
+        "rates": {
+          "bet": 0.327288,
+          "drive": 0.303706,
+          "challenge": 0.265458
+        }
+      },
+      "today": {
+        "amount": 3264,
+        "orderCount": 3,
+        "targetOrderCount": 8,
+        "orderCompletionRate": 0.375,
+        "targetAmount": 7101,
+        "completionRate": 0.459654
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 34016
+        }
+      ]
+    },
+    {
+      "id": "store-itun2d",
+      "name": "南平建瓯建州不夜城店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 212,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 22,
+        "tier1288": 3,
+        "tier1888": 15
+      },
+      "ranking": {
+        "cumulativeChallenge": 20,
+        "todayChallenge": 54
+      },
+      "cumulative": {
+        "amount": 48484,
+        "orderCount": 43,
+        "targetOrderCount": 213,
+        "orderCompletionRate": 0.201878,
+        "targets": {
+          "bet": 150956,
+          "drive": 162676,
+          "challenge": 186116
+        },
+        "rates": {
+          "bet": 0.32118,
+          "drive": 0.29804,
+          "challenge": 0.260504
+        }
+      },
+      "today": {
+        "amount": 7304,
+        "orderCount": 8,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.666667,
+        "targetAmount": 10314,
+        "completionRate": 0.708164
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 48484
+        }
+      ]
+    },
+    {
+      "id": "store-1mka8",
+      "name": "宁德蕉城城东店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 174,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 19,
+        "tier1288": 1,
+        "tier1888": 13
+      },
+      "ranking": {
+        "cumulativeChallenge": 21,
+        "todayChallenge": 27
+      },
+      "cumulative": {
+        "amount": 39292,
+        "orderCount": 34,
+        "targetOrderCount": 180,
+        "orderCompletionRate": 0.188889,
+        "targets": {
+          "bet": 130382,
+          "drive": 140505,
+          "challenge": 160751
+        },
+        "rates": {
+          "bet": 0.301361,
+          "drive": 0.279648,
+          "challenge": 0.244428
+        }
+      },
+      "today": {
+        "amount": 9192,
+        "orderCount": 9,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.9,
+        "targetAmount": 8908,
+        "completionRate": 1.031881
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 39292
+        }
+      ]
+    },
+    {
+      "id": "store-72g68c",
+      "name": "宁德福鼎万辉旗舰店",
+      "regionId": "region-1eaha27",
+      "regionName": "闽东三区",
+      "status": "未完成对赌目标",
+      "bonus": 162,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 13,
+        "tier1288": 1,
+        "tier1888": 13
+      },
+      "ranking": {
+        "cumulativeChallenge": 22,
+        "todayChallenge": 26
+      },
+      "cumulative": {
+        "amount": 35552,
+        "orderCount": 29,
+        "targetOrderCount": 166,
+        "orderCompletionRate": 0.174699,
+        "targets": {
+          "bet": 119152,
+          "drive": 128403,
+          "challenge": 146905
+        },
+        "rates": {
+          "bet": 0.298375,
+          "drive": 0.276878,
+          "challenge": 0.242007
+        }
+      },
+      "today": {
+        "amount": 8416,
+        "orderCount": 7,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.777778,
+        "targetAmount": 8141,
+        "completionRate": 1.03378
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 35552
+        }
+      ]
+    },
+    {
+      "id": "store-66adiu",
+      "name": "福州仓山螺洲新城店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 108,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 8,
+        "tier1288": 2,
+        "tier1888": 8
+      },
+      "ranking": {
+        "cumulativeChallenge": 23,
+        "todayChallenge": 8
+      },
+      "cumulative": {
+        "amount": 23960,
+        "orderCount": 20,
+        "targetOrderCount": 110,
+        "orderCompletionRate": 0.181818,
+        "targets": {
+          "bet": 81679,
+          "drive": 88021,
+          "challenge": 100704
+        },
+        "rates": {
+          "bet": 0.293343,
+          "drive": 0.272208,
+          "challenge": 0.237925
+        }
+      },
+      "today": {
+        "amount": 10004,
+        "orderCount": 8,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 1.333333,
+        "targetAmount": 5581,
+        "completionRate": 1.79251
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 23960
+        }
+      ]
+    },
+    {
+      "id": "store-sfmnql",
+      "name": "宁德柘荣柳城西路店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 90,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 9,
+        "tier1288": 2,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 24,
+        "todayChallenge": 21
+      },
+      "cumulative": {
+        "amount": 20096,
+        "orderCount": 17,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.178947,
+        "targets": {
+          "bet": 70715,
+          "drive": 76205,
+          "challenge": 87186
+        },
+        "rates": {
+          "bet": 0.284183,
+          "drive": 0.26371,
+          "challenge": 0.230496
+        }
+      },
+      "today": {
+        "amount": 5328,
+        "orderCount": 6,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1.2,
+        "targetAmount": 4831,
+        "completionRate": 1.102877
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 20096
+        }
+      ]
+    },
+    {
+      "id": "store-6n98s2",
+      "name": "泉州洛江现代华城店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 162,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 14,
+        "tier1288": 4,
+        "tier1888": 11
+      },
+      "ranking": {
+        "cumulativeChallenge": 25,
+        "todayChallenge": 17
+      },
+      "cumulative": {
+        "amount": 37492,
+        "orderCount": 34,
+        "targetOrderCount": 181,
+        "orderCompletionRate": 0.187845,
+        "targets": {
+          "bet": 132834,
+          "drive": 143147,
+          "challenge": 163773
+        },
+        "rates": {
+          "bet": 0.282247,
+          "drive": 0.261913,
+          "challenge": 0.228927
+        }
+      },
+      "today": {
+        "amount": 11080,
+        "orderCount": 10,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 1,
+        "targetAmount": 9076,
+        "completionRate": 1.220802
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 37492
+        }
+      ]
+    },
+    {
+      "id": "store-z3wnfl",
+      "name": "南平邵武财富广场店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 154,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 10,
+        "tier1288": 4,
+        "tier1888": 11
+      },
+      "ranking": {
+        "cumulativeChallenge": 26,
+        "todayChallenge": 64
+      },
+      "cumulative": {
+        "amount": 33576,
+        "orderCount": 27,
+        "targetOrderCount": 166,
+        "orderCompletionRate": 0.162651,
+        "targets": {
+          "bet": 121353,
+          "drive": 130775,
+          "challenge": 149618
+        },
+        "rates": {
+          "bet": 0.27668,
+          "drive": 0.256746,
+          "challenge": 0.224412
+        }
+      },
+      "today": {
+        "amount": 5240,
+        "orderCount": 5,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.555556,
+        "targetAmount": 8291,
+        "completionRate": 0.632011
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 33576
+        }
+      ]
+    },
+    {
+      "id": "store-dvhf45",
+      "name": "福州南平西路店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 66,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 3,
+        "tier1288": 0,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 27,
+        "todayChallenge": 57
+      },
+      "cumulative": {
+        "amount": 15332,
+        "orderCount": 14,
+        "targetOrderCount": 76,
+        "orderCompletionRate": 0.184211,
+        "targets": {
+          "bet": 55753,
+          "drive": 60082,
+          "challenge": 68739
+        },
+        "rates": {
+          "bet": 0.274999,
+          "drive": 0.255185,
+          "challenge": 0.223047
+        }
+      },
+      "today": {
+        "amount": 2664,
+        "orderCount": 3,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 0.75,
+        "targetAmount": 3809,
+        "completionRate": 0.699396
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15332
+        }
+      ]
+    },
+    {
+      "id": "store-1inrl2v",
+      "name": "宁德蕉城大润发广场店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 66,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 3,
+        "tier1288": 0,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 28,
+        "todayChallenge": 15
+      },
+      "cumulative": {
+        "amount": 13392,
+        "orderCount": 9,
+        "targetOrderCount": 70,
+        "orderCompletionRate": 0.128571,
+        "targets": {
+          "bet": 48718,
+          "drive": 52501,
+          "challenge": 60066
+        },
+        "rates": {
+          "bet": 0.274888,
+          "drive": 0.255081,
+          "challenge": 0.222955
+        }
+      },
+      "today": {
+        "amount": 4464,
+        "orderCount": 3,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 0.75,
+        "targetAmount": 3329,
+        "completionRate": 1.340943
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13392
+        }
+      ]
+    },
+    {
+      "id": "store-138jypy",
+      "name": "福州仓山百花洲路店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 80,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 4,
+        "tier1288": 2,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 29,
+        "todayChallenge": 101
+      },
+      "cumulative": {
+        "amount": 16656,
+        "orderCount": 12,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.134831,
+        "targets": {
+          "bet": 64400,
+          "drive": 69400,
+          "challenge": 79400
+        },
+        "rates": {
+          "bet": 0.258634,
+          "drive": 0.24,
+          "challenge": 0.209773
+        }
+      },
+      "today": {
+        "amount": 1376,
+        "orderCount": 2,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.4,
+        "targetAmount": 4400,
+        "completionRate": 0.312727
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16656
+        }
+      ]
+    },
+    {
+      "id": "store-1pxjdwm",
+      "name": "莆田学园南路店",
+      "regionId": "region-2qwevo",
+      "regionName": "莆田区域",
+      "status": "未完成对赌目标",
+      "bonus": 74,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 1,
+        "tier1288": 2,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 30,
+        "todayChallenge": 25
+      },
+      "cumulative": {
+        "amount": 16144,
+        "orderCount": 13,
+        "targetOrderCount": 91,
+        "orderCompletionRate": 0.142857,
+        "targets": {
+          "bet": 64695,
+          "drive": 69718,
+          "challenge": 79764
+        },
+        "rates": {
+          "bet": 0.24954,
+          "drive": 0.231561,
+          "challenge": 0.202397
+        }
+      },
+      "today": {
+        "amount": 4640,
+        "orderCount": 5,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1,
+        "targetAmount": 4420,
+        "completionRate": 1.049774
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16144
+        }
+      ]
+    },
+    {
+      "id": "store-kjdlwu",
+      "name": "南平顺昌中山路店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 158,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 21,
+        "tier1288": 1,
+        "tier1888": 11
+      },
+      "ranking": {
+        "cumulativeChallenge": 31,
+        "todayChallenge": 55
+      },
+      "cumulative": {
+        "amount": 38056,
+        "orderCount": 37,
+        "targetOrderCount": 217,
+        "orderCompletionRate": 0.170507,
+        "targets": {
+          "bet": 155508,
+          "drive": 167582,
+          "challenge": 191729
+        },
+        "rates": {
+          "bet": 0.244721,
+          "drive": 0.227089,
+          "challenge": 0.198488
+        }
+      },
+      "today": {
+        "amount": 7480,
+        "orderCount": 10,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.833333,
+        "targetAmount": 10625,
+        "completionRate": 0.704
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 38056
+        }
+      ]
+    },
+    {
+      "id": "store-7qmzex",
+      "name": "福州仓山高宅店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 80,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 11,
+        "tier1288": 3,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 32,
+        "todayChallenge": 38
+      },
+      "cumulative": {
+        "amount": 19760,
+        "orderCount": 20,
+        "targetOrderCount": 110,
+        "orderCompletionRate": 0.181818,
+        "targets": {
+          "bet": 80936,
+          "drive": 87220,
+          "challenge": 99787
+        },
+        "rates": {
+          "bet": 0.244144,
+          "drive": 0.226554,
+          "challenge": 0.198022
+        }
+      },
+      "today": {
+        "amount": 5116,
+        "orderCount": 7,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 1.166667,
+        "targetAmount": 5530,
+        "completionRate": 0.925136
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19760
+        }
+      ]
+    },
+    {
+      "id": "store-h6sxvf",
+      "name": "厦门思明建发悦享店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 66,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 8,
+        "tier1288": 5,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 33,
+        "todayChallenge": 87
+      },
+      "cumulative": {
+        "amount": 15720,
+        "orderCount": 15,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.168539,
+        "targets": {
+          "bet": 64400,
+          "drive": 69400,
+          "challenge": 79400
+        },
+        "rates": {
+          "bet": 0.244099,
+          "drive": 0.226513,
+          "challenge": 0.197985
+        }
+      },
+      "today": {
+        "amount": 1888,
+        "orderCount": 1,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.2,
+        "targetAmount": 4400,
+        "completionRate": 0.429091
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15720
+        }
+      ]
+    },
+    {
+      "id": "store-1498wt9",
+      "name": "泉州南安梅山店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 96,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 13,
+        "tier1288": 0,
+        "tier1888": 7
+      },
+      "ranking": {
+        "cumulativeChallenge": 34,
+        "todayChallenge": 50
+      },
+      "cumulative": {
+        "amount": 23712,
+        "orderCount": 24,
+        "targetOrderCount": 133,
+        "orderCompletionRate": 0.180451,
+        "targets": {
+          "bet": 97501,
+          "drive": 105071,
+          "challenge": 120211
+        },
+        "rates": {
+          "bet": 0.243198,
+          "drive": 0.225676,
+          "challenge": 0.197253
+        }
+      },
+      "today": {
+        "amount": 5116,
+        "orderCount": 7,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 1,
+        "targetAmount": 6662,
+        "completionRate": 0.767938
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 23712
+        }
+      ]
+    },
+    {
+      "id": "store-1qhmfuv",
+      "name": "福州仓山橘园洲万科里店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 70,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 35,
+        "todayChallenge": 119
+      },
+      "cumulative": {
+        "amount": 15544,
+        "orderCount": 13,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.146067,
+        "targets": {
+          "bet": 64400,
+          "drive": 69400,
+          "challenge": 79400
+        },
+        "rates": {
+          "bet": 0.241366,
+          "drive": 0.223977,
+          "challenge": 0.195768
+        }
+      },
+      "today": {
+        "amount": 688,
+        "orderCount": 1,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.2,
+        "targetAmount": 4400,
+        "completionRate": 0.156364
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15544
+        }
+      ]
+    },
+    {
+      "id": "store-14o56w9",
+      "name": "泉州丰泽海星街店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 72,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 10,
+        "tier1288": 2,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 36,
+        "todayChallenge": 39
+      },
+      "cumulative": {
+        "amount": 18560,
+        "orderCount": 20,
+        "targetOrderCount": 109,
+        "orderCompletionRate": 0.183486,
+        "targets": {
+          "bet": 76948,
+          "drive": 82922,
+          "challenge": 94870
+        },
+        "rates": {
+          "bet": 0.241202,
+          "drive": 0.223825,
+          "challenge": 0.195636
+        }
+      },
+      "today": {
+        "amount": 4852,
+        "orderCount": 4,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.666667,
+        "targetAmount": 5257,
+        "completionRate": 0.92296
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 18560
+        }
+      ]
+    },
+    {
+      "id": "store-bmrz7p",
+      "name": "宁德蕉城金溪首府店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 198,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 17,
+        "tier1288": 4,
+        "tier1888": 14
+      },
+      "ranking": {
+        "cumulativeChallenge": 37,
+        "todayChallenge": 66
+      },
+      "cumulative": {
+        "amount": 43280,
+        "orderCount": 35,
+        "targetOrderCount": 256,
+        "orderCompletionRate": 0.136719,
+        "targets": {
+          "bet": 183545,
+          "drive": 197795,
+          "challenge": 226296
+        },
+        "rates": {
+          "bet": 0.2358,
+          "drive": 0.218812,
+          "challenge": 0.191254
+        }
+      },
+      "today": {
+        "amount": 7728,
+        "orderCount": 6,
+        "targetOrderCount": 14,
+        "orderCompletionRate": 0.428571,
+        "targetAmount": 12540,
+        "completionRate": 0.616268
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 43280
+        }
+      ]
+    },
+    {
+      "id": "store-p5rsr6",
+      "name": "福州闽侯汇锋店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 134,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 9,
+        "tier1288": 1,
+        "tier1888": 11
+      },
+      "ranking": {
+        "cumulativeChallenge": 38,
+        "todayChallenge": 31
+      },
+      "cumulative": {
+        "amount": 30188,
+        "orderCount": 26,
+        "targetOrderCount": 180,
+        "orderCompletionRate": 0.144444,
+        "targets": {
+          "bet": 128093,
+          "drive": 138038,
+          "challenge": 157928
+        },
+        "rates": {
+          "bet": 0.235673,
+          "drive": 0.218693,
+          "challenge": 0.19115
+        }
+      },
+      "today": {
+        "amount": 8592,
+        "orderCount": 9,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.9,
+        "targetAmount": 8752,
+        "completionRate": 0.981718
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 30188
+        }
+      ]
+    },
+    {
+      "id": "store-cuzdxi",
+      "name": "莆田涵江日月星辰广场店",
+      "regionId": "region-2qwevo",
+      "regionName": "莆田区域",
+      "status": "未完成对赌目标",
+      "bonus": 60,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 10,
+        "tier1288": 0,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 39,
+        "todayChallenge": 29
+      },
+      "cumulative": {
+        "amount": 15984,
+        "orderCount": 18,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.189474,
+        "targets": {
+          "bet": 69226,
+          "drive": 74601,
+          "challenge": 85350
+        },
+        "rates": {
+          "bet": 0.230896,
+          "drive": 0.21426,
+          "challenge": 0.187276
+        }
+      },
+      "today": {
+        "amount": 4728,
+        "orderCount": 6,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1.2,
+        "targetAmount": 4730,
+        "completionRate": 0.999577
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15984
+        }
+      ]
+    },
+    {
+      "id": "store-1tm43ay",
+      "name": "三明凤凰国际店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 34,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 7,
+        "tier1288": 0,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 40,
+        "todayChallenge": 76
+      },
+      "cumulative": {
+        "amount": 8980,
+        "orderCount": 10,
+        "targetOrderCount": 52,
+        "orderCompletionRate": 0.192308,
+        "targets": {
+          "bet": 39156,
+          "drive": 42196,
+          "challenge": 48276
+        },
+        "rates": {
+          "bet": 0.229339,
+          "drive": 0.212816,
+          "challenge": 0.186014
+        }
+      },
+      "today": {
+        "amount": 1376,
+        "orderCount": 2,
+        "targetOrderCount": 3,
+        "orderCompletionRate": 0.666667,
+        "targetAmount": 2675,
+        "completionRate": 0.514393
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 8980
+        }
+      ]
+    },
+    {
+      "id": "store-1d7sa3a",
+      "name": "漳州云霄万星广场旗舰店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 166,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 19,
+        "tier1288": 3,
+        "tier1888": 11
+      },
+      "ranking": {
+        "cumulativeChallenge": 41,
+        "todayChallenge": 84
+      },
+      "cumulative": {
+        "amount": 39644,
+        "orderCount": 38,
+        "targetOrderCount": 238,
+        "orderCompletionRate": 0.159664,
+        "targets": {
+          "bet": 173631,
+          "drive": 187112,
+          "challenge": 214073
+        },
+        "rates": {
+          "bet": 0.228323,
+          "drive": 0.211873,
+          "challenge": 0.185189
+        }
+      },
+      "today": {
+        "amount": 5628,
+        "orderCount": 6,
+        "targetOrderCount": 13,
+        "orderCompletionRate": 0.461538,
+        "targetAmount": 11863,
+        "completionRate": 0.474416
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 39644
+        }
+      ]
+    },
+    {
+      "id": "store-1jxbgfr",
+      "name": "湖北武汉大学店",
+      "regionId": "region-yu9qib",
+      "regionName": "武汉区域",
+      "status": "未完成对赌目标",
+      "bonus": 78,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 3,
+        "tier1288": 2,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 42,
+        "todayChallenge": 19
+      },
+      "cumulative": {
+        "amount": 16744,
+        "orderCount": 13,
+        "targetOrderCount": 102,
+        "orderCompletionRate": 0.127451,
+        "targets": {
+          "bet": 64017,
+          "drive": 72869,
+          "challenge": 90573
+        },
+        "rates": {
+          "bet": 0.261556,
+          "drive": 0.229782,
+          "challenge": 0.184867
+        }
+      },
+      "today": {
+        "amount": 6140,
+        "orderCount": 5,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.833333,
+        "targetAmount": 5328,
+        "completionRate": 1.152402
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16744
+        }
+      ]
+    },
+    {
+      "id": "store-13n6m6m",
+      "name": "福州闽侯青口海韵国际城店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 40,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 43,
+        "todayChallenge": 80
+      },
+      "cumulative": {
+        "amount": 9104,
+        "orderCount": 8,
+        "targetOrderCount": 56,
+        "orderCompletionRate": 0.142857,
+        "targets": {
+          "bet": 40714,
+          "drive": 43875,
+          "challenge": 50198
+        },
+        "rates": {
+          "bet": 0.223609,
+          "drive": 0.207499,
+          "challenge": 0.181362
+        }
+      },
+      "today": {
+        "amount": 1376,
+        "orderCount": 2,
+        "targetOrderCount": 3,
+        "orderCompletionRate": 0.666667,
+        "targetAmount": 2782,
+        "completionRate": 0.494608
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9104
+        }
+      ]
+    },
+    {
+      "id": "store-1q62wpb",
+      "name": "福州仓山首山金星店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 100,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 9
+      },
+      "ranking": {
+        "cumulativeChallenge": 44,
+        "todayChallenge": 63
+      },
+      "cumulative": {
+        "amount": 20820,
+        "orderCount": 15,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.117188,
+        "targets": {
+          "bet": 94057,
+          "drive": 101359,
+          "challenge": 115964
+        },
+        "rates": {
+          "bet": 0.221355,
+          "drive": 0.205408,
+          "challenge": 0.179538
+        }
+      },
+      "today": {
+        "amount": 4164,
+        "orderCount": 3,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.428571,
+        "targetAmount": 6426,
+        "completionRate": 0.647993
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 20820
+        }
+      ]
+    },
+    {
+      "id": "store-1ckojx0",
+      "name": "福州台江万达金街旗舰店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 68,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 9,
+        "tier1288": 0,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 45,
+        "todayChallenge": 61
+      },
+      "cumulative": {
+        "amount": 16020,
+        "orderCount": 15,
+        "targetOrderCount": 104,
+        "orderCompletionRate": 0.144231,
+        "targets": {
+          "bet": 72412,
+          "drive": 78034,
+          "challenge": 89278
+        },
+        "rates": {
+          "bet": 0.221234,
+          "drive": 0.205295,
+          "challenge": 0.17944
+        }
+      },
+      "today": {
+        "amount": 3264,
+        "orderCount": 3,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.5,
+        "targetAmount": 4947,
+        "completionRate": 0.659794
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16020
+        }
+      ]
+    },
+    {
+      "id": "store-1x5h6jq",
+      "name": "龙岩长汀水东街店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 126,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 17,
+        "tier1288": 2,
+        "tier1888": 8
+      },
+      "ranking": {
+        "cumulativeChallenge": 46,
+        "todayChallenge": 44
+      },
+      "cumulative": {
+        "amount": 30152,
+        "orderCount": 29,
+        "targetOrderCount": 194,
+        "orderCompletionRate": 0.149485,
+        "targets": {
+          "bet": 136846,
+          "drive": 147470,
+          "challenge": 168720
+        },
+        "rates": {
+          "bet": 0.220335,
+          "drive": 0.204462,
+          "challenge": 0.17871
+        }
+      },
+      "today": {
+        "amount": 7816,
+        "orderCount": 7,
+        "targetOrderCount": 11,
+        "orderCompletionRate": 0.636364,
+        "targetAmount": 9350,
+        "completionRate": 0.835936
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 30152
+        }
+      ]
+    },
+    {
+      "id": "store-yqk2hn",
+      "name": "福州闽侯上街福大店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 84,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 8,
+        "tier1288": 3,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 47,
+        "todayChallenge": 18
+      },
+      "cumulative": {
+        "amount": 19196,
+        "orderCount": 17,
+        "targetOrderCount": 123,
+        "orderCompletionRate": 0.138211,
+        "targets": {
+          "bet": 87784,
+          "drive": 94600,
+          "challenge": 108231
+        },
+        "rates": {
+          "bet": 0.218673,
+          "drive": 0.202918,
+          "challenge": 0.177361
+        }
+      },
+      "today": {
+        "amount": 7128,
+        "orderCount": 6,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.857143,
+        "targetAmount": 5998,
+        "completionRate": 1.188396
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19196
+        }
+      ]
+    },
+    {
+      "id": "store-nfmoez",
+      "name": "莆田世全时尚国际店",
+      "regionId": "region-2qwevo",
+      "regionName": "莆田区域",
+      "status": "未完成对赌目标",
+      "bonus": 88,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 9,
+        "tier1288": 0,
+        "tier1888": 7
+      },
+      "ranking": {
+        "cumulativeChallenge": 48,
+        "todayChallenge": 124
+      },
+      "cumulative": {
+        "amount": 20572,
+        "orderCount": 19,
+        "targetOrderCount": 129,
+        "orderCompletionRate": 0.147287,
+        "targets": {
+          "bet": 96343,
+          "drive": 103823,
+          "challenge": 118783
+        },
+        "rates": {
+          "bet": 0.213529,
+          "drive": 0.198145,
+          "challenge": 0.17319
+        }
+      },
+      "today": {
+        "amount": 688,
+        "orderCount": 1,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.142857,
+        "targetAmount": 6582,
+        "completionRate": 0.104527
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 20572
+        }
+      ]
+    },
+    {
+      "id": "store-1m75elw",
+      "name": "南平邵武皇庭新世界店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 74,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 2,
+        "tier1288": 0,
+        "tier1888": 7
+      },
+      "ranking": {
+        "cumulativeChallenge": 49,
+        "todayChallenge": 70
+      },
+      "cumulative": {
+        "amount": 14592,
+        "orderCount": 9,
+        "targetOrderCount": 92,
+        "orderCompletionRate": 0.097826,
+        "targets": {
+          "bet": 68366,
+          "drive": 73674,
+          "challenge": 84289
+        },
+        "rates": {
+          "bet": 0.213439,
+          "drive": 0.198062,
+          "challenge": 0.173119
+        }
+      },
+      "today": {
+        "amount": 2576,
+        "orderCount": 2,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.4,
+        "targetAmount": 4671,
+        "completionRate": 0.551488
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14592
+        }
+      ]
+    },
+    {
+      "id": "store-a3rlsd",
+      "name": "泉州永春美岭金街店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 72,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 8,
+        "tier1288": 1,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 50,
+        "todayChallenge": 116
+      },
+      "cumulative": {
+        "amount": 17008,
+        "orderCount": 16,
+        "targetOrderCount": 110,
+        "orderCompletionRate": 0.145455,
+        "targets": {
+          "bet": 81550,
+          "drive": 87881,
+          "challenge": 100544
+        },
+        "rates": {
+          "bet": 0.208559,
+          "drive": 0.193534,
+          "challenge": 0.16916
+        }
+      },
+      "today": {
+        "amount": 1076,
+        "orderCount": 2,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.333333,
+        "targetAmount": 5572,
+        "completionRate": 0.193108
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 17008
+        }
+      ]
+    },
+    {
+      "id": "store-28aziy",
+      "name": "福州晋安阳光城檀悦店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 144,
+      "tierOrders": {
+        "tier388": 8,
+        "tier688": 21,
+        "tier1288": 2,
+        "tier1888": 9
+      },
+      "ranking": {
+        "cumulativeChallenge": 51,
+        "todayChallenge": 45
+      },
+      "cumulative": {
+        "amount": 37120,
+        "orderCount": 40,
+        "targetOrderCount": 250,
+        "orderCompletionRate": 0.16,
+        "targets": {
+          "bet": 178628,
+          "drive": 192497,
+          "challenge": 220234
+        },
+        "rates": {
+          "bet": 0.207806,
+          "drive": 0.192834,
+          "challenge": 0.168548
+        }
+      },
+      "today": {
+        "amount": 10144,
+        "orderCount": 13,
+        "targetOrderCount": 14,
+        "orderCompletionRate": 0.928571,
+        "targetAmount": 12204,
+        "completionRate": 0.831203
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 37120
+        }
+      ]
+    },
+    {
+      "id": "store-1cmwhdn",
+      "name": "漳州南靖金才假日广场店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 48,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 4,
+        "tier1288": 0,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 52,
+        "todayChallenge": 37
+      },
+      "cumulative": {
+        "amount": 12244,
+        "orderCount": 13,
+        "targetOrderCount": 85,
+        "orderCompletionRate": 0.152941,
+        "targets": {
+          "bet": 59077,
+          "drive": 63664,
+          "challenge": 72838
+        },
+        "rates": {
+          "bet": 0.207255,
+          "drive": 0.192322,
+          "challenge": 0.168099
+        }
+      },
+      "today": {
+        "amount": 3740,
+        "orderCount": 5,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1,
+        "targetAmount": 4036,
+        "completionRate": 0.92666
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 12244
+        }
+      ]
+    },
+    {
+      "id": "store-13baj0k",
+      "name": "宁德寿宁廊桥店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 76,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 12,
+        "tier1288": 2,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 53,
+        "todayChallenge": 20
+      },
+      "cumulative": {
+        "amount": 19160,
+        "orderCount": 20,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.15625,
+        "targets": {
+          "bet": 94195,
+          "drive": 101509,
+          "challenge": 116135
+        },
+        "rates": {
+          "bet": 0.203408,
+          "drive": 0.188752,
+          "challenge": 0.16498
+        }
+      },
+      "today": {
+        "amount": 7128,
+        "orderCount": 6,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.857143,
+        "targetAmount": 6436,
+        "completionRate": 1.10752
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19160
+        }
+      ]
+    },
+    {
+      "id": "store-1klwb8u",
+      "name": "福州台江文艺大厦店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 52,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 6,
+        "tier1288": 0,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 54,
+        "todayChallenge": 72
+      },
+      "cumulative": {
+        "amount": 11680,
+        "orderCount": 10,
+        "targetOrderCount": 81.34,
+        "orderCompletionRate": 0.122941,
+        "targets": {
+          "bet": 58585,
+          "drive": 63133,
+          "challenge": 72231
+        },
+        "rates": {
+          "bet": 0.199368,
+          "drive": 0.185006,
+          "challenge": 0.161703
+        }
+      },
+      "today": {
+        "amount": 2064,
+        "orderCount": 3,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 0.75,
+        "targetAmount": 3795,
+        "completionRate": 0.543874
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11680
+        }
+      ]
+    },
+    {
+      "id": "store-5p675f",
+      "name": "宁德蕉城中耕广场店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 72,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 6,
+        "tier1288": 0,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 55,
+        "todayChallenge": 83
+      },
+      "cumulative": {
+        "amount": 15456,
+        "orderCount": 12,
+        "targetOrderCount": 109,
+        "orderCompletionRate": 0.110092,
+        "targets": {
+          "bet": 78154,
+          "drive": 84222,
+          "challenge": 96357
+        },
+        "rates": {
+          "bet": 0.197763,
+          "drive": 0.183515,
+          "challenge": 0.160403
+        }
+      },
+      "today": {
+        "amount": 2576,
+        "orderCount": 2,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.333333,
+        "targetAmount": 5340,
+        "completionRate": 0.482397
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15456
+        }
+      ]
+    },
+    {
+      "id": "store-1ix3ivw",
+      "name": "宁德霞浦方圆荟店",
+      "regionId": "region-1eaha27",
+      "regionName": "闽东三区",
+      "status": "未完成对赌目标",
+      "bonus": 88,
+      "tierOrders": {
+        "tier388": 18,
+        "tier688": 3,
+        "tier1288": 2,
+        "tier1888": 7
+      },
+      "ranking": {
+        "cumulativeChallenge": 56,
+        "todayChallenge": 40
+      },
+      "cumulative": {
+        "amount": 24840,
+        "orderCount": 30,
+        "targetOrderCount": 180,
+        "orderCompletionRate": 0.166667,
+        "targets": {
+          "bet": 128324,
+          "drive": 138287,
+          "challenge": 158214
+        },
+        "rates": {
+          "bet": 0.193573,
+          "drive": 0.179626,
+          "challenge": 0.157003
+        }
+      },
+      "today": {
+        "amount": 7992,
+        "orderCount": 9,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.9,
+        "targetAmount": 8768,
+        "completionRate": 0.911496
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 24840
+        }
+      ]
+    },
+    {
+      "id": "store-1gzyyhd",
+      "name": "龙岩闽西交易城店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 40,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 9,
+        "tier1288": 2,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 57,
+        "todayChallenge": 56
+      },
+      "cumulative": {
+        "amount": 11044,
+        "orderCount": 13,
+        "targetOrderCount": 77,
+        "orderCompletionRate": 0.168831,
+        "targets": {
+          "bet": 57299,
+          "drive": 61748,
+          "challenge": 70646
+        },
+        "rates": {
+          "bet": 0.192743,
+          "drive": 0.178856,
+          "challenge": 0.156329
+        }
+      },
+      "today": {
+        "amount": 2752,
+        "orderCount": 4,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 1,
+        "targetAmount": 3915,
+        "completionRate": 0.702937
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11044
+        }
+      ]
+    },
+    {
+      "id": "store-hbk4fg",
+      "name": "泉州鲤城超越工业园店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 34,
+      "tierOrders": {
+        "tier388": 8,
+        "tier688": 7,
+        "tier1288": 0,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 58,
+        "todayChallenge": 2
+      },
+      "cumulative": {
+        "amount": 11696,
+        "orderCount": 17,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.191011,
+        "targets": {
+          "bet": 61423,
+          "drive": 66192,
+          "challenge": 75730
+        },
+        "rates": {
+          "bet": 0.190417,
+          "drive": 0.176698,
+          "challenge": 0.154443
+        }
+      },
+      "today": {
+        "amount": 8768,
+        "orderCount": 11,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 2.2,
+        "targetAmount": 4197,
+        "completionRate": 2.089111
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11696
+        }
+      ]
+    },
+    {
+      "id": "store-1ydmmuz",
+      "name": "龙岩漳平圣宇广场店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 98,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 8,
+        "tier1288": 2,
+        "tier1888": 7
+      },
+      "ranking": {
+        "cumulativeChallenge": 59,
+        "todayChallenge": 35
+      },
+      "cumulative": {
+        "amount": 22072,
+        "orderCount": 19,
+        "targetOrderCount": 161,
+        "orderCompletionRate": 0.118012,
+        "targets": {
+          "bet": 117497,
+          "drive": 126620,
+          "challenge": 144865
+        },
+        "rates": {
+          "bet": 0.187852,
+          "drive": 0.174317,
+          "challenge": 0.152363
+        }
+      },
+      "today": {
+        "amount": 7552,
+        "orderCount": 4,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.444444,
+        "targetAmount": 8028,
+        "completionRate": 0.940708
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 22072
+        }
+      ]
+    },
+    {
+      "id": "store-1rkfzwq",
+      "name": "南平建阳万晟皇庭店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 50,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 7,
+        "tier1288": 1,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 60,
+        "todayChallenge": 46
+      },
+      "cumulative": {
+        "amount": 12932,
+        "orderCount": 14,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.147368,
+        "targets": {
+          "bet": 69422,
+          "drive": 74812,
+          "challenge": 85592
+        },
+        "rates": {
+          "bet": 0.186281,
+          "drive": 0.17286,
+          "challenge": 0.151089
+        }
+      },
+      "today": {
+        "amount": 3828,
+        "orderCount": 6,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1.2,
+        "targetAmount": 4743,
+        "completionRate": 0.807084
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 12932
+        }
+      ]
+    },
+    {
+      "id": "store-dkb9qs",
+      "name": "南平松溪古城路店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 58,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 9,
+        "tier1288": 0,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 61,
+        "todayChallenge": 103
+      },
+      "cumulative": {
+        "amount": 14520,
+        "orderCount": 15,
+        "targetOrderCount": 109.274775,
+        "orderCompletionRate": 0.137269,
+        "targets": {
+          "bet": 76815,
+          "drive": 83556,
+          "challenge": 97036
+        },
+        "rates": {
+          "bet": 0.189026,
+          "drive": 0.173776,
+          "challenge": 0.149635
+        }
+      },
+      "today": {
+        "amount": 1764,
+        "orderCount": 3,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.428571,
+        "targetAmount": 5931,
+        "completionRate": 0.29742
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14520
+        }
+      ]
+    },
+    {
+      "id": "store-1ui4fzf",
+      "name": "龙岩漳平天守阳光城店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 46,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 10,
+        "tier1288": 1,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 62,
+        "todayChallenge": 43
+      },
+      "cumulative": {
+        "amount": 12720,
+        "orderCount": 15,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.157895,
+        "targets": {
+          "bet": 69978,
+          "drive": 75411,
+          "challenge": 86277
+        },
+        "rates": {
+          "bet": 0.181771,
+          "drive": 0.168676,
+          "challenge": 0.147432
+        }
+      },
+      "today": {
+        "amount": 4040,
+        "orderCount": 5,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1,
+        "targetAmount": 4781,
+        "completionRate": 0.845012
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 12720
+        }
+      ]
+    },
+    {
+      "id": "store-1eaq76b",
+      "name": "福州仓山南站阳光天地店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 48,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 4,
+        "tier1288": 0,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 63,
+        "todayChallenge": 47
+      },
+      "cumulative": {
+        "amount": 10692,
+        "orderCount": 9,
+        "targetOrderCount": 85,
+        "orderCompletionRate": 0.105882,
+        "targets": {
+          "bet": 59484,
+          "drive": 64103,
+          "challenge": 73339
+        },
+        "rates": {
+          "bet": 0.179746,
+          "drive": 0.166794,
+          "challenge": 0.145789
+        }
+      },
+      "today": {
+        "amount": 3264,
+        "orderCount": 3,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.6,
+        "targetAmount": 4064,
+        "completionRate": 0.80315
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10692
+        }
+      ]
+    },
+    {
+      "id": "store-1l0dfg8",
+      "name": "莆田涵江水韵天虹店",
+      "regionId": "region-2qwevo",
+      "regionName": "莆田区域",
+      "status": "未完成对赌目标",
+      "bonus": 56,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 7,
+        "tier1288": 2,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 64,
+        "todayChallenge": 33
+      },
+      "cumulative": {
+        "amount": 13444,
+        "orderCount": 13,
+        "targetOrderCount": 105,
+        "orderCompletionRate": 0.12381,
+        "targets": {
+          "bet": 75175,
+          "drive": 81011,
+          "challenge": 92685
+        },
+        "rates": {
+          "bet": 0.178836,
+          "drive": 0.165953,
+          "challenge": 0.14505
+        }
+      },
+      "today": {
+        "amount": 4940,
+        "orderCount": 5,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.833333,
+        "targetAmount": 5136,
+        "completionRate": 0.961838
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13444
+        }
+      ]
+    },
+    {
+      "id": "store-1l3jm9p",
+      "name": "漳州诏安金座店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 90,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 11,
+        "tier1288": 3,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 65,
+        "todayChallenge": 79
+      },
+      "cumulative": {
+        "amount": 20872,
+        "orderCount": 19,
+        "targetOrderCount": 161,
+        "orderCompletionRate": 0.118012,
+        "targets": {
+          "bet": 116915,
+          "drive": 125993,
+          "challenge": 144147
+        },
+        "rates": {
+          "bet": 0.178523,
+          "drive": 0.16566,
+          "challenge": 0.144797
+        }
+      },
+      "today": {
+        "amount": 3952,
+        "orderCount": 4,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.444444,
+        "targetAmount": 7988,
+        "completionRate": 0.494742
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 20872
+        }
+      ]
+    },
+    {
+      "id": "store-17k6njs",
+      "name": "南平建瓯南街头店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 100,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 6,
+        "tier1288": 3,
+        "tier1888": 7
+      },
+      "ranking": {
+        "cumulativeChallenge": 66,
+        "todayChallenge": 9
+      },
+      "cumulative": {
+        "amount": 22760,
+        "orderCount": 20,
+        "targetOrderCount": 180,
+        "orderCompletionRate": 0.111111,
+        "targets": {
+          "bet": 129569,
+          "drive": 139629,
+          "challenge": 159749
+        },
+        "rates": {
+          "bet": 0.175659,
+          "drive": 0.163003,
+          "challenge": 0.142474
+        }
+      },
+      "today": {
+        "amount": 15068,
+        "orderCount": 11,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 1.1,
+        "targetAmount": 8853,
+        "completionRate": 1.702022
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 22760
+        }
+      ]
+    },
+    {
+      "id": "store-1tlbije",
+      "name": "福州金山万科里店（卫星店）",
+      "regionId": "region-16704v2",
+      "regionName": "外卖区域",
+      "status": "未完成对赌目标",
+      "bonus": 18,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 1,
+        "tier1288": 1,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 67,
+        "todayChallenge": 30
+      },
+      "cumulative": {
+        "amount": 5804,
+        "orderCount": 8,
+        "targetOrderCount": 51,
+        "orderCompletionRate": 0.156863,
+        "targets": {
+          "bet": 33589,
+          "drive": 36197,
+          "challenge": 41412
+        },
+        "rates": {
+          "bet": 0.172795,
+          "drive": 0.160345,
+          "challenge": 0.140153
+        }
+      },
+      "today": {
+        "amount": 2276,
+        "orderCount": 2,
+        "targetOrderCount": 3,
+        "orderCompletionRate": 0.666667,
+        "targetAmount": 2295,
+        "completionRate": 0.991721
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 5804
+        }
+      ]
+    },
+    {
+      "id": "store-1srjkti",
+      "name": "温州泰顺青草湾店",
+      "regionId": "region-1eaha27",
+      "regionName": "闽东三区",
+      "status": "未完成对赌目标",
+      "bonus": 30,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 7,
+        "tier1288": 1,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 68,
+        "todayChallenge": 73
+      },
+      "cumulative": {
+        "amount": 8380,
+        "orderCount": 10,
+        "targetOrderCount": 70,
+        "orderCompletionRate": 0.142857,
+        "targets": {
+          "bet": 48879,
+          "drive": 52674,
+          "challenge": 60263
+        },
+        "rates": {
+          "bet": 0.171444,
+          "drive": 0.159092,
+          "challenge": 0.139057
+        }
+      },
+      "today": {
+        "amount": 1764,
+        "orderCount": 3,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 0.75,
+        "targetAmount": 3340,
+        "completionRate": 0.528144
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 8380
+        }
+      ]
+    },
+    {
+      "id": "store-f05ikx",
+      "name": "福州晋安鼓山沃尔玛店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 82,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 8,
+        "tier1288": 1,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 69,
+        "todayChallenge": 60
+      },
+      "cumulative": {
+        "amount": 18896,
+        "orderCount": 17,
+        "targetOrderCount": 157,
+        "orderCompletionRate": 0.10828,
+        "targets": {
+          "bet": 111164,
+          "drive": 119795,
+          "challenge": 137057
+        },
+        "rates": {
+          "bet": 0.169983,
+          "drive": 0.157736,
+          "challenge": 0.13787
+        }
+      },
+      "today": {
+        "amount": 5152,
+        "orderCount": 4,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.444444,
+        "targetAmount": 7595,
+        "completionRate": 0.678341
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 18896
+        }
+      ]
+    },
+    {
+      "id": "store-101t1ty",
+      "name": "泉州洛江双阳店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 60,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 2,
+        "tier1288": 1,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 70,
+        "todayChallenge": 109
+      },
+      "cumulative": {
+        "amount": 12492,
+        "orderCount": 9,
+        "targetOrderCount": 104,
+        "orderCompletionRate": 0.086538,
+        "targets": {
+          "bet": 73809,
+          "drive": 79540,
+          "challenge": 91001
+        },
+        "rates": {
+          "bet": 0.169248,
+          "drive": 0.157053,
+          "challenge": 0.137273
+        }
+      },
+      "today": {
+        "amount": 1200,
+        "orderCount": 0,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0,
+        "targetAmount": 5043,
+        "completionRate": 0.237954
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 12492
+        }
+      ]
+    },
+    {
+      "id": "store-1gb2swy",
+      "name": "南平武夷山温岭街店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 50,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 71,
+        "todayChallenge": 68
+      },
+      "cumulative": {
+        "amount": 10992,
+        "orderCount": 9,
+        "targetOrderCount": 91.04,
+        "orderCompletionRate": 0.098858,
+        "targets": {
+          "bet": 65573,
+          "drive": 70664,
+          "challenge": 80847
+        },
+        "rates": {
+          "bet": 0.16763,
+          "drive": 0.155553,
+          "challenge": 0.135961
+        }
+      },
+      "today": {
+        "amount": 2576,
+        "orderCount": 2,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.4,
+        "targetAmount": 4440,
+        "completionRate": 0.58018
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10992
+        }
+      ]
+    },
+    {
+      "id": "store-i3px1f",
+      "name": "泉州晋江池店镇店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 122,
+      "tierOrders": {
+        "tier388": 7,
+        "tier688": 20,
+        "tier1288": 2,
+        "tier1888": 7
+      },
+      "ranking": {
+        "cumulativeChallenge": 72,
+        "todayChallenge": 41
+      },
+      "cumulative": {
+        "amount": 32268,
+        "orderCount": 36,
+        "targetOrderCount": 270,
+        "orderCompletionRate": 0.133333,
+        "targets": {
+          "bet": 194241,
+          "drive": 209322,
+          "challenge": 239483
+        },
+        "rates": {
+          "bet": 0.166124,
+          "drive": 0.154155,
+          "challenge": 0.13474
+        }
+      },
+      "today": {
+        "amount": 11944,
+        "orderCount": 13,
+        "targetOrderCount": 15,
+        "orderCompletionRate": 0.866667,
+        "targetAmount": 13271,
+        "completionRate": 0.900008
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 32268
+        }
+      ]
+    },
+    {
+      "id": "store-1dby58t",
+      "name": "莆田秀屿上塘珠宝城店",
+      "regionId": "region-2qwevo",
+      "regionName": "莆田区域",
+      "status": "未完成对赌目标",
+      "bonus": 80,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 12,
+        "tier1288": 1,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 73,
+        "todayChallenge": 98
+      },
+      "cumulative": {
+        "amount": 19372,
+        "orderCount": 19,
+        "targetOrderCount": 175,
+        "orderCompletionRate": 0.108571,
+        "targets": {
+          "bet": 124140,
+          "drive": 133778,
+          "challenge": 153055
+        },
+        "rates": {
+          "bet": 0.15605,
+          "drive": 0.144807,
+          "challenge": 0.126569
+        }
+      },
+      "today": {
+        "amount": 2752,
+        "orderCount": 4,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.4,
+        "targetAmount": 8482,
+        "completionRate": 0.324452
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19372
+        }
+      ]
+    },
+    {
+      "id": "store-wfkoog",
+      "name": "南平武夷山三姑旗舰店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 42,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 6,
+        "tier1288": 0,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 74,
+        "todayChallenge": 48
+      },
+      "cumulative": {
+        "amount": 10568,
+        "orderCount": 11,
+        "targetOrderCount": 91,
+        "orderCompletionRate": 0.120879,
+        "targets": {
+          "bet": 67847,
+          "drive": 73115,
+          "challenge": 83650
+        },
+        "rates": {
+          "bet": 0.155762,
+          "drive": 0.144539,
+          "challenge": 0.126336
+        }
+      },
+      "today": {
+        "amount": 3652,
+        "orderCount": 4,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.8,
+        "targetAmount": 4636,
+        "completionRate": 0.787748
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10568
+        }
+      ]
+    },
+    {
+      "id": "store-1vvk11r",
+      "name": "莆田秀屿万达店",
+      "regionId": "region-2qwevo",
+      "regionName": "莆田区域",
+      "status": "未完成对赌目标",
+      "bonus": 78,
+      "tierOrders": {
+        "tier388": 14,
+        "tier688": 11,
+        "tier1288": 1,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 75,
+        "todayChallenge": 107
+      },
+      "cumulative": {
+        "amount": 23728,
+        "orderCount": 31,
+        "targetOrderCount": 213,
+        "orderCompletionRate": 0.14554,
+        "targets": {
+          "bet": 152793,
+          "drive": 164656,
+          "challenge": 188381
+        },
+        "rates": {
+          "bet": 0.155295,
+          "drive": 0.144107,
+          "challenge": 0.125958
+        }
+      },
+      "today": {
+        "amount": 2840,
+        "orderCount": 5,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.416667,
+        "targetAmount": 10439,
+        "completionRate": 0.272057
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 23728
+        }
+      ]
+    },
+    {
+      "id": "store-1cbo19o",
+      "name": "福州台江宝龙店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 52,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 1,
+        "tier1288": 0,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 76,
+        "todayChallenge": 81
+      },
+      "cumulative": {
+        "amount": 10516,
+        "orderCount": 7,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.073684,
+        "targets": {
+          "bet": 68483,
+          "drive": 73800,
+          "challenge": 84434
+        },
+        "rates": {
+          "bet": 0.153556,
+          "drive": 0.142493,
+          "challenge": 0.124547
+        }
+      },
+      "today": {
+        "amount": 2276,
+        "orderCount": 2,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.4,
+        "targetAmount": 4679,
+        "completionRate": 0.486429
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10516
+        }
+      ]
+    },
+    {
+      "id": "store-1qq4stg",
+      "name": "福州闽侯正荣财富中心店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 64,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 4,
+        "tier1288": 1,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 77,
+        "todayChallenge": 67
+      },
+      "cumulative": {
+        "amount": 13868,
+        "orderCount": 11,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.085938,
+        "targets": {
+          "bet": 90634,
+          "drive": 97671,
+          "challenge": 111744
+        },
+        "rates": {
+          "bet": 0.153011,
+          "drive": 0.141987,
+          "challenge": 0.124105
+        }
+      },
+      "today": {
+        "amount": 3652,
+        "orderCount": 4,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.571429,
+        "targetAmount": 6192,
+        "completionRate": 0.589793
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13868
+        }
+      ]
+    },
+    {
+      "id": "store-1p4p3nz",
+      "name": "宁德周宁桥南街店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 68,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 9,
+        "tier1288": 0,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 78,
+        "todayChallenge": 85
+      },
+      "cumulative": {
+        "amount": 17184,
+        "orderCount": 18,
+        "targetOrderCount": 161,
+        "orderCompletionRate": 0.111801,
+        "targets": {
+          "bet": 113031,
+          "drive": 121806,
+          "challenge": 139358
+        },
+        "rates": {
+          "bet": 0.152029,
+          "drive": 0.141077,
+          "challenge": 0.123308
+        }
+      },
+      "today": {
+        "amount": 3652,
+        "orderCount": 4,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.444444,
+        "targetAmount": 7723,
+        "completionRate": 0.472873
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 17184
+        }
+      ]
+    },
+    {
+      "id": "store-prrihr",
+      "name": "龙岩新罗中山路旗舰店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 58,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 6,
+        "tier1288": 1,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 79,
+        "todayChallenge": 92
+      },
+      "cumulative": {
+        "amount": 14132,
+        "orderCount": 14,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.109375,
+        "targets": {
+          "bet": 93156,
+          "drive": 100389,
+          "challenge": 114854
+        },
+        "rates": {
+          "bet": 0.151703,
+          "drive": 0.140772,
+          "challenge": 0.123043
+        }
+      },
+      "today": {
+        "amount": 2452,
+        "orderCount": 4,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.571429,
+        "targetAmount": 6365,
+        "completionRate": 0.385232
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14132
+        }
+      ]
+    },
+    {
+      "id": "store-jxrtnc",
+      "name": "福州台江交通万科店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 56,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 3,
+        "tier1288": 0,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 80,
+        "todayChallenge": 122
+      },
+      "cumulative": {
+        "amount": 11504,
+        "orderCount": 8,
+        "targetOrderCount": 108,
+        "orderCompletionRate": 0.074074,
+        "targets": {
+          "bet": 76158,
+          "drive": 82071,
+          "challenge": 93897
+        },
+        "rates": {
+          "bet": 0.151054,
+          "drive": 0.140171,
+          "challenge": 0.122517
+        }
+      },
+      "today": {
+        "amount": 688,
+        "orderCount": 1,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.166667,
+        "targetAmount": 5203,
+        "completionRate": 0.132231
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11504
+        }
+      ]
+    },
+    {
+      "id": "store-1nnr6vt",
+      "name": "漳州角美万益广场店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 82,
+      "tierOrders": {
+        "tier388": 6,
+        "tier688": 5,
+        "tier1288": 2,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 81,
+        "todayChallenge": 58
+      },
+      "cumulative": {
+        "amount": 19672,
+        "orderCount": 19,
+        "targetOrderCount": 180,
+        "orderCompletionRate": 0.105556,
+        "targets": {
+          "bet": 130344,
+          "drive": 140464,
+          "challenge": 160704
+        },
+        "rates": {
+          "bet": 0.150924,
+          "drive": 0.14005,
+          "challenge": 0.122411
+        }
+      },
+      "today": {
+        "amount": 6228,
+        "orderCount": 6,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.6,
+        "targetAmount": 8906,
+        "completionRate": 0.699304
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19672
+        }
+      ]
+    },
+    {
+      "id": "store-h8ox69",
+      "name": "漳州开发区海滨店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 54,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 6,
+        "tier1288": 2,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 82,
+        "todayChallenge": 49
+      },
+      "cumulative": {
+        "amount": 14308,
+        "orderCount": 16,
+        "targetOrderCount": 129,
+        "orderCompletionRate": 0.124031,
+        "targets": {
+          "bet": 95019,
+          "drive": 102396,
+          "challenge": 117151
+        },
+        "rates": {
+          "bet": 0.15058,
+          "drive": 0.139732,
+          "challenge": 0.122133
+        }
+      },
+      "today": {
+        "amount": 5064,
+        "orderCount": 3,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.428571,
+        "targetAmount": 6492,
+        "completionRate": 0.780037
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14308
+        }
+      ]
+    },
+    {
+      "id": "store-fuhany",
+      "name": "宁德周宁尚城店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 82,
+      "tierOrders": {
+        "tier388": 6,
+        "tier688": 5,
+        "tier1288": 2,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 83,
+        "todayChallenge": 123
+      },
+      "cumulative": {
+        "amount": 19672,
+        "orderCount": 19,
+        "targetOrderCount": 181,
+        "orderCompletionRate": 0.104972,
+        "targets": {
+          "bet": 132866,
+          "drive": 143182,
+          "challenge": 163814
+        },
+        "rates": {
+          "bet": 0.148059,
+          "drive": 0.137392,
+          "challenge": 0.120087
+        }
+      },
+      "today": {
+        "amount": 1164,
+        "orderCount": 3,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.3,
+        "targetAmount": 9078,
+        "completionRate": 0.128222
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19672
+        }
+      ]
+    },
+    {
+      "id": "store-p7gc55",
+      "name": "龙岩永定南门街店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 56,
+      "tierOrders": {
+        "tier388": 6,
+        "tier688": 5,
+        "tier1288": 1,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 84,
+        "todayChallenge": 100
+      },
+      "cumulative": {
+        "amount": 14608,
+        "orderCount": 16,
+        "targetOrderCount": 141,
+        "orderCompletionRate": 0.113475,
+        "targets": {
+          "bet": 98714,
+          "drive": 106378,
+          "challenge": 121706
+        },
+        "rates": {
+          "bet": 0.147983,
+          "drive": 0.137322,
+          "challenge": 0.120027
+        }
+      },
+      "today": {
+        "amount": 2152,
+        "orderCount": 4,
+        "targetOrderCount": 8,
+        "orderCompletionRate": 0.5,
+        "targetAmount": 6744,
+        "completionRate": 0.319098
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14608
+        }
+      ]
+    },
+    {
+      "id": "store-85ojja",
+      "name": "揭阳普宁商品城店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 54,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 2,
+        "tier1288": 0,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 85,
+        "todayChallenge": 52
+      },
+      "cumulative": {
+        "amount": 11980,
+        "orderCount": 10,
+        "targetOrderCount": 110,
+        "orderCompletionRate": 0.090909,
+        "targets": {
+          "bet": 82152,
+          "drive": 88531,
+          "challenge": 101287
+        },
+        "rates": {
+          "bet": 0.145827,
+          "drive": 0.13532,
+          "challenge": 0.118278
+        }
+      },
+      "today": {
+        "amount": 4164,
+        "orderCount": 3,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.5,
+        "targetAmount": 5613,
+        "completionRate": 0.741849
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11980
+        }
+      ]
+    },
+    {
+      "id": "store-ha9ans",
+      "name": "南平延平解放路店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 54,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 6,
+        "tier1288": 2,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 86,
+        "todayChallenge": 108
+      },
+      "cumulative": {
+        "amount": 13144,
+        "orderCount": 13,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.101563,
+        "targets": {
+          "bet": 92463,
+          "drive": 99641,
+          "challenge": 113999
+        },
+        "rates": {
+          "bet": 0.142154,
+          "drive": 0.131914,
+          "challenge": 0.115299
+        }
+      },
+      "today": {
+        "amount": 1676,
+        "orderCount": 2,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.285714,
+        "targetAmount": 6317,
+        "completionRate": 0.265316
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13144
+        }
+      ]
+    },
+    {
+      "id": "store-tt45hv",
+      "name": "广东梅州蕉岭府前街店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 40,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 7,
+        "tier1288": 1,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 87,
+        "todayChallenge": 53
+      },
+      "cumulative": {
+        "amount": 10268,
+        "orderCount": 11,
+        "targetOrderCount": 104,
+        "orderCompletionRate": 0.105769,
+        "targets": {
+          "bet": 73145,
+          "drive": 78824,
+          "challenge": 90182
+        },
+        "rates": {
+          "bet": 0.140379,
+          "drive": 0.130265,
+          "challenge": 0.113859
+        }
+      },
+      "today": {
+        "amount": 3564,
+        "orderCount": 3,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.5,
+        "targetAmount": 4997,
+        "completionRate": 0.713228
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10268
+        }
+      ]
+    },
+    {
+      "id": "store-1d06kgg",
+      "name": "福州闽侯万家广场店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 66,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 2,
+        "tier1288": 2,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 88,
+        "todayChallenge": 82
+      },
+      "cumulative": {
+        "amount": 13392,
+        "orderCount": 9,
+        "targetOrderCount": 129,
+        "orderCompletionRate": 0.069767,
+        "targets": {
+          "bet": 95729,
+          "drive": 103161,
+          "challenge": 118026
+        },
+        "rates": {
+          "bet": 0.139895,
+          "drive": 0.129817,
+          "challenge": 0.113467
+        }
+      },
+      "today": {
+        "amount": 3176,
+        "orderCount": 2,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.285714,
+        "targetAmount": 6540,
+        "completionRate": 0.485627
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13392
+        }
+      ]
+    },
+    {
+      "id": "store-1bbso2n",
+      "name": "福州马尾儒江店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 90,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 12,
+        "tier1288": 1,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 89,
+        "todayChallenge": 32
+      },
+      "cumulative": {
+        "amount": 22036,
+        "orderCount": 22,
+        "targetOrderCount": 219,
+        "orderCompletionRate": 0.100457,
+        "targets": {
+          "bet": 148127,
+          "drive": 163509,
+          "challenge": 194274
+        },
+        "rates": {
+          "bet": 0.148764,
+          "drive": 0.134769,
+          "challenge": 0.113427
+        }
+      },
+      "today": {
+        "amount": 10392,
+        "orderCount": 9,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.75,
+        "targetAmount": 10766,
+        "completionRate": 0.965261
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 22036
+        }
+      ]
+    },
+    {
+      "id": "store-16dfvon",
+      "name": "宁德福安东百城店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 50,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 2,
+        "tier1288": 1,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 90,
+        "todayChallenge": 114
+      },
+      "cumulative": {
+        "amount": 10604,
+        "orderCount": 8,
+        "targetOrderCount": 109,
+        "orderCompletionRate": 0.073394,
+        "targets": {
+          "bet": 76669,
+          "drive": 82622,
+          "challenge": 94527
+        },
+        "rates": {
+          "bet": 0.138309,
+          "drive": 0.128344,
+          "challenge": 0.11218
+        }
+      },
+      "today": {
+        "amount": 1076,
+        "orderCount": 2,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.333333,
+        "targetAmount": 5238,
+        "completionRate": 0.205422
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10604
+        }
+      ]
+    },
+    {
+      "id": "store-1baox2h",
+      "name": "龙岩连城万星广场店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 28,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 4,
+        "tier1288": 0,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 91,
+        "todayChallenge": 113
+      },
+      "cumulative": {
+        "amount": 6528,
+        "orderCount": 6,
+        "targetOrderCount": 70,
+        "orderCompletionRate": 0.085714,
+        "targets": {
+          "bet": 48524,
+          "drive": 52291,
+          "challenge": 59826
+        },
+        "rates": {
+          "bet": 0.134531,
+          "drive": 0.12484,
+          "challenge": 0.109116
+        }
+      },
+      "today": {
+        "amount": 688,
+        "orderCount": 1,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 0.25,
+        "targetAmount": 3315,
+        "completionRate": 0.207541
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6528
+        }
+      ]
+    },
+    {
+      "id": "store-afzydd",
+      "name": "龙岩武平中远上城店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 46,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 5,
+        "tier1288": 1,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 92,
+        "todayChallenge": 128
+      },
+      "cumulative": {
+        "amount": 11556,
+        "orderCount": 12,
+        "targetOrderCount": 122,
+        "orderCompletionRate": 0.098361,
+        "targets": {
+          "bet": 86292,
+          "drive": 92992,
+          "challenge": 106391
+        },
+        "rates": {
+          "bet": 0.133917,
+          "drive": 0.124269,
+          "challenge": 0.108618
+        }
+      },
+      "today": {
+        "amount": 388,
+        "orderCount": 1,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.142857,
+        "targetAmount": 5896,
+        "completionRate": 0.065807
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11556
+        }
+      ]
+    },
+    {
+      "id": "store-1mrwx4q",
+      "name": "泉州石狮城东店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 30,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 93,
+        "todayChallenge": 36
+      },
+      "cumulative": {
+        "amount": 8380,
+        "orderCount": 10,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.11236,
+        "targets": {
+          "bet": 63282,
+          "drive": 68195,
+          "challenge": 78021
+        },
+        "rates": {
+          "bet": 0.132423,
+          "drive": 0.122883,
+          "challenge": 0.107407
+        }
+      },
+      "today": {
+        "amount": 4040,
+        "orderCount": 5,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1,
+        "targetAmount": 4324,
+        "completionRate": 0.93432
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 8380
+        }
+      ]
+    },
+    {
+      "id": "store-d8vgw3",
+      "name": "漳州长泰万豪店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 28,
+      "tierOrders": {
+        "tier388": 6,
+        "tier688": 6,
+        "tier1288": 1,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 94,
+        "todayChallenge": 23
+      },
+      "cumulative": {
+        "amount": 9632,
+        "orderCount": 14,
+        "targetOrderCount": 104,
+        "orderCompletionRate": 0.134615,
+        "targets": {
+          "bet": 74829,
+          "drive": 80638,
+          "challenge": 92258
+        },
+        "rates": {
+          "bet": 0.12872,
+          "drive": 0.119447,
+          "challenge": 0.104403
+        }
+      },
+      "today": {
+        "amount": 5504,
+        "orderCount": 8,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 1.333333,
+        "targetAmount": 5113,
+        "completionRate": 1.076472
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9632
+        }
+      ]
+    },
+    {
+      "id": "store-12lwxve",
+      "name": "龙岩武平中心店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 66,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 8,
+        "tier1288": 0,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 95,
+        "todayChallenge": 99
+      },
+      "cumulative": {
+        "amount": 16496,
+        "orderCount": 17,
+        "targetOrderCount": 186,
+        "orderCompletionRate": 0.091398,
+        "targets": {
+          "bet": 135776,
+          "drive": 146318,
+          "challenge": 167401
+        },
+        "rates": {
+          "bet": 0.121494,
+          "drive": 0.112741,
+          "challenge": 0.098542
+        }
+      },
+      "today": {
+        "amount": 2964,
+        "orderCount": 3,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.3,
+        "targetAmount": 9277,
+        "completionRate": 0.3195
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16496
+        }
+      ]
+    },
+    {
+      "id": "store-1dlrfh",
+      "name": "漳州龙池广场店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 40,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 96,
+        "todayChallenge": 106
+      },
+      "cumulative": {
+        "amount": 11044,
+        "orderCount": 13,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.101563,
+        "targets": {
+          "bet": 91110,
+          "drive": 98184,
+          "challenge": 112331
+        },
+        "rates": {
+          "bet": 0.121216,
+          "drive": 0.112483,
+          "challenge": 0.098317
+        }
+      },
+      "today": {
+        "amount": 1764,
+        "orderCount": 3,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.428571,
+        "targetAmount": 6225,
+        "completionRate": 0.283373
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11044
+        }
+      ]
+    },
+    {
+      "id": "store-1jellyx",
+      "name": "宁德太姥山旗舰店",
+      "regionId": "region-1eaha27",
+      "regionName": "闽东三区",
+      "status": "未完成对赌目标",
+      "bonus": 28,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 9,
+        "tier1288": 0,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 97,
+        "todayChallenge": 69
+      },
+      "cumulative": {
+        "amount": 8468,
+        "orderCount": 11,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.115789,
+        "targets": {
+          "bet": 69964,
+          "drive": 75396,
+          "challenge": 86261
+        },
+        "rates": {
+          "bet": 0.121034,
+          "drive": 0.112314,
+          "challenge": 0.098167
+        }
+      },
+      "today": {
+        "amount": 2752,
+        "orderCount": 4,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.8,
+        "targetAmount": 4780,
+        "completionRate": 0.575732
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 8468
+        }
+      ]
+    },
+    {
+      "id": "store-1yboza9",
+      "name": "漳州漳浦古雷店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 40,
+      "tierOrders": {
+        "tier388": 8,
+        "tier688": 2,
+        "tier1288": 1,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 98,
+        "todayChallenge": 115
+      },
+      "cumulative": {
+        "amount": 11432,
+        "orderCount": 14,
+        "targetOrderCount": 129,
+        "orderCompletionRate": 0.108527,
+        "targets": {
+          "bet": 96025,
+          "drive": 103480,
+          "challenge": 118391
+        },
+        "rates": {
+          "bet": 0.119052,
+          "drive": 0.110475,
+          "challenge": 0.096561
+        }
+      },
+      "today": {
+        "amount": 1288,
+        "orderCount": 1,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.142857,
+        "targetAmount": 6561,
+        "completionRate": 0.196312
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11432
+        }
+      ]
+    },
+    {
+      "id": "store-58pbtg",
+      "name": "宁德蕉城南路店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 82,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 3,
+        "tier1288": 1,
+        "tier1888": 7
+      },
+      "ranking": {
+        "cumulativeChallenge": 99,
+        "todayChallenge": 78
+      },
+      "cumulative": {
+        "amount": 17732,
+        "orderCount": 14,
+        "targetOrderCount": 213,
+        "orderCompletionRate": 0.065728,
+        "targets": {
+          "bet": 152100,
+          "drive": 163909,
+          "challenge": 187527
+        },
+        "rates": {
+          "bet": 0.116581,
+          "drive": 0.108182,
+          "challenge": 0.094557
+        }
+      },
+      "today": {
+        "amount": 5240,
+        "orderCount": 5,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.416667,
+        "targetAmount": 10392,
+        "completionRate": 0.504234
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 17732
+        }
+      ]
+    },
+    {
+      "id": "store-k98edq",
+      "name": "泉州南安中骏世界城旗舰店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 102,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 12,
+        "tier1288": 3,
+        "tier1888": 6
+      },
+      "ranking": {
+        "cumulativeChallenge": 100,
+        "todayChallenge": 125
+      },
+      "cumulative": {
+        "amount": 24612,
+        "orderCount": 24,
+        "targetOrderCount": 294,
+        "orderCompletionRate": 0.081633,
+        "targets": {
+          "bet": 213814,
+          "drive": 230407,
+          "challenge": 263611
+        },
+        "rates": {
+          "bet": 0.115109,
+          "drive": 0.10682,
+          "challenge": 0.093365
+        }
+      },
+      "today": {
+        "amount": 1376,
+        "orderCount": 2,
+        "targetOrderCount": 16,
+        "orderCompletionRate": 0.125,
+        "targetAmount": 14608,
+        "completionRate": 0.094195
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 24612
+        }
+      ]
+    },
+    {
+      "id": "store-1jczz4k",
+      "name": "南平政和朝阳店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 62,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 8,
+        "tier1288": 1,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 101,
+        "todayChallenge": 89
+      },
+      "cumulative": {
+        "amount": 15896,
+        "orderCount": 17,
+        "targetOrderCount": 194,
+        "orderCompletionRate": 0.087629,
+        "targets": {
+          "bet": 138506,
+          "drive": 149259,
+          "challenge": 170766
+        },
+        "rates": {
+          "bet": 0.114768,
+          "drive": 0.106499,
+          "challenge": 0.093086
+        }
+      },
+      "today": {
+        "amount": 3952,
+        "orderCount": 4,
+        "targetOrderCount": 11,
+        "orderCompletionRate": 0.363636,
+        "targetAmount": 9463,
+        "completionRate": 0.417627
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15896
+        }
+      ]
+    },
+    {
+      "id": "store-1gfusn7",
+      "name": "宁德屏南中心城市广场店",
+      "regionId": "region-1eaha27",
+      "regionName": "闽东三区",
+      "status": "未完成对赌目标",
+      "bonus": 24,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 4,
+        "tier1288": 1,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 102,
+        "todayChallenge": 75
+      },
+      "cumulative": {
+        "amount": 6316,
+        "orderCount": 7,
+        "targetOrderCount": 76,
+        "orderCompletionRate": 0.092105,
+        "targets": {
+          "bet": 56007,
+          "drive": 60356,
+          "challenge": 69053
+        },
+        "rates": {
+          "bet": 0.112772,
+          "drive": 0.104646,
+          "challenge": 0.091466
+        }
+      },
+      "today": {
+        "amount": 1976,
+        "orderCount": 2,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 0.5,
+        "targetAmount": 3827,
+        "completionRate": 0.516331
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6316
+        }
+      ]
+    },
+    {
+      "id": "store-alqcpz",
+      "name": "莆田正荣财富中心店",
+      "regionId": "region-2qwevo",
+      "regionName": "莆田区域",
+      "status": "未完成对赌目标",
+      "bonus": 46,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 7,
+        "tier1288": 2,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 103,
+        "todayChallenge": 131
+      },
+      "cumulative": {
+        "amount": 11556,
+        "orderCount": 12,
+        "targetOrderCount": 147,
+        "orderCompletionRate": 0.081633,
+        "targets": {
+          "bet": 105929,
+          "drive": 114154,
+          "challenge": 130602
+        },
+        "rates": {
+          "bet": 0.109092,
+          "drive": 0.101232,
+          "challenge": 0.088483
+        }
+      },
+      "today": {
+        "amount": 0,
+        "orderCount": 0,
+        "targetOrderCount": 8,
+        "orderCompletionRate": 0,
+        "targetAmount": 7237,
+        "completionRate": 0
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11556
+        }
+      ]
+    },
+    {
+      "id": "store-xxwr2f",
+      "name": "福州罗源凤蝶店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 36,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 4,
+        "tier1288": 3,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 104,
+        "todayChallenge": 102
+      },
+      "cumulative": {
+        "amount": 9668,
+        "orderCount": 11,
+        "targetOrderCount": 124,
+        "orderCompletionRate": 0.08871,
+        "targets": {
+          "bet": 89200,
+          "drive": 96126,
+          "challenge": 109976
+        },
+        "rates": {
+          "bet": 0.108386,
+          "drive": 0.100576,
+          "challenge": 0.08791
+        }
+      },
+      "today": {
+        "amount": 1888,
+        "orderCount": 1,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.142857,
+        "targetAmount": 6094,
+        "completionRate": 0.309813
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9668
+        }
+      ]
+    },
+    {
+      "id": "store-r3g9o4",
+      "name": "三明宁化万星广场店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 26,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 5,
+        "tier1288": 1,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 105,
+        "todayChallenge": 120
+      },
+      "cumulative": {
+        "amount": 7392,
+        "orderCount": 9,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.094737,
+        "targets": {
+          "bet": 69249,
+          "drive": 74625,
+          "challenge": 85378
+        },
+        "rates": {
+          "bet": 0.106745,
+          "drive": 0.099055,
+          "challenge": 0.08658
+        }
+      },
+      "today": {
+        "amount": 688,
+        "orderCount": 1,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.2,
+        "targetAmount": 4731,
+        "completionRate": 0.145424
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7392
+        }
+      ]
+    },
+    {
+      "id": "store-14badpm",
+      "name": "福州长乐十洋国际城店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 30,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 106,
+        "todayChallenge": 34
+      },
+      "cumulative": {
+        "amount": 7216,
+        "orderCount": 7,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.073684,
+        "targets": {
+          "bet": 68924,
+          "drive": 74276,
+          "challenge": 84978
+        },
+        "rates": {
+          "bet": 0.104695,
+          "drive": 0.097151,
+          "challenge": 0.084916
+        }
+      },
+      "today": {
+        "amount": 4464,
+        "orderCount": 3,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.6,
+        "targetAmount": 4709,
+        "completionRate": 0.947972
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7216
+        }
+      ]
+    },
+    {
+      "id": "store-z4ndau",
+      "name": "南平建阳金茂广场店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 12,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 3,
+        "tier1288": 1,
+        "tier1888": 0
+      },
+      "ranking": {
+        "cumulativeChallenge": 107,
+        "todayChallenge": 71
+      },
+      "cumulative": {
+        "amount": 3740,
+        "orderCount": 5,
+        "targetOrderCount": 52,
+        "orderCompletionRate": 0.096154,
+        "targets": {
+          "bet": 36644,
+          "drive": 39489,
+          "challenge": 45179
+        },
+        "rates": {
+          "bet": 0.102063,
+          "drive": 0.09471,
+          "challenge": 0.082782
+        }
+      },
+      "today": {
+        "amount": 1376,
+        "orderCount": 2,
+        "targetOrderCount": 3,
+        "orderCompletionRate": 0.666667,
+        "targetAmount": 2504,
+        "completionRate": 0.549521
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 3740
+        }
+      ]
+    },
+    {
+      "id": "store-1ovub7x",
+      "name": "福州永泰金利莱斯广场店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 16,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 5,
+        "tier1288": 1,
+        "tier1888": 0
+      },
+      "ranking": {
+        "cumulativeChallenge": 108,
+        "todayChallenge": 74
+      },
+      "cumulative": {
+        "amount": 5892,
+        "orderCount": 9,
+        "targetOrderCount": 85,
+        "orderCompletionRate": 0.105882,
+        "targets": {
+          "bet": 59739,
+          "drive": 64377,
+          "challenge": 73653
+        },
+        "rates": {
+          "bet": 0.098629,
+          "drive": 0.091523,
+          "challenge": 0.079997
+        }
+      },
+      "today": {
+        "amount": 2152,
+        "orderCount": 4,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.8,
+        "targetAmount": 4082,
+        "completionRate": 0.527193
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 5892
+        }
+      ]
+    },
+    {
+      "id": "store-dgqrr0",
+      "name": "漳州漳浦新都广场店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 68,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 6,
+        "tier1288": 1,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 109,
+        "todayChallenge": 88
+      },
+      "cumulative": {
+        "amount": 15244,
+        "orderCount": 13,
+        "targetOrderCount": 217,
+        "orderCompletionRate": 0.059908,
+        "targets": {
+          "bet": 155565,
+          "drive": 167643,
+          "challenge": 191799
+        },
+        "rates": {
+          "bet": 0.097991,
+          "drive": 0.090931,
+          "challenge": 0.079479
+        }
+      },
+      "today": {
+        "amount": 4464,
+        "orderCount": 3,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.25,
+        "targetAmount": 10629,
+        "completionRate": 0.419983
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15244
+        }
+      ]
+    },
+    {
+      "id": "store-t4t0bo",
+      "name": "龙岩长汀三元阁店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 56,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 12,
+        "tier1288": 2,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 110,
+        "todayChallenge": 94
+      },
+      "cumulative": {
+        "amount": 15384,
+        "orderCount": 18,
+        "targetOrderCount": 219,
+        "orderCompletionRate": 0.082192,
+        "targets": {
+          "bet": 158876,
+          "drive": 171211,
+          "challenge": 195881
+        },
+        "rates": {
+          "bet": 0.09683,
+          "drive": 0.089854,
+          "challenge": 0.078537
+        }
+      },
+      "today": {
+        "amount": 3952,
+        "orderCount": 4,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.333333,
+        "targetAmount": 10855,
+        "completionRate": 0.364072
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15384
+        }
+      ]
+    },
+    {
+      "id": "store-193vre1",
+      "name": "漳州东山西埔店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 30,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 2,
+        "tier1288": 1,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 111,
+        "todayChallenge": 90
+      },
+      "cumulative": {
+        "amount": 6828,
+        "orderCount": 6,
+        "targetOrderCount": 104,
+        "orderCompletionRate": 0.057692,
+        "targets": {
+          "bet": 72074,
+          "drive": 77670,
+          "challenge": 88862
+        },
+        "rates": {
+          "bet": 0.094736,
+          "drive": 0.08791,
+          "challenge": 0.076838
+        }
+      },
+      "today": {
+        "amount": 1976,
+        "orderCount": 2,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.333333,
+        "targetAmount": 4924,
+        "completionRate": 0.4013
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6828
+        }
+      ]
+    },
+    {
+      "id": "store-rx5tou",
+      "name": "福州台江上下杭店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 44,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 7,
+        "tier1288": 0,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 112,
+        "todayChallenge": 51
+      },
+      "cumulative": {
+        "amount": 10480,
+        "orderCount": 10,
+        "targetOrderCount": 161,
+        "orderCompletionRate": 0.062112,
+        "targets": {
+          "bet": 113001,
+          "drive": 121775,
+          "challenge": 139322
+        },
+        "rates": {
+          "bet": 0.092743,
+          "drive": 0.08606,
+          "challenge": 0.075221
+        }
+      },
+      "today": {
+        "amount": 5840,
+        "orderCount": 5,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.555556,
+        "targetAmount": 7721,
+        "completionRate": 0.756379
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10480
+        }
+      ]
+    },
+    {
+      "id": "store-8z6olr",
+      "name": "福州罗源世纪金源旗舰店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 52,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 8,
+        "tier1288": 1,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 113,
+        "todayChallenge": 91
+      },
+      "cumulative": {
+        "amount": 14008,
+        "orderCount": 16,
+        "targetOrderCount": 213,
+        "orderCompletionRate": 0.075117,
+        "targets": {
+          "bet": 152169,
+          "drive": 163984,
+          "challenge": 187612
+        },
+        "rates": {
+          "bet": 0.092056,
+          "drive": 0.085423,
+          "challenge": 0.074665
+        }
+      },
+      "today": {
+        "amount": 4040,
+        "orderCount": 5,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.416667,
+        "targetAmount": 10397,
+        "completionRate": 0.388574
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14008
+        }
+      ]
+    },
+    {
+      "id": "store-tiytux",
+      "name": "三明将乐夏华商厦店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 36,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 3,
+        "tier1288": 0,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 114,
+        "todayChallenge": 62
+      },
+      "cumulative": {
+        "amount": 7728,
+        "orderCount": 6,
+        "targetOrderCount": 122,
+        "orderCompletionRate": 0.04918,
+        "targets": {
+          "bet": 85025,
+          "drive": 91627,
+          "challenge": 104829
+        },
+        "rates": {
+          "bet": 0.090891,
+          "drive": 0.084342,
+          "challenge": 0.07372
+        }
+      },
+      "today": {
+        "amount": 3776,
+        "orderCount": 2,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.285714,
+        "targetAmount": 5809,
+        "completionRate": 0.650026
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7728
+        }
+      ]
+    },
+    {
+      "id": "store-yk8xxp",
+      "name": "福州永泰华煦中央府店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 42,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 6,
+        "tier1288": 0,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 115,
+        "todayChallenge": 105
+      },
+      "cumulative": {
+        "amount": 10180,
+        "orderCount": 10,
+        "targetOrderCount": 161,
+        "orderCompletionRate": 0.062112,
+        "targets": {
+          "bet": 114669,
+          "drive": 123572,
+          "challenge": 141378
+        },
+        "rates": {
+          "bet": 0.088777,
+          "drive": 0.082381,
+          "challenge": 0.072006
+        }
+      },
+      "today": {
+        "amount": 2276,
+        "orderCount": 2,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.222222,
+        "targetAmount": 7835,
+        "completionRate": 0.290491
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10180
+        }
+      ]
+    },
+    {
+      "id": "store-2nndn1",
+      "name": "莆田荔城云商街店",
+      "regionId": "region-2qwevo",
+      "regionName": "莆田区域",
+      "status": "未完成对赌目标",
+      "bonus": 42,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 3,
+        "tier1288": 1,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 116,
+        "todayChallenge": 127
+      },
+      "cumulative": {
+        "amount": 10568,
+        "orderCount": 11,
+        "targetOrderCount": 166,
+        "orderCompletionRate": 0.066265,
+        "targets": {
+          "bet": 121583,
+          "drive": 131023,
+          "challenge": 149902
+        },
+        "rates": {
+          "bet": 0.08692,
+          "drive": 0.080658,
+          "challenge": 0.070499
+        }
+      },
+      "today": {
+        "amount": 688,
+        "orderCount": 1,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.111111,
+        "targetAmount": 8307,
+        "completionRate": 0.082822
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10568
+        }
+      ]
+    },
+    {
+      "id": "store-7n0bs4",
+      "name": "福州台江三迪中心店（卫星店）",
+      "regionId": "region-16704v2",
+      "regionName": "外卖区域",
+      "status": "未完成对赌目标",
+      "bonus": 20,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 0,
+        "tier1288": 0,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 117,
+        "todayChallenge": 59
+      },
+      "cumulative": {
+        "amount": 4164,
+        "orderCount": 3,
+        "targetOrderCount": 70,
+        "orderCompletionRate": 0.042857,
+        "targets": {
+          "bet": 48415,
+          "drive": 52174,
+          "challenge": 59692
+        },
+        "rates": {
+          "bet": 0.086006,
+          "drive": 0.07981,
+          "challenge": 0.069758
+        }
+      },
+      "today": {
+        "amount": 2276,
+        "orderCount": 2,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 0.5,
+        "targetAmount": 3308,
+        "completionRate": 0.688029
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 4164
+        }
+      ]
+    },
+    {
+      "id": "store-1yn15lc",
+      "name": "泉州泉港永嘉天地旗舰店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 24,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 12,
+        "tier1288": 0,
+        "tier1888": 0
+      },
+      "ranking": {
+        "cumulativeChallenge": 118,
+        "todayChallenge": 77
+      },
+      "cumulative": {
+        "amount": 9032,
+        "orderCount": 14,
+        "targetOrderCount": 148,
+        "orderCompletionRate": 0.094595,
+        "targets": {
+          "bet": 110431,
+          "drive": 119005,
+          "challenge": 136152
+        },
+        "rates": {
+          "bet": 0.081789,
+          "drive": 0.075896,
+          "challenge": 0.066338
+        }
+      },
+      "today": {
+        "amount": 3828,
+        "orderCount": 6,
+        "targetOrderCount": 8,
+        "orderCompletionRate": 0.75,
+        "targetAmount": 7545,
+        "completionRate": 0.507356
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9032
+        }
+      ]
+    },
+    {
+      "id": "store-1wskpou",
+      "name": "三明泰宁和平中路店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 20,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 119,
+        "todayChallenge": 121
+      },
+      "cumulative": {
+        "amount": 5716,
+        "orderCount": 7,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.073684,
+        "targets": {
+          "bet": 71519,
+          "drive": 77072,
+          "challenge": 88177
+        },
+        "rates": {
+          "bet": 0.079923,
+          "drive": 0.074164,
+          "challenge": 0.064824
+        }
+      },
+      "today": {
+        "amount": 688,
+        "orderCount": 1,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.2,
+        "targetAmount": 4886,
+        "completionRate": 0.14081
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 5716
+        }
+      ]
+    },
+    {
+      "id": "store-1av3cps",
+      "name": "福州连江万家城市广场店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 42,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 6,
+        "tier1288": 0,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 120,
+        "todayChallenge": 95
+      },
+      "cumulative": {
+        "amount": 10568,
+        "orderCount": 11,
+        "targetOrderCount": 181,
+        "orderCompletionRate": 0.060773,
+        "targets": {
+          "bet": 132304,
+          "drive": 142576,
+          "challenge": 163120
+        },
+        "rates": {
+          "bet": 0.079877,
+          "drive": 0.074122,
+          "challenge": 0.064787
+        }
+      },
+      "today": {
+        "amount": 3264,
+        "orderCount": 3,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.3,
+        "targetAmount": 9039,
+        "completionRate": 0.361102
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10568
+        }
+      ]
+    },
+    {
+      "id": "store-1n0f8ky",
+      "name": "福州仓山万达金街旗舰店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 16,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 3,
+        "tier1288": 0,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 121,
+        "todayChallenge": 126
+      },
+      "cumulative": {
+        "amount": 5116,
+        "orderCount": 7,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.078652,
+        "targets": {
+          "bet": 64400,
+          "drive": 69400,
+          "challenge": 79400
+        },
+        "rates": {
+          "bet": 0.079441,
+          "drive": 0.073718,
+          "challenge": 0.064433
+        }
+      },
+      "today": {
+        "amount": 388,
+        "orderCount": 1,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.2,
+        "targetAmount": 4400,
+        "completionRate": 0.088182
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 5116
+        }
+      ]
+    },
+    {
+      "id": "store-1usov6e",
+      "name": "漳州龙文吾悦广场店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 30,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 122,
+        "todayChallenge": 65
+      },
+      "cumulative": {
+        "amount": 7604,
+        "orderCount": 8,
+        "targetOrderCount": 133,
+        "orderCompletionRate": 0.06015,
+        "targets": {
+          "bet": 97475,
+          "drive": 105043,
+          "challenge": 120179
+        },
+        "rates": {
+          "bet": 0.07801,
+          "drive": 0.072389,
+          "challenge": 0.063272
+        }
+      },
+      "today": {
+        "amount": 4164,
+        "orderCount": 3,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.428571,
+        "targetAmount": 6660,
+        "completionRate": 0.625225
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7604
+        }
+      ]
+    },
+    {
+      "id": "store-1tlx5eh",
+      "name": "福州闽侯源通东路店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 22,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 3,
+        "tier1288": 1,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 123,
+        "todayChallenge": 117
+      },
+      "cumulative": {
+        "amount": 6016,
+        "orderCount": 7,
+        "targetOrderCount": 114,
+        "orderCompletionRate": 0.061404,
+        "targets": {
+          "bet": 83699,
+          "drive": 90197,
+          "challenge": 103194
+        },
+        "rates": {
+          "bet": 0.071877,
+          "drive": 0.066698,
+          "challenge": 0.058298
+        }
+      },
+      "today": {
+        "amount": 1076,
+        "orderCount": 2,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.333333,
+        "targetAmount": 5719,
+        "completionRate": 0.188145
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6016
+        }
+      ]
+    },
+    {
+      "id": "store-nxu3dl",
+      "name": "南平武夷山宝龙店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 20,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 5,
+        "tier1288": 0,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 124,
+        "todayChallenge": 111
+      },
+      "cumulative": {
+        "amount": 5716,
+        "orderCount": 7,
+        "targetOrderCount": 119.11,
+        "orderCompletionRate": 0.058769,
+        "targets": {
+          "bet": 83902,
+          "drive": 91192,
+          "challenge": 105773
+        },
+        "rates": {
+          "bet": 0.068127,
+          "drive": 0.062681,
+          "challenge": 0.05404
+        }
+      },
+      "today": {
+        "amount": 1376,
+        "orderCount": 2,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.285714,
+        "targetAmount": 6216,
+        "completionRate": 0.221364
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 5716
+        }
+      ]
+    },
+    {
+      "id": "store-89alub",
+      "name": "三明城关步行街店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 20,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 2,
+        "tier1288": 1,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 125,
+        "todayChallenge": 104
+      },
+      "cumulative": {
+        "amount": 6492,
+        "orderCount": 9,
+        "targetOrderCount": 141,
+        "orderCompletionRate": 0.06383,
+        "targets": {
+          "bet": 98319,
+          "drive": 105953,
+          "challenge": 121220
+        },
+        "rates": {
+          "bet": 0.06603,
+          "drive": 0.061272,
+          "challenge": 0.053556
+        }
+      },
+      "today": {
+        "amount": 1976,
+        "orderCount": 2,
+        "targetOrderCount": 8,
+        "orderCompletionRate": 0.25,
+        "targetAmount": 6717,
+        "completionRate": 0.294179
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6492
+        }
+      ]
+    },
+    {
+      "id": "store-mdj3js",
+      "name": "泉州惠安禹悦汇店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 36,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 7,
+        "tier1288": 2,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 126,
+        "todayChallenge": 97
+      },
+      "cumulative": {
+        "amount": 9668,
+        "orderCount": 11,
+        "targetOrderCount": 201,
+        "orderCompletionRate": 0.054726,
+        "targets": {
+          "bet": 147238,
+          "drive": 158670,
+          "challenge": 181533
+        },
+        "rates": {
+          "bet": 0.065662,
+          "drive": 0.060931,
+          "challenge": 0.053258
+        }
+      },
+      "today": {
+        "amount": 3264,
+        "orderCount": 3,
+        "targetOrderCount": 11,
+        "orderCompletionRate": 0.272727,
+        "targetAmount": 10060,
+        "completionRate": 0.324453
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9668
+        }
+      ]
+    },
+    {
+      "id": "store-17iozkb",
+      "name": "厦门同安爱琴海店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 34,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 2,
+        "tier1288": 0,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 127,
+        "todayChallenge": 129
+      },
+      "cumulative": {
+        "amount": 7816,
+        "orderCount": 7,
+        "targetOrderCount": 180,
+        "orderCompletionRate": 0.038889,
+        "targets": {
+          "bet": 128283,
+          "drive": 138243,
+          "challenge": 158162
+        },
+        "rates": {
+          "bet": 0.060928,
+          "drive": 0.056538,
+          "challenge": 0.049418
+        }
+      },
+      "today": {
+        "amount": 388,
+        "orderCount": 1,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.1,
+        "targetAmount": 8765,
+        "completionRate": 0.044267
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7816
+        }
+      ]
+    },
+    {
+      "id": "store-qq8yu6",
+      "name": "宁德福鼎云鼎时代广场店",
+      "regionId": "region-1eaha27",
+      "regionName": "闽东三区",
+      "status": "未完成对赌目标",
+      "bonus": 22,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 6,
+        "tier1288": 0,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 128,
+        "todayChallenge": 96
+      },
+      "cumulative": {
+        "amount": 6404,
+        "orderCount": 8,
+        "targetOrderCount": 161,
+        "orderCompletionRate": 0.049689,
+        "targets": {
+          "bet": 112578,
+          "drive": 121318,
+          "challenge": 138799
+        },
+        "rates": {
+          "bet": 0.056885,
+          "drive": 0.052787,
+          "challenge": 0.046139
+        }
+      },
+      "today": {
+        "amount": 2576,
+        "orderCount": 2,
+        "targetOrderCount": 9,
+        "orderCompletionRate": 0.222222,
+        "targetAmount": 7692,
+        "completionRate": 0.334893
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6404
+        }
+      ]
+    },
+    {
+      "id": "store-18fsgud",
+      "name": "泉州晋江阳光店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 6,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 3,
+        "tier1288": 0,
+        "tier1888": 0
+      },
+      "ranking": {
+        "cumulativeChallenge": 129,
+        "todayChallenge": 110
+      },
+      "cumulative": {
+        "amount": 4004,
+        "orderCount": 8,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.084211,
+        "targets": {
+          "bet": 70570,
+          "drive": 76049,
+          "challenge": 87007
+        },
+        "rates": {
+          "bet": 0.056738,
+          "drive": 0.05265,
+          "challenge": 0.046019
+        }
+      },
+      "today": {
+        "amount": 1076,
+        "orderCount": 2,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.4,
+        "targetAmount": 4822,
+        "completionRate": 0.223144
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 4004
+        }
+      ]
+    },
+    {
+      "id": "store-1vxdmoo",
+      "name": "温州苍南两岸新天地店",
+      "regionId": "region-1eaha27",
+      "regionName": "闽东三区",
+      "status": "未完成对赌目标",
+      "bonus": 14,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 2,
+        "tier1288": 0,
+        "tier1888": 1
+      },
+      "ranking": {
+        "cumulativeChallenge": 130,
+        "todayChallenge": 118
+      },
+      "cumulative": {
+        "amount": 3264,
+        "orderCount": 3,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.033708,
+        "targets": {
+          "bet": 62376,
+          "drive": 67219,
+          "challenge": 76904
+        },
+        "rates": {
+          "bet": 0.052328,
+          "drive": 0.048558,
+          "challenge": 0.042443
+        }
+      },
+      "today": {
+        "amount": 688,
+        "orderCount": 1,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.2,
+        "targetAmount": 4262,
+        "completionRate": 0.161427
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 3264
+        }
+      ]
+    },
+    {
+      "id": "store-1v4xbsy",
+      "name": "三明永安诚上广场店",
+      "regionId": "region-1xnlpko",
+      "regionName": "闽西一三区",
+      "status": "未完成对赌目标",
+      "bonus": 4,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 2,
+        "tier1288": 0,
+        "tier1888": 0
+      },
+      "ranking": {
+        "cumulativeChallenge": 131,
+        "todayChallenge": 130
+      },
+      "cumulative": {
+        "amount": 1764,
+        "orderCount": 3,
+        "targetOrderCount": 70,
+        "orderCompletionRate": 0.042857,
+        "targets": {
+          "bet": 48482,
+          "drive": 52246,
+          "challenge": 59774
+        },
+        "rates": {
+          "bet": 0.036385,
+          "drive": 0.033763,
+          "challenge": 0.029511
+        }
+      },
+      "today": {
+        "amount": 0,
+        "orderCount": 0,
+        "targetOrderCount": 4,
+        "orderCompletionRate": 0,
+        "targetAmount": 3312,
+        "completionRate": 0
+      },
+      "delta30": null,
+      "todayDelta30": null,
+      "rankChange30": null,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 1764
+        }
+      ]
+    }
+  ]
+}
