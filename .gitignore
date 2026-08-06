@@ -2,7 +2,10 @@ node_modules/
 dist/
 test-results/
 playwright-report/
+.tmp/
 .DS_Store
 data/raw/
 data/snapshots/
+data/state/
+data/.stage1-refresh.lock
 *.crdownload
