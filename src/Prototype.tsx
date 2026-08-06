@@ -155,24 +155,42 @@ export default function Prototype() {
 
   useEffect(() => {
     let cancelled = false;
-    fetch(`${import.meta.env.BASE_URL}data/report.json?ts=${Date.now()}`, { cache: "no-store" })
-      .then((response) => {
-        if (!response.ok) throw new Error(`数据读取失败（${response.status}）`);
-        return response.json() as Promise<Report>;
-      })
-      .then((payload) => {
-        if (cancelled) return;
-        const preference = readViewPreference(payload);
-        setReport(payload);
-        setMode(preference.mode);
-        setScopeType(preference.scopeType);
-        setScopeId(preference.scopeId);
-      })
-      .catch((error: Error) => {
-        if (!cancelled) setLoadError(error.message);
-      });
+    let hasLoaded = false;
+
+    const loadLatestReport = () => {
+      fetch(`${import.meta.env.BASE_URL}data/report.json?ts=${Date.now()}`, { cache: "no-store" })
+        .then((response) => {
+          if (!response.ok) throw new Error(`数据读取失败（${response.status}）`);
+          return response.json() as Promise<Report>;
+        })
+        .then((payload) => {
+          if (cancelled) return;
+          if (!hasLoaded) {
+            const preference = readViewPreference(payload);
+            setMode(preference.mode);
+            setScopeType(preference.scopeType);
+            setScopeId(preference.scopeId);
+          }
+          hasLoaded = true;
+          setLoadError(null);
+          setReport(payload);
+        })
+        .catch((error: Error) => {
+          if (!cancelled && !hasLoaded) setLoadError(error.message);
+        });
+    };
+
+    const refreshWhenVisible = () => {
+      if (document.visibilityState === "visible") loadLatestReport();
+    };
+
+    loadLatestReport();
+    const refreshTimer = window.setInterval(loadLatestReport, 60_000);
+    document.addEventListener("visibilitychange", refreshWhenVisible);
     return () => {
       cancelled = true;
+      window.clearInterval(refreshTimer);
+      document.removeEventListener("visibilitychange", refreshWhenVisible);
     };
   }, []);
 
