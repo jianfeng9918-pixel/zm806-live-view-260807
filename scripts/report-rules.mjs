@@ -56,3 +56,10 @@ export function findLatestPriorSnapshot(snapshots, timestamp, maxAgeMinutes = 12
 export function differenceRate(official, calculated) {
   return official > 0 ? Math.abs(official - calculated) / official : calculated === 0 ? 0 : 1;
 }
+
+export function calculateRankChange(previousRank, currentRank) {
+  if (!Number.isInteger(previousRank) || previousRank < 1 || !Number.isInteger(currentRank) || currentRank < 1) {
+    return null;
+  }
+  return previousRank - currentRank;
+}
