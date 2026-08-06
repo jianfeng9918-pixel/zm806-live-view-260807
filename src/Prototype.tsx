@@ -23,6 +23,13 @@ import { KeyboardInput, MobileScroll, useKeyboard } from "./mobile";
 type Mode = "today" | "cumulative";
 type ScopeType = "hq" | "region" | "store";
 
+type SavedViewPreference = {
+  version: 1;
+  mode: Mode;
+  scopeType: ScopeType;
+  scopeId: string | null;
+};
+
 type TargetSet = { bet: number; drive: number; challenge: number };
 type RateSet = { bet: number; drive: number; challenge: number };
 type TrendPoint = { at: string; amount: number };
@@ -137,6 +144,7 @@ type Report = {
 };
 
 const currency = new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 0 });
+const VIEW_PREFERENCE_KEY = "zhoumapo-806-report-view-v1";
 
 export default function Prototype() {
   const [report, setReport] = useState<Report | null>(null);
@@ -154,9 +162,11 @@ export default function Prototype() {
       })
       .then((payload) => {
         if (cancelled) return;
+        const preference = readViewPreference(payload);
         setReport(payload);
-        setMode(payload.defaults.mode);
-        setScopeType(payload.defaults.scope);
+        setMode(preference.mode);
+        setScopeType(preference.scopeType);
+        setScopeId(preference.scopeId);
       })
       .catch((error: Error) => {
         if (!cancelled) setLoadError(error.message);
@@ -165,6 +175,11 @@ export default function Prototype() {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    if (!report) return;
+    writeViewPreference({ version: 1, mode, scopeType, scopeId });
+  }, [mode, report, scopeId, scopeType]);
 
   const navigate = (type: ScopeType, id: string | null = null) => {
     setScopeType(type);
@@ -268,54 +283,111 @@ function ScopeControls({
   onModeChange: (mode: Mode) => void;
   onNavigate: (type: ScopeType, id: string | null) => void;
 }) {
-  const scopeValue = scopeType === "hq" ? "hq" : `${scopeType}:${scopeId ?? ""}`;
+  const activeStore = scopeType === "store"
+    ? report.stores.find((store) => store.id === scopeId) ?? null
+    : null;
+  const selectedRegionId = scopeType === "region"
+    ? scopeId
+    : activeStore?.regionId ?? null;
+  const selectedRegion = report.regions.find((region) => region.id === selectedRegionId) ?? null;
+  const regionStores = selectedRegion
+    ? report.stores.filter((store) => store.regionId === selectedRegion.id)
+    : [];
+  const primaryValue = selectedRegion?.id ?? "hq";
+  const secondaryValue = activeStore?.id ?? "region-overview";
+  const activeLabel = activeStore?.name ?? selectedRegion?.name ?? "总部总览";
+
   return (
     <section className="scope-panel" aria-label="战报筛选">
-      <div className="scope-row">
-        <label htmlFor="scope-select">查看范围</label>
-        <div className="select-shell">
+      <div className="scope-panel-heading">
+        <div>
+          <h2>选择查看范围</h2>
+          <p>当前：<strong>{activeLabel}</strong></p>
+        </div>
+        <span>记住本机选择</span>
+      </div>
+
+      <div className="scope-step">
+        <label htmlFor="primary-scope-select">
+          <b>1</b>
+          <span>先选择总部或区域</span>
+        </label>
+        <div className="select-shell primary-select">
           <select
-            id="scope-select"
-            value={scopeValue}
+            id="primary-scope-select"
+            value={primaryValue}
             onChange={(event) => {
               if (event.target.value === "hq") onNavigate("hq", null);
-              else {
-                const [type, id] = event.target.value.split(":") as [ScopeType, string];
-                onNavigate(type, id);
-              }
+              else onNavigate("region", event.target.value);
             }}
           >
             <option value="hq">总部总览</option>
-            <optgroup label="按区域查看">
+            <optgroup label="选择区域">
               {report.regions.map((region) => (
-                <option key={region.id} value={`region:${region.id}`}>{region.name}</option>
-              ))}
-            </optgroup>
-            <optgroup label="按门店查看">
-              {report.stores.map((store) => (
-                <option key={store.id} value={`store:${store.id}`}>{store.name}</option>
+                <option key={region.id} value={region.id}>{region.name}</option>
               ))}
             </optgroup>
           </select>
           <ChevronDownIcon aria-hidden="true" />
         </div>
       </div>
-      <p className="scope-help">可切换总部总览、区域或门店</p>
-      <div className="mode-switch" role="tablist" aria-label="数据口径">
-        <button
-          type="button"
-          role="tab"
-          aria-selected={mode === "cumulative"}
-          className={mode === "cumulative" ? "active" : ""}
-          onClick={() => onModeChange("cumulative")}
-        >累计</button>
-        <button
-          type="button"
-          role="tab"
-          aria-selected={mode === "today"}
-          className={mode === "today" ? "active" : ""}
-          onClick={() => onModeChange("today")}
-        >今日</button>
+
+      {selectedRegion ? (
+        <div className="scope-step secondary-step">
+          <label htmlFor="store-scope-select">
+            <b>2</b>
+            <span>再选择区域总览或门店</span>
+          </label>
+          <div className="select-shell secondary-select">
+            <select
+              id="store-scope-select"
+              value={secondaryValue}
+              onChange={(event) => {
+                if (event.target.value === "region-overview") onNavigate("region", selectedRegion.id);
+                else onNavigate("store", event.target.value);
+              }}
+            >
+              <option value="region-overview">{selectedRegion.name} · 区域总览</option>
+              <optgroup label={`${selectedRegion.name}门店`}>
+                {regionStores.map((store) => (
+                  <option key={store.id} value={store.id}>{store.name}</option>
+                ))}
+              </optgroup>
+            </select>
+            <ChevronDownIcon aria-hidden="true" />
+          </div>
+        </div>
+      ) : (
+        <p className="hq-scope-note">总部总览已选定，无需再选择门店</p>
+      )}
+
+      <div className="mode-panel">
+        <div className="mode-heading">
+          <strong>数据口径</strong>
+          <span>点击按钮切换</span>
+        </div>
+        <div className="mode-switch" role="tablist" aria-label="数据口径">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={mode === "today"}
+            className={mode === "today" ? "active" : ""}
+            onClick={() => onModeChange("today")}
+          >
+            <span>今日</span>
+            <small>当天进度</small>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={mode === "cumulative"}
+            className={mode === "cumulative" ? "active" : ""}
+            onClick={() => onModeChange("cumulative")}
+          >
+            <span>累计</span>
+            <small>806总进度</small>
+          </button>
+        </div>
       </div>
     </section>
   );
@@ -793,4 +865,47 @@ function compactMoney(value: number) {
 
 function formatTime(value: string) {
   return new Intl.DateTimeFormat("zh-CN", { timeZone: "Asia/Shanghai", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date(value));
+}
+
+function readViewPreference(report: Report): SavedViewPreference {
+  const fallbackScopeId = report.defaults.scope === "store"
+    ? report.defaults.featuredStoreId
+    : null;
+  const fallback: SavedViewPreference = {
+    version: 1,
+    mode: report.defaults.mode,
+    scopeType: report.defaults.scope,
+    scopeId: fallbackScopeId,
+  };
+
+  try {
+    const raw = window.localStorage.getItem(VIEW_PREFERENCE_KEY);
+    if (!raw) return fallback;
+    const saved = JSON.parse(raw) as Partial<SavedViewPreference>;
+    const savedMode: Mode = saved.mode === "cumulative" || saved.mode === "today"
+      ? saved.mode
+      : fallback.mode;
+
+    if (saved.scopeType === "hq") {
+      return { version: 1, mode: savedMode, scopeType: "hq", scopeId: null };
+    }
+    if (saved.scopeType === "region" && report.regions.some((region) => region.id === saved.scopeId)) {
+      return { version: 1, mode: savedMode, scopeType: "region", scopeId: saved.scopeId ?? null };
+    }
+    if (saved.scopeType === "store" && report.stores.some((store) => store.id === saved.scopeId)) {
+      return { version: 1, mode: savedMode, scopeType: "store", scopeId: saved.scopeId ?? null };
+    }
+  } catch {
+    // Private browsing and locked-down WebViews can reject storage access.
+  }
+
+  return { ...fallback, mode: fallback.mode };
+}
+
+function writeViewPreference(preference: SavedViewPreference) {
+  try {
+    window.localStorage.setItem(VIEW_PREFERENCE_KEY, JSON.stringify(preference));
+  } catch {
+    // The report remains fully usable when device-local storage is unavailable.
+  }
 }
