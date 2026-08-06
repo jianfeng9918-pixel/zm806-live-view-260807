@@ -1,5 +1,19 @@
 # Mobile Prototype Agent Guide
 
+## 806 Battle Report Product Rules
+
+- The primary reader is a store owner checking the report on a phone. Keep core labels and values comfortably readable at 393px; avoid 8–10px text for operational information and keep touch targets at least 44px tall.
+- Range selection is hierarchical: first choose Headquarters or a region; only after choosing a region show a second control for the region overview or one of that region's stores. Headquarters never requires a store selection.
+- Persist the last valid scope and Today/Cumulative mode on the current device. On the next visit, restore that view; if the saved region or store no longer exists, fall back safely to report defaults.
+- Today/Cumulative must look and behave like prominent tappable controls, not passive labels.
+- Keep the filter rail visually compact so the active store or region hero starts near the top of a phone screen. The saved current view, two hierarchical selects, and Today/Total Progress switch must remain clear, but do not wrap each choice in a large instructional card.
+- Stage 1 refreshes must export exactly the five lightweight battle-report sheets named in `docs/BI刷新操作手册.md`. Never use screenshots, visible rows, or BI's full-card "select all" export as the data source. The public page polls for a new `report.json` once per minute while retaining the user's current view.
+- Bottom store directories are read-only browsing tables: rows must not navigate, while the hierarchical selectors, regional ranking, fastest list, and attention list remain valid detail entry points.
+- Region and store detail heroes show the whole-yuan amount required to strictly overtake the preceding BI rank in the active Today/Cumulative metric. Stores use the national rank as the primary race and show their in-region rank only as secondary context.
+- Rank encouragement must use mode-specific 30-minute snapshot movement for both stores and regions. Keep language constructive; rising is green, falling is restrained amber, and missing comparisons say they are waiting for the next snapshot.
+- Any national or in-region first place in Today or Cumulative may activate the restrained champion hero. Always name the exact championship, use the local red-and-champagne-gold hero treatment, and avoid confetti, flashing, or looping celebration effects.
+- BI currently supplies earned bonus only. Show earned bonus plus the reliable gap to the single Challenge target. Never estimate a fixed “100% total bonus” from current order mix. Only show a fixed total when the payload includes an official optional `bonusGoal` value.
+
 ## Prototype Instructions
 
 In ChatGPT Work Mode, run `sites-preview start "$PWD"`, open `http://terminal.local:4173/` in the cloud browser, and verify the rendered app and its primary interactions. Keep that preview open and tell the user to inspect it in the cloud browser; do not present the local URL as a user-facing chat link. In Codex Desktop, run the local server yourself, open the preview in the in-app browser, and provide the clickable local URL. Do not deploy to Sites unless the user explicitly asks to share, publish, or deploy. Do not give the user server-start instructions when you can run it.
