@@ -6,9 +6,11 @@
   "scripts": {
     "check:runtime": "node scripts/check-mobile-runtime.mjs",
     "data:update": "node scripts/update-report.mjs",
+    "data:ingest": "node scripts/ingest-bi-export.mjs",
     "test:data": "node scripts/test-report.mjs",
     "test:rules": "node scripts/test-rules.mjs",
-    "verify": "npm run check:runtime && npm run test:data && npm run test:rules && npm run build",
+    "test:ranking": "node --experimental-strip-types scripts/test-ranking.mjs",
+    "verify": "npm run check:runtime && npm run test:data && npm run test:rules && npm run test:ranking && npm run build",
     "update:runtime-lock": "node scripts/update-mobile-runtime-lock.mjs",
     "test:runtime": "playwright test",
     "test:sites": "node --test tests/sites-worker.test.mjs",
