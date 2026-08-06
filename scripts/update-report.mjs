@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import XLSX from "xlsx";
 import {
   differenceRate,
+  findLatestPriorSnapshot,
   findThirtyMinuteSnapshot,
   selectAttentionStoreIds,
   selectCompletedRegionIds,
@@ -26,8 +27,9 @@ const generatedAt = args.generatedAt ?? shanghaiIso(new Date());
 const workbook = XLSX.readFile(inputPath, { cellDates: true });
 const data = buildReport(workbook, generatedAt, path.basename(inputPath));
 const previousSnapshots = await readSnapshots(snapshotDir);
-const previous = findThirtyMinuteSnapshot(previousSnapshots, generatedAt);
-applySnapshotComparisons(data, previous, previousSnapshots);
+const thirtyMinuteSnapshot = findThirtyMinuteSnapshot(previousSnapshots, generatedAt);
+const previous = thirtyMinuteSnapshot ?? findLatestPriorSnapshot(previousSnapshots, generatedAt);
+applySnapshotComparisons(data, previous, previousSnapshots, Boolean(thirtyMinuteSnapshot));
 
 await fs.mkdir(path.dirname(reportPath), { recursive: true });
 await fs.mkdir(snapshotDir, { recursive: true });
@@ -267,6 +269,8 @@ function buildReport(wb, timestamp, sourceFile) {
     },
     summary: {
       deltaBasis: "waiting-for-next-snapshot",
+      comparisonMinutes: null,
+      comparisonFrom: null,
       fastestStoreIds: [],
       attentionStoreIds: fallbackAttention,
       completedRegionIds,
@@ -279,7 +283,7 @@ function buildReport(wb, timestamp, sourceFile) {
   };
 }
 
-function applySnapshotComparisons(report, previous, history) {
+function applySnapshotComparisons(report, previous, history, isThirtyMinuteComparison) {
   const uniqueSnapshots = new Map([...history, toSnapshot(report)].map((snapshot) => [snapshot.generatedAt, snapshot]));
   const chronological = [...uniqueSnapshots.values()]
     .sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt))
@@ -321,7 +325,13 @@ function applySnapshotComparisons(report, previous, history) {
   if (previous) {
     report.hq.delta30 = report.hq.cumulative.amount - previous.hq.cumulativeAmount;
     report.hq.todayDelta30 = report.hq.today.amount - previous.hq.todayAmount;
-    report.summary.deltaBasis = "closest-snapshot-to-30-minutes";
+    report.summary.deltaBasis = isThirtyMinuteComparison
+      ? "closest-snapshot-to-30-minutes"
+      : "latest-available-snapshot";
+    report.summary.comparisonMinutes = Math.round(
+      ((Date.parse(report.generatedAt) - Date.parse(previous.generatedAt)) / 60000) * 10,
+    ) / 10;
+    report.summary.comparisonFrom = previous.generatedAt;
     report.summary.fastestStoreIds = selectFastestStoreIds(report.stores);
     report.summary.attentionStoreIds = selectAttentionStoreIds(report.stores, true);
     report.summary.noGrowthStoreCount = report.stores

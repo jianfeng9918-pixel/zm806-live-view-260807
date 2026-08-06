@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 import XLSX from "xlsx";
 import {
   differenceRate,
+  findLatestPriorSnapshot,
   findThirtyMinuteSnapshot,
   selectAttentionStoreIds,
   selectCompletedRegionIds,
@@ -50,6 +51,8 @@ const snapshots = [
 ];
 assert.equal(findThirtyMinuteSnapshot(snapshots, currentAt)?.id, "30-min", "应选择最接近30分钟前的成功快照");
 assert.equal(findThirtyMinuteSnapshot([{ generatedAt: "2026-08-06T15:19:00+08:00" }], currentAt), null, "超过10分钟误差不得比较");
+assert.equal(findLatestPriorSnapshot(snapshots, currentAt)?.id, "21-min", "人工更新错过30分钟窗口时应选择最近成功快照");
+assert.equal(findLatestPriorSnapshot([{ generatedAt: "2026-08-06T13:59:00+08:00" }], currentAt), null, "超过2小时不得回退比较");
 assert.equal(differenceRate(100, 98), 0.02);
 assert.equal(differenceRate(0, 0), 0);
 assert.equal(differenceRate(0, 1), 1);
@@ -77,7 +80,7 @@ fs.rmSync(tempDir, { recursive: true, force: true });
 
 console.log(JSON.stringify({
   status: "passed",
-  cases: ["no-completed-region", "multiple-completed-regions", "zero-target", "tied-lowest", "failed-update-preserves-report"],
+  cases: ["no-completed-region", "multiple-completed-regions", "zero-target", "tied-lowest", "manual-window-fallback", "failed-update-preserves-report"],
 }, null, 2));
 
 function region(id, name, targetAmount, completionRate) {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "campaign": "周麻婆14周年806储值战报",
-  "generatedAt": "2026-08-06T15:18:38+08:00",
+  "generatedAt": "2026-08-06T16:08:00+08:00",
   "timezone": "Asia/Shanghai",
   "freshness": {
     "status": "fresh",
@@ -10,18 +10,18 @@
   },
   "source": {
     "type": "bi-excel",
-    "workbook": "806-export-20260806-1518.xlsx",
+    "workbook": "806-export-20260806-1608.xlsx",
     "dashboard": "15_2026版_806活动储值分析",
     "reconciliation": {
       "status": "matched",
       "cumulative": {
-        "official": 2596504,
-        "storeSum": 2596504,
+        "official": 2611200,
+        "storeSum": 2611200,
         "differenceRate": 0
       },
       "today": {
-        "official": 604888,
-        "storeSum": 604888,
+        "official": 619584,
+        "storeSum": 619584,
         "differenceRate": 0
       }
     }
@@ -34,43 +34,53 @@
   "hq": {
     "storeCount": 131,
     "activeStoreCount": 129,
-    "bonus": 11146,
+    "bonus": 11200,
     "cumulative": {
-      "amount": 2596504,
-      "orderCount": 2383,
+      "amount": 2611200,
+      "orderCount": 2400,
       "targetOrderCount": 17619.294775,
-      "orderCompletionRate": 0.135249,
+      "orderCompletionRate": 0.136214,
       "targets": {
         "bet": 12688935,
         "drive": 13674102,
         "challenge": 15644433
       },
       "rates": {
-        "bet": 0.20462741750982252,
-        "drive": 0.1898847909720141,
-        "challenge": 0.16597
+        "bet": 0.20578559193502055,
+        "drive": 0.1909595233383516,
+        "challenge": 0.166909
       }
     },
     "today": {
-      "amount": 604888,
-      "orderCount": 601,
+      "amount": 619584,
+      "orderCount": 618,
       "targetOrderCount": 979,
-      "orderCompletionRate": 0.613892,
+      "orderCompletionRate": 0.631256,
       "targetAmount": 869243,
-      "completionRate": 0.695879
+      "completionRate": 0.712786
     },
-    "delta30": null,
-    "todayDelta30": null,
+    "delta30": 14696,
+    "todayDelta30": 14696,
     "trend": [
       {
         "at": "2026-08-06T15:18:38+08:00",
         "amount": 2596504
+      },
+      {
+        "at": "2026-08-06T16:08:00+08:00",
+        "amount": 2611200
       }
     ]
   },
   "summary": {
-    "deltaBasis": "waiting-for-next-snapshot",
-    "fastestStoreIds": [],
+    "deltaBasis": "latest-available-snapshot",
+    "comparisonMinutes": 49.4,
+    "comparisonFrom": "2026-08-06T15:18:38+08:00",
+    "fastestStoreIds": [
+      "store-1rkfzwq",
+      "store-p5rsr6",
+      "store-1d7sa3a"
+    ],
     "attentionStoreIds": [
       "store-1v4xbsy",
       "store-1vxdmoo",
@@ -81,8 +91,8 @@
       "region-1b3zsou"
     ],
     "lowestRegionId": "region-2qwevo",
-    "noGrowthStoreCount": null,
-    "noGrowthRegionCount": null
+    "noGrowthStoreCount": 118,
+    "noGrowthRegionCount": 4
   },
   "regions": [
     {
@@ -95,33 +105,37 @@
         "todayChallenge": 2
       },
       "cumulative": {
-        "amount": 251600,
+        "amount": 252288,
         "targets": {
           "bet": 837086,
           "drive": 902078,
           "challenge": 1032062
         },
         "rates": {
-          "bet": 0.300566,
-          "drive": 0.278912,
-          "challenge": 0.243784
+          "bet": 0.301388,
+          "drive": 0.279674,
+          "challenge": 0.24445
         },
-        "bonus": 1160
+        "bonus": 1162
       },
       "today": {
-        "amount": 60340,
-        "orderCount": 55,
+        "amount": 61028,
+        "orderCount": 56,
         "targetOrderCount": 65,
-        "orderCompletionRate": 0.846154,
+        "orderCompletionRate": 0.861538,
         "targetAmount": 57193,
-        "completionRate": 1.055024
+        "completionRate": 1.067054
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 688,
+      "todayDelta30": 688,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 251600
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 252288
         }
       ]
     },
@@ -135,33 +149,37 @@
         "todayChallenge": 6
       },
       "cumulative": {
-        "amount": 483012,
+        "amount": 484900,
         "targets": {
           "bet": 1881366,
           "drive": 2027435,
           "challenge": 2319571
         },
         "rates": {
-          "bet": 0.256735,
-          "drive": 0.238238,
-          "challenge": 0.208233
+          "bet": 0.257738,
+          "drive": 0.239169,
+          "challenge": 0.209047
         },
-        "bonus": 2188
+        "bonus": 2198
       },
       "today": {
-        "amount": 100036,
-        "orderCount": 97,
+        "amount": 101924,
+        "orderCount": 98,
         "targetOrderCount": 145,
-        "orderCompletionRate": 0.668966,
+        "orderCompletionRate": 0.675862,
         "targetAmount": 128541,
-        "completionRate": 0.778242
+        "completionRate": 0.79293
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 1888,
+      "todayDelta30": 1888,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 483012
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 484900
         }
       ]
     },
@@ -175,33 +193,37 @@
         "todayChallenge": 3
       },
       "cumulative": {
-        "amount": 224172,
+        "amount": 227012,
         "targets": {
           "bet": 951781,
           "drive": 1025678,
           "challenge": 1173471
         },
         "rates": {
-          "bet": 0.235529,
-          "drive": 0.21856,
-          "challenge": 0.191033
+          "bet": 0.238513,
+          "drive": 0.221329,
+          "challenge": 0.193453
         },
-        "bonus": 928
+        "bonus": 934
       },
       "today": {
-        "amount": 59440,
-        "orderCount": 55,
+        "amount": 62280,
+        "orderCount": 60,
         "targetOrderCount": 73,
-        "orderCompletionRate": 0.753425,
+        "orderCompletionRate": 0.821918,
         "targetAmount": 65029,
-        "completionRate": 0.914054
+        "completionRate": 0.957727
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 2840,
+      "todayDelta30": 2840,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 224172
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 227012
         }
       ]
     },
@@ -215,33 +237,37 @@
         "todayChallenge": 5
       },
       "cumulative": {
-        "amount": 259696,
+        "amount": 260384,
         "targets": {
           "bet": 1107834,
           "drive": 1193848,
           "challenge": 1365871
         },
         "rates": {
-          "bet": 0.234418,
-          "drive": 0.217529,
-          "challenge": 0.190132
+          "bet": 0.235039,
+          "drive": 0.218105,
+          "challenge": 0.190636
         },
-        "bonus": 1170
+        "bonus": 1172
       },
       "today": {
-        "amount": 59440,
-        "orderCount": 55,
+        "amount": 60128,
+        "orderCount": 56,
         "targetOrderCount": 86,
-        "orderCompletionRate": 0.639535,
+        "orderCompletionRate": 0.651163,
         "targetAmount": 75691,
-        "completionRate": 0.785298
+        "completionRate": 0.794388
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 688,
+      "todayDelta30": 688,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 259696
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 260384
         }
       ]
     },
@@ -276,11 +302,15 @@
         "targetAmount": 5328,
         "completionRate": 1.152402
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16744
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 16744
         }
       ]
@@ -295,33 +325,37 @@
         "todayChallenge": 8
       },
       "cumulative": {
-        "amount": 280368,
+        "amount": 282944,
         "targets": {
           "bet": 1367762,
           "drive": 1470072,
           "challenge": 1674693
         },
         "rates": {
-          "bet": 0.204983,
-          "drive": 0.190717,
-          "challenge": 0.167415
+          "bet": 0.206866,
+          "drive": 0.192469,
+          "challenge": 0.168953
         },
-        "bonus": 1194
+        "bonus": 1206
       },
       "today": {
-        "amount": 65860,
-        "orderCount": 70,
+        "amount": 68436,
+        "orderCount": 72,
         "targetOrderCount": 107,
-        "orderCompletionRate": 0.654206,
+        "orderCompletionRate": 0.672897,
         "targetAmount": 94996,
-        "completionRate": 0.693292
+        "completionRate": 0.720409
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 2576,
+      "todayDelta30": 2576,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 280368
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 282944
         }
       ]
     },
@@ -356,11 +390,15 @@
         "targetAmount": 47322,
         "completionRate": 0.58197
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 127664
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 127664
         }
       ]
@@ -375,33 +413,37 @@
         "todayChallenge": 7
       },
       "cumulative": {
-        "amount": 158156,
+        "amount": 158544,
         "targets": {
           "bet": 889347,
           "drive": 958397,
           "challenge": 1096496
         },
         "rates": {
-          "bet": 0.177834,
-          "drive": 0.165021,
-          "challenge": 0.144238
+          "bet": 0.17827,
+          "drive": 0.165426,
+          "challenge": 0.144591
         },
         "bonus": 700
       },
       "today": {
-        "amount": 43420,
-        "orderCount": 40,
+        "amount": 43808,
+        "orderCount": 41,
         "targetOrderCount": 68,
-        "orderCompletionRate": 0.588235,
+        "orderCompletionRate": 0.602941,
         "targetAmount": 60554,
-        "completionRate": 0.717046
+        "completionRate": 0.723453
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 388,
+      "todayDelta30": 388,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 158156
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 158544
         }
       ]
     },
@@ -412,36 +454,40 @@
       "storeCount": 16,
       "ranking": {
         "cumulativeChallenge": 9,
-        "todayChallenge": 12
+        "todayChallenge": 11
       },
       "cumulative": {
-        "amount": 289504,
+        "amount": 293368,
         "targets": {
           "bet": 1693185,
           "drive": 1824645,
           "challenge": 2087562
         },
         "rates": {
-          "bet": 0.170982,
-          "drive": 0.158663,
-          "challenge": 0.13868
+          "bet": 0.173264,
+          "drive": 0.160781,
+          "challenge": 0.140531
         },
-        "bonus": 1198
+        "bonus": 1216
       },
       "today": {
-        "amount": 62280,
-        "orderCount": 60,
+        "amount": 66144,
+        "orderCount": 63,
         "targetOrderCount": 130,
-        "orderCompletionRate": 0.461538,
+        "orderCompletionRate": 0.484615,
         "targetAmount": 115685,
-        "completionRate": 0.538358
+        "completionRate": 0.57176
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 3864,
+      "todayDelta30": 3864,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 289504
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 293368
         }
       ]
     },
@@ -455,33 +501,37 @@
         "todayChallenge": 13
       },
       "cumulative": {
-        "amount": 131368,
+        "amount": 132444,
         "targets": {
           "bet": 809884,
           "drive": 872764,
           "challenge": 998522
         },
         "rates": {
-          "bet": 0.162206,
-          "drive": 0.150519,
-          "challenge": 0.131562
+          "bet": 0.163535,
+          "drive": 0.151752,
+          "challenge": 0.13264
         },
-        "bonus": 524
+        "bonus": 526
       },
       "today": {
-        "amount": 21276,
-        "orderCount": 27,
+        "amount": 22352,
+        "orderCount": 29,
         "targetOrderCount": 62,
-        "orderCompletionRate": 0.435484,
+        "orderCompletionRate": 0.467742,
         "targetAmount": 55333,
-        "completionRate": 0.384508
+        "completionRate": 0.403954
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 1076,
+      "todayDelta30": 1076,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 131368
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 132444
         }
       ]
     },
@@ -495,33 +545,37 @@
         "todayChallenge": 9
       },
       "cumulative": {
-        "amount": 208924,
+        "amount": 209612,
         "targets": {
           "bet": 1323641,
           "drive": 1426401,
           "challenge": 1631936
         },
         "rates": {
-          "bet": 0.15784,
-          "drive": 0.146469,
-          "challenge": 0.128022
+          "bet": 0.15836,
+          "drive": 0.146952,
+          "challenge": 0.128444
         },
-        "bonus": 816
+        "bonus": 818
       },
       "today": {
-        "amount": 57620,
-        "orderCount": 65,
+        "amount": 58308,
+        "orderCount": 66,
         "targetOrderCount": 100,
-        "orderCompletionRate": 0.65,
+        "orderCompletionRate": 0.66,
         "targetAmount": 90437,
-        "completionRate": 0.637129
+        "completionRate": 0.644736
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 688,
+      "todayDelta30": 688,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 208924
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 209612
         }
       ]
     },
@@ -532,7 +586,7 @@
       "storeCount": 12,
       "ranking": {
         "cumulativeChallenge": 12,
-        "todayChallenge": 11
+        "todayChallenge": 12
       },
       "cumulative": {
         "amount": 155328,
@@ -556,11 +610,15 @@
         "targetAmount": 67531,
         "completionRate": 0.547067
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 155328
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 155328
         }
       ]
@@ -596,11 +654,15 @@
         "targetAmount": 5603,
         "completionRate": 0.812422
       },
-      "delta30": null,
-      "todayDelta30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9968
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 9968
         }
       ]
@@ -648,12 +710,16 @@
         "targetAmount": 4081,
         "completionRate": 2.040676
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 55580
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 55580
         }
       ]
@@ -673,7 +739,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 2,
-        "todayChallenge": 22
+        "todayChallenge": 25
       },
       "cumulative": {
         "amount": 110964,
@@ -699,12 +765,16 @@
         "targetAmount": 9035,
         "completionRate": 1.083785
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 110964
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 110964
         }
       ]
@@ -724,7 +794,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 3,
-        "todayChallenge": 12
+        "todayChallenge": 14
       },
       "cumulative": {
         "amount": 66836,
@@ -750,12 +820,16 @@
         "targetAmount": 9754,
         "completionRate": 1.44351
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 66836
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 66836
         }
       ]
@@ -801,12 +875,16 @@
         "targetAmount": 4400,
         "completionRate": 1.912727
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 30028
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 30028
         }
       ]
@@ -852,12 +930,16 @@
         "targetAmount": 6455,
         "completionRate": 1.609915
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 41216
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 41216
         }
       ]
@@ -868,48 +950,162 @@
       "regionId": "region-1ipya1f",
       "regionName": "闽西二区",
       "status": "未完成对赌目标",
-      "bonus": 254,
+      "bonus": 258,
       "tierOrders": {
         "tier388": 1,
-        "tier688": 33,
+        "tier688": 35,
         "tier1288": 3,
         "tier1888": 17
       },
       "ranking": {
         "cumulativeChallenge": 6,
-        "todayChallenge": 14
+        "todayChallenge": 13
       },
       "cumulative": {
-        "amount": 59052,
-        "orderCount": 54,
+        "amount": 60428,
+        "orderCount": 56,
         "targetOrderCount": 199,
-        "orderCompletionRate": 0.271357,
+        "orderCompletionRate": 0.281407,
         "targets": {
           "bet": 146354,
           "drive": 157717,
           "challenge": 180443
         },
         "rates": {
-          "bet": 0.403487,
-          "drive": 0.374417,
-          "challenge": 0.327261
+          "bet": 0.412889,
+          "drive": 0.383142,
+          "challenge": 0.334887
         }
       },
       "today": {
-        "amount": 13480,
-        "orderCount": 10,
+        "amount": 14856,
+        "orderCount": 12,
         "targetOrderCount": 11,
-        "orderCompletionRate": 0.909091,
+        "orderCompletionRate": 1.090909,
         "targetAmount": 9999,
-        "completionRate": 1.348135
+        "completionRate": 1.485749
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 1376,
+      "todayDelta30": 1376,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 59052
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 60428
+        }
+      ]
+    },
+    {
+      "id": "store-1l6pokl",
+      "name": "龙岩新罗国贸天琴湾店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 104,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 12,
+        "tier1288": 0,
+        "tier1888": 8
+      },
+      "ranking": {
+        "cumulativeChallenge": 7,
+        "todayChallenge": 1
+      },
+      "cumulative": {
+        "amount": 24136,
+        "orderCount": 22,
+        "targetOrderCount": 85,
+        "orderCompletionRate": 0.258824,
+        "targets": {
+          "bet": 58851,
+          "drive": 63421,
+          "challenge": 72559
+        },
+        "rates": {
+          "bet": 0.41012,
+          "drive": 0.380568,
+          "challenge": 0.33264
+        }
+      },
+      "today": {
+        "amount": 9368,
+        "orderCount": 11,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 2.2,
+        "targetAmount": 4021,
+        "completionRate": 2.329769
+      },
+      "delta30": 1076,
+      "todayDelta30": 1076,
+      "rankChange30": 2,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 23060
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 24136
+        }
+      ]
+    },
+    {
+      "id": "store-1wvq1su",
+      "name": "宁德蕉城东侨亿利城店",
+      "regionId": "region-1dpc0mi",
+      "regionName": "闽东一区",
+      "status": "未完成对赌目标",
+      "bonus": 316,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 24,
+        "tier1288": 8,
+        "tier1888": 22
+      },
+      "ranking": {
+        "cumulativeChallenge": 8,
+        "todayChallenge": 12
+      },
+      "cumulative": {
+        "amount": 69904,
+        "orderCount": 58,
+        "targetOrderCount": 238,
+        "orderCompletionRate": 0.243697,
+        "targets": {
+          "bet": 173233,
+          "drive": 186683,
+          "challenge": 213583
+        },
+        "rates": {
+          "bet": 0.403526,
+          "drive": 0.374453,
+          "challenge": 0.327292
+        }
+      },
+      "today": {
+        "amount": 17696,
+        "orderCount": 17,
+        "targetOrderCount": 13,
+        "orderCompletionRate": 1.307692,
+        "targetAmount": 11836,
+        "completionRate": 1.4951
+      },
+      "delta30": 688,
+      "todayDelta30": 688,
+      "rankChange30": 0,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 69216
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 69904
         }
       ]
     },
@@ -927,7 +1123,7 @@
         "tier1888": 14
       },
       "ranking": {
-        "cumulativeChallenge": 7,
+        "cumulativeChallenge": 9,
         "todayChallenge": 6
       },
       "cumulative": {
@@ -954,115 +1150,17 @@
         "targetAmount": 6275,
         "completionRate": 1.970996
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -2,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 36840
-        }
-      ]
-    },
-    {
-      "id": "store-1wvq1su",
-      "name": "宁德蕉城东侨亿利城店",
-      "regionId": "region-1dpc0mi",
-      "regionName": "闽东一区",
-      "status": "未完成对赌目标",
-      "bonus": 314,
-      "tierOrders": {
-        "tier388": 4,
-        "tier688": 23,
-        "tier1288": 8,
-        "tier1888": 22
-      },
-      "ranking": {
-        "cumulativeChallenge": 8,
-        "todayChallenge": 13
-      },
-      "cumulative": {
-        "amount": 69216,
-        "orderCount": 57,
-        "targetOrderCount": 238,
-        "orderCompletionRate": 0.239496,
-        "targets": {
-          "bet": 173233,
-          "drive": 186683,
-          "challenge": 213583
         },
-        "rates": {
-          "bet": 0.399554,
-          "drive": 0.370768,
-          "challenge": 0.324071
-        }
-      },
-      "today": {
-        "amount": 17008,
-        "orderCount": 16,
-        "targetOrderCount": 13,
-        "orderCompletionRate": 1.230769,
-        "targetAmount": 11836,
-        "completionRate": 1.436972
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 69216
-        }
-      ]
-    },
-    {
-      "id": "store-1l6pokl",
-      "name": "龙岩新罗国贸天琴湾店",
-      "regionId": "region-1ipya1f",
-      "regionName": "闽西二区",
-      "status": "未完成对赌目标",
-      "bonus": 102,
-      "tierOrders": {
-        "tier388": 1,
-        "tier688": 11,
-        "tier1288": 0,
-        "tier1888": 8
-      },
-      "ranking": {
-        "cumulativeChallenge": 9,
-        "todayChallenge": 3
-      },
-      "cumulative": {
-        "amount": 23060,
-        "orderCount": 20,
-        "targetOrderCount": 85,
-        "orderCompletionRate": 0.235294,
-        "targets": {
-          "bet": 58851,
-          "drive": 63421,
-          "challenge": 72559
-        },
-        "rates": {
-          "bet": 0.391837,
-          "drive": 0.363602,
-          "challenge": 0.31781
-        }
-      },
-      "today": {
-        "amount": 8292,
-        "orderCount": 9,
-        "targetOrderCount": 5,
-        "orderCompletionRate": 1.8,
-        "targetAmount": 4021,
-        "completionRate": 2.062174
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
-        {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 23060
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 36840
         }
       ]
     },
@@ -1081,7 +1179,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 10,
-        "todayChallenge": 1
+        "todayChallenge": 2
       },
       "cumulative": {
         "amount": 19284,
@@ -1107,12 +1205,16 @@
         "targetAmount": 3430,
         "completionRate": 2.253061
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19284
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 19284
         }
       ]
@@ -1132,7 +1234,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 11,
-        "todayChallenge": 24
+        "todayChallenge": 27
       },
       "cumulative": {
         "amount": 37652,
@@ -1158,12 +1260,16 @@
         "targetAmount": 6855,
         "completionRate": 1.0655
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 37652
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 37652
         }
       ]
@@ -1183,7 +1289,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 12,
-        "todayChallenge": 28
+        "todayChallenge": 31
       },
       "cumulative": {
         "amount": 35392,
@@ -1209,12 +1315,16 @@
         "targetAmount": 7992,
         "completionRate": 1
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 35392
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 35392
         }
       ]
@@ -1260,12 +1370,16 @@
         "targetAmount": 6512,
         "completionRate": 0.211302
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 34440
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 34440
         }
       ]
@@ -1311,12 +1425,16 @@
         "targetAmount": 5784,
         "completionRate": 1.988935
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 29712
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 29712
         }
       ]
@@ -1362,12 +1480,16 @@
         "targetAmount": 7567,
         "completionRate": 1.555174
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 38376
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 38376
         }
       ]
@@ -1387,7 +1509,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 16,
-        "todayChallenge": 93
+        "todayChallenge": 94
       },
       "cumulative": {
         "amount": 34776,
@@ -1413,12 +1535,16 @@
         "targetAmount": 6863,
         "completionRate": 0.375346
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 34776
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 34776
         }
       ]
@@ -1438,7 +1564,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 17,
-        "todayChallenge": 16
+        "todayChallenge": 17
       },
       "cumulative": {
         "amount": 45044,
@@ -1464,12 +1590,16 @@
         "targetAmount": 9057,
         "completionRate": 1.285635
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 45044
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 45044
         }
       ]
@@ -1489,7 +1619,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 18,
-        "todayChallenge": 42
+        "todayChallenge": 43
       },
       "cumulative": {
         "amount": 51448,
@@ -1515,12 +1645,16 @@
         "targetAmount": 10409,
         "completionRate": 0.845807
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 51448
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 51448
         }
       ]
@@ -1540,7 +1674,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 19,
-        "todayChallenge": 86
+        "todayChallenge": 88
       },
       "cumulative": {
         "amount": 34016,
@@ -1566,12 +1700,16 @@
         "targetAmount": 7101,
         "completionRate": 0.459654
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 34016
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 34016
         }
       ]
@@ -1617,12 +1755,16 @@
         "targetAmount": 10314,
         "completionRate": 0.708164
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 48484
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 48484
         }
       ]
@@ -1642,7 +1784,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 21,
-        "todayChallenge": 27
+        "todayChallenge": 30
       },
       "cumulative": {
         "amount": 39292,
@@ -1668,12 +1810,16 @@
         "targetAmount": 8908,
         "completionRate": 1.031881
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 39292
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 39292
         }
       ]
@@ -1693,7 +1839,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 22,
-        "todayChallenge": 26
+        "todayChallenge": 29
       },
       "cumulative": {
         "amount": 35552,
@@ -1719,12 +1865,16 @@
         "targetAmount": 8141,
         "completionRate": 1.03378
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 35552
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 35552
         }
       ]
@@ -1770,12 +1920,16 @@
         "targetAmount": 5581,
         "completionRate": 1.79251
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 23960
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 23960
         }
       ]
@@ -1795,7 +1949,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 24,
-        "todayChallenge": 21
+        "todayChallenge": 23
       },
       "cumulative": {
         "amount": 20096,
@@ -1821,12 +1975,16 @@
         "targetAmount": 4831,
         "completionRate": 1.102877
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 20096
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 20096
         }
       ]
@@ -1846,7 +2004,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 25,
-        "todayChallenge": 17
+        "todayChallenge": 18
       },
       "cumulative": {
         "amount": 37492,
@@ -1872,12 +2030,16 @@
         "targetAmount": 9076,
         "completionRate": 1.220802
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 37492
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 37492
         }
       ]
@@ -1897,7 +2059,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 26,
-        "todayChallenge": 64
+        "todayChallenge": 66
       },
       "cumulative": {
         "amount": 33576,
@@ -1923,12 +2085,16 @@
         "targetAmount": 8291,
         "completionRate": 0.632011
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 33576
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 33576
         }
       ]
@@ -1974,12 +2140,16 @@
         "targetAmount": 3809,
         "completionRate": 0.699396
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15332
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 15332
         }
       ]
@@ -1999,7 +2169,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 28,
-        "todayChallenge": 15
+        "todayChallenge": 16
       },
       "cumulative": {
         "amount": 13392,
@@ -2025,12 +2195,16 @@
         "targetAmount": 3329,
         "completionRate": 1.340943
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13392
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 13392
         }
       ]
@@ -2050,7 +2224,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 29,
-        "todayChallenge": 101
+        "todayChallenge": 102
       },
       "cumulative": {
         "amount": 16656,
@@ -2076,13 +2250,127 @@
         "targetAmount": 4400,
         "completionRate": 0.312727
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 16656
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 16656
+        }
+      ]
+    },
+    {
+      "id": "store-h6sxvf",
+      "name": "厦门思明建发悦享店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 68,
+      "tierOrders": {
+        "tier388": 0,
+        "tier688": 9,
+        "tier1288": 5,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 30,
+        "todayChallenge": 70
+      },
+      "cumulative": {
+        "amount": 16408,
+        "orderCount": 16,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.179775,
+        "targets": {
+          "bet": 64400,
+          "drive": 69400,
+          "challenge": 79400
+        },
+        "rates": {
+          "bet": 0.254783,
+          "drive": 0.236427,
+          "challenge": 0.20665
+        }
+      },
+      "today": {
+        "amount": 2576,
+        "orderCount": 2,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 0.4,
+        "targetAmount": 4400,
+        "completionRate": 0.585455
+      },
+      "delta30": 688,
+      "todayDelta30": 688,
+      "rankChange30": 3,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15720
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 16408
+        }
+      ]
+    },
+    {
+      "id": "store-p5rsr6",
+      "name": "福州闽侯汇锋店",
+      "regionId": "region-ybqct6",
+      "regionName": "福州一二区",
+      "status": "未完成对赌目标",
+      "bonus": 144,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 9,
+        "tier1288": 1,
+        "tier1888": 12
+      },
+      "ranking": {
+        "cumulativeChallenge": 31,
+        "todayChallenge": 20
+      },
+      "cumulative": {
+        "amount": 32076,
+        "orderCount": 27,
+        "targetOrderCount": 180,
+        "orderCompletionRate": 0.15,
+        "targets": {
+          "bet": 128093,
+          "drive": 138038,
+          "challenge": 157928
+        },
+        "rates": {
+          "bet": 0.250412,
+          "drive": 0.232371,
+          "challenge": 0.203105
+        }
+      },
+      "today": {
+        "amount": 10480,
+        "orderCount": 10,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 1,
+        "targetAmount": 8752,
+        "completionRate": 1.197441
+      },
+      "delta30": 1888,
+      "todayDelta30": 1888,
+      "rankChange30": 7,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 30188
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 32076
         }
       ]
     },
@@ -2100,8 +2388,8 @@
         "tier1888": 6
       },
       "ranking": {
-        "cumulativeChallenge": 30,
-        "todayChallenge": 25
+        "cumulativeChallenge": 32,
+        "todayChallenge": 28
       },
       "cumulative": {
         "amount": 16144,
@@ -2127,12 +2415,16 @@
         "targetAmount": 4420,
         "completionRate": 1.049774
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -2,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16144
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 16144
         }
       ]
@@ -2151,7 +2443,7 @@
         "tier1888": 11
       },
       "ranking": {
-        "cumulativeChallenge": 31,
+        "cumulativeChallenge": 33,
         "todayChallenge": 55
       },
       "cumulative": {
@@ -2178,12 +2470,16 @@
         "targetAmount": 10625,
         "completionRate": 0.704
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -2,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 38056
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 38056
         }
       ]
@@ -2202,8 +2498,8 @@
         "tier1888": 4
       },
       "ranking": {
-        "cumulativeChallenge": 32,
-        "todayChallenge": 38
+        "cumulativeChallenge": 34,
+        "todayChallenge": 39
       },
       "cumulative": {
         "amount": 19760,
@@ -2229,64 +2525,17 @@
         "targetAmount": 5530,
         "completionRate": 0.925136
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -2,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 19760
-        }
-      ]
-    },
-    {
-      "id": "store-h6sxvf",
-      "name": "厦门思明建发悦享店",
-      "regionId": "region-1wyuifr",
-      "regionName": "闽南一区",
-      "status": "未完成对赌目标",
-      "bonus": 66,
-      "tierOrders": {
-        "tier388": 0,
-        "tier688": 8,
-        "tier1288": 5,
-        "tier1888": 2
-      },
-      "ranking": {
-        "cumulativeChallenge": 33,
-        "todayChallenge": 87
-      },
-      "cumulative": {
-        "amount": 15720,
-        "orderCount": 15,
-        "targetOrderCount": 89,
-        "orderCompletionRate": 0.168539,
-        "targets": {
-          "bet": 64400,
-          "drive": 69400,
-          "challenge": 79400
         },
-        "rates": {
-          "bet": 0.244099,
-          "drive": 0.226513,
-          "challenge": 0.197985
-        }
-      },
-      "today": {
-        "amount": 1888,
-        "orderCount": 1,
-        "targetOrderCount": 5,
-        "orderCompletionRate": 0.2,
-        "targetAmount": 4400,
-        "completionRate": 0.429091
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 15720
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 19760
         }
       ]
     },
@@ -2304,7 +2553,7 @@
         "tier1888": 7
       },
       "ranking": {
-        "cumulativeChallenge": 34,
+        "cumulativeChallenge": 35,
         "todayChallenge": 50
       },
       "cumulative": {
@@ -2331,12 +2580,16 @@
         "targetAmount": 6662,
         "completionRate": 0.767938
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 23712
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 23712
         }
       ]
@@ -2355,7 +2608,7 @@
         "tier1888": 6
       },
       "ranking": {
-        "cumulativeChallenge": 35,
+        "cumulativeChallenge": 36,
         "todayChallenge": 119
       },
       "cumulative": {
@@ -2382,12 +2635,16 @@
         "targetAmount": 4400,
         "completionRate": 0.156364
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15544
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 15544
         }
       ]
@@ -2406,8 +2663,8 @@
         "tier1888": 4
       },
       "ranking": {
-        "cumulativeChallenge": 36,
-        "todayChallenge": 39
+        "cumulativeChallenge": 37,
+        "todayChallenge": 40
       },
       "cumulative": {
         "amount": 18560,
@@ -2433,13 +2690,72 @@
         "targetAmount": 5257,
         "completionRate": 0.92296
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 18560
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 18560
+        }
+      ]
+    },
+    {
+      "id": "store-1d7sa3a",
+      "name": "漳州云霄万星广场旗舰店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 176,
+      "tierOrders": {
+        "tier388": 5,
+        "tier688": 19,
+        "tier1288": 3,
+        "tier1888": 12
+      },
+      "ranking": {
+        "cumulativeChallenge": 38,
+        "todayChallenge": 65
+      },
+      "cumulative": {
+        "amount": 41532,
+        "orderCount": 39,
+        "targetOrderCount": 238,
+        "orderCompletionRate": 0.163866,
+        "targets": {
+          "bet": 173631,
+          "drive": 187112,
+          "challenge": 214073
+        },
+        "rates": {
+          "bet": 0.239197,
+          "drive": 0.221963,
+          "challenge": 0.194009
+        }
+      },
+      "today": {
+        "amount": 7516,
+        "orderCount": 7,
+        "targetOrderCount": 13,
+        "orderCompletionRate": 0.538462,
+        "targetAmount": 11863,
+        "completionRate": 0.633567
+      },
+      "delta30": 1888,
+      "todayDelta30": 1888,
+      "rankChange30": 3,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 39644
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 41532
         }
       ]
     },
@@ -2457,8 +2773,8 @@
         "tier1888": 14
       },
       "ranking": {
-        "cumulativeChallenge": 37,
-        "todayChallenge": 66
+        "cumulativeChallenge": 39,
+        "todayChallenge": 68
       },
       "cumulative": {
         "amount": 43280,
@@ -2484,64 +2800,17 @@
         "targetAmount": 12540,
         "completionRate": 0.616268
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -2,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 43280
-        }
-      ]
-    },
-    {
-      "id": "store-p5rsr6",
-      "name": "福州闽侯汇锋店",
-      "regionId": "region-ybqct6",
-      "regionName": "福州一二区",
-      "status": "未完成对赌目标",
-      "bonus": 134,
-      "tierOrders": {
-        "tier388": 5,
-        "tier688": 9,
-        "tier1288": 1,
-        "tier1888": 11
-      },
-      "ranking": {
-        "cumulativeChallenge": 38,
-        "todayChallenge": 31
-      },
-      "cumulative": {
-        "amount": 30188,
-        "orderCount": 26,
-        "targetOrderCount": 180,
-        "orderCompletionRate": 0.144444,
-        "targets": {
-          "bet": 128093,
-          "drive": 138038,
-          "challenge": 157928
         },
-        "rates": {
-          "bet": 0.235673,
-          "drive": 0.218693,
-          "challenge": 0.19115
-        }
-      },
-      "today": {
-        "amount": 8592,
-        "orderCount": 9,
-        "targetOrderCount": 10,
-        "orderCompletionRate": 0.9,
-        "targetAmount": 8752,
-        "completionRate": 0.981718
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 30188
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 43280
         }
       ]
     },
@@ -2559,8 +2828,8 @@
         "tier1888": 4
       },
       "ranking": {
-        "cumulativeChallenge": 39,
-        "todayChallenge": 29
+        "cumulativeChallenge": 40,
+        "todayChallenge": 32
       },
       "cumulative": {
         "amount": 15984,
@@ -2586,12 +2855,16 @@
         "targetAmount": 4730,
         "completionRate": 0.999577
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15984
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 15984
         }
       ]
@@ -2610,8 +2883,8 @@
         "tier1888": 2
       },
       "ranking": {
-        "cumulativeChallenge": 40,
-        "todayChallenge": 76
+        "cumulativeChallenge": 41,
+        "todayChallenge": 79
       },
       "cumulative": {
         "amount": 8980,
@@ -2637,64 +2910,17 @@
         "targetAmount": 2675,
         "completionRate": 0.514393
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 8980
-        }
-      ]
-    },
-    {
-      "id": "store-1d7sa3a",
-      "name": "漳州云霄万星广场旗舰店",
-      "regionId": "region-1wyuifr",
-      "regionName": "闽南一区",
-      "status": "未完成对赌目标",
-      "bonus": 166,
-      "tierOrders": {
-        "tier388": 5,
-        "tier688": 19,
-        "tier1288": 3,
-        "tier1888": 11
-      },
-      "ranking": {
-        "cumulativeChallenge": 41,
-        "todayChallenge": 84
-      },
-      "cumulative": {
-        "amount": 39644,
-        "orderCount": 38,
-        "targetOrderCount": 238,
-        "orderCompletionRate": 0.159664,
-        "targets": {
-          "bet": 173631,
-          "drive": 187112,
-          "challenge": 214073
         },
-        "rates": {
-          "bet": 0.228323,
-          "drive": 0.211873,
-          "challenge": 0.185189
-        }
-      },
-      "today": {
-        "amount": 5628,
-        "orderCount": 6,
-        "targetOrderCount": 13,
-        "orderCompletionRate": 0.461538,
-        "targetAmount": 11863,
-        "completionRate": 0.474416
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 39644
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 8980
         }
       ]
     },
@@ -2713,7 +2939,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 42,
-        "todayChallenge": 19
+        "todayChallenge": 22
       },
       "cumulative": {
         "amount": 16744,
@@ -2739,12 +2965,16 @@
         "targetAmount": 5328,
         "completionRate": 1.152402
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16744
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 16744
         }
       ]
@@ -2764,7 +2994,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 43,
-        "todayChallenge": 80
+        "todayChallenge": 83
       },
       "cumulative": {
         "amount": 9104,
@@ -2790,13 +3020,72 @@
         "targetAmount": 2782,
         "completionRate": 0.494608
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 9104
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 9104
+        }
+      ]
+    },
+    {
+      "id": "store-1rkfzwq",
+      "name": "南平建阳万晟皇庭店",
+      "regionId": "region-od1ly6",
+      "regionName": "闽北区域",
+      "status": "未完成对赌目标",
+      "bonus": 62,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 8,
+        "tier1288": 1,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 44,
+        "todayChallenge": 15
+      },
+      "cumulative": {
+        "amount": 15508,
+        "orderCount": 16,
+        "targetOrderCount": 95,
+        "orderCompletionRate": 0.168421,
+        "targets": {
+          "bet": 69422,
+          "drive": 74812,
+          "challenge": 85592
+        },
+        "rates": {
+          "bet": 0.223387,
+          "drive": 0.207293,
+          "challenge": 0.181185
+        }
+      },
+      "today": {
+        "amount": 6404,
+        "orderCount": 8,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1.6,
+        "targetAmount": 4743,
+        "completionRate": 1.3502
+      },
+      "delta30": 2576,
+      "todayDelta30": 2576,
+      "rankChange30": 16,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 12932
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 15508
         }
       ]
     },
@@ -2814,8 +3103,8 @@
         "tier1888": 9
       },
       "ranking": {
-        "cumulativeChallenge": 44,
-        "todayChallenge": 63
+        "cumulativeChallenge": 45,
+        "todayChallenge": 64
       },
       "cumulative": {
         "amount": 20820,
@@ -2841,12 +3130,16 @@
         "targetAmount": 6426,
         "completionRate": 0.647993
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 20820
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 20820
         }
       ]
@@ -2865,8 +3158,8 @@
         "tier1888": 5
       },
       "ranking": {
-        "cumulativeChallenge": 45,
-        "todayChallenge": 61
+        "cumulativeChallenge": 46,
+        "todayChallenge": 62
       },
       "cumulative": {
         "amount": 16020,
@@ -2892,12 +3185,16 @@
         "targetAmount": 4947,
         "completionRate": 0.659794
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16020
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 16020
         }
       ]
@@ -2916,8 +3213,8 @@
         "tier1888": 8
       },
       "ranking": {
-        "cumulativeChallenge": 46,
-        "todayChallenge": 44
+        "cumulativeChallenge": 47,
+        "todayChallenge": 45
       },
       "cumulative": {
         "amount": 30152,
@@ -2943,12 +3240,16 @@
         "targetAmount": 9350,
         "completionRate": 0.835936
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 30152
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 30152
         }
       ]
@@ -2967,8 +3268,8 @@
         "tier1888": 5
       },
       "ranking": {
-        "cumulativeChallenge": 47,
-        "todayChallenge": 18
+        "cumulativeChallenge": 48,
+        "todayChallenge": 21
       },
       "cumulative": {
         "amount": 19196,
@@ -2994,12 +3295,16 @@
         "targetAmount": 5998,
         "completionRate": 1.188396
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19196
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 19196
         }
       ]
@@ -3018,7 +3323,7 @@
         "tier1888": 7
       },
       "ranking": {
-        "cumulativeChallenge": 48,
+        "cumulativeChallenge": 49,
         "todayChallenge": 124
       },
       "cumulative": {
@@ -3045,12 +3350,16 @@
         "targetAmount": 6582,
         "completionRate": 0.104527
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 20572
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 20572
         }
       ]
@@ -3069,8 +3378,8 @@
         "tier1888": 7
       },
       "ranking": {
-        "cumulativeChallenge": 49,
-        "todayChallenge": 70
+        "cumulativeChallenge": 50,
+        "todayChallenge": 73
       },
       "cumulative": {
         "amount": 14592,
@@ -3096,13 +3405,72 @@
         "targetAmount": 4671,
         "completionRate": 0.551488
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 14592
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 14592
+        }
+      ]
+    },
+    {
+      "id": "store-13baj0k",
+      "name": "宁德寿宁廊桥店",
+      "regionId": "region-1b3zsou",
+      "regionName": "闽东二区",
+      "status": "未完成对赌目标",
+      "bonus": 78,
+      "tierOrders": {
+        "tier388": 2,
+        "tier688": 13,
+        "tier1288": 2,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 51,
+        "todayChallenge": 19
+      },
+      "cumulative": {
+        "amount": 19848,
+        "orderCount": 21,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.164063,
+        "targets": {
+          "bet": 94195,
+          "drive": 101509,
+          "challenge": 116135
+        },
+        "rates": {
+          "bet": 0.210712,
+          "drive": 0.195529,
+          "challenge": 0.170905
+        }
+      },
+      "today": {
+        "amount": 7816,
+        "orderCount": 7,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 1,
+        "targetAmount": 6436,
+        "completionRate": 1.214419
+      },
+      "delta30": 688,
+      "todayDelta30": 688,
+      "rankChange30": 2,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19160
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 19848
         }
       ]
     },
@@ -3120,7 +3488,7 @@
         "tier1888": 5
       },
       "ranking": {
-        "cumulativeChallenge": 50,
+        "cumulativeChallenge": 52,
         "todayChallenge": 116
       },
       "cumulative": {
@@ -3147,12 +3515,16 @@
         "targetAmount": 5572,
         "completionRate": 0.193108
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -2,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 17008
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 17008
         }
       ]
@@ -3171,8 +3543,8 @@
         "tier1888": 9
       },
       "ranking": {
-        "cumulativeChallenge": 51,
-        "todayChallenge": 45
+        "cumulativeChallenge": 53,
+        "todayChallenge": 46
       },
       "cumulative": {
         "amount": 37120,
@@ -3198,12 +3570,16 @@
         "targetAmount": 12204,
         "completionRate": 0.831203
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -2,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 37120
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 37120
         }
       ]
@@ -3222,8 +3598,8 @@
         "tier1888": 4
       },
       "ranking": {
-        "cumulativeChallenge": 52,
-        "todayChallenge": 37
+        "cumulativeChallenge": 54,
+        "todayChallenge": 38
       },
       "cumulative": {
         "amount": 12244,
@@ -3249,64 +3625,17 @@
         "targetAmount": 4036,
         "completionRate": 0.92666
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -2,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 12244
-        }
-      ]
-    },
-    {
-      "id": "store-13baj0k",
-      "name": "宁德寿宁廊桥店",
-      "regionId": "region-1b3zsou",
-      "regionName": "闽东二区",
-      "status": "未完成对赌目标",
-      "bonus": 76,
-      "tierOrders": {
-        "tier388": 2,
-        "tier688": 12,
-        "tier1288": 2,
-        "tier1888": 4
-      },
-      "ranking": {
-        "cumulativeChallenge": 53,
-        "todayChallenge": 20
-      },
-      "cumulative": {
-        "amount": 19160,
-        "orderCount": 20,
-        "targetOrderCount": 128,
-        "orderCompletionRate": 0.15625,
-        "targets": {
-          "bet": 94195,
-          "drive": 101509,
-          "challenge": 116135
         },
-        "rates": {
-          "bet": 0.203408,
-          "drive": 0.188752,
-          "challenge": 0.16498
-        }
-      },
-      "today": {
-        "amount": 7128,
-        "orderCount": 6,
-        "targetOrderCount": 7,
-        "orderCompletionRate": 0.857143,
-        "targetAmount": 6436,
-        "completionRate": 1.10752
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 19160
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 12244
         }
       ]
     },
@@ -3324,8 +3653,8 @@
         "tier1888": 4
       },
       "ranking": {
-        "cumulativeChallenge": 54,
-        "todayChallenge": 72
+        "cumulativeChallenge": 55,
+        "todayChallenge": 75
       },
       "cumulative": {
         "amount": 11680,
@@ -3351,12 +3680,16 @@
         "targetAmount": 3795,
         "completionRate": 0.543874
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11680
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 11680
         }
       ]
@@ -3375,8 +3708,8 @@
         "tier1888": 6
       },
       "ranking": {
-        "cumulativeChallenge": 55,
-        "todayChallenge": 83
+        "cumulativeChallenge": 56,
+        "todayChallenge": 86
       },
       "cumulative": {
         "amount": 15456,
@@ -3402,12 +3735,16 @@
         "targetAmount": 5340,
         "completionRate": 0.482397
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15456
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 15456
         }
       ]
@@ -3426,8 +3763,8 @@
         "tier1888": 7
       },
       "ranking": {
-        "cumulativeChallenge": 56,
-        "todayChallenge": 40
+        "cumulativeChallenge": 57,
+        "todayChallenge": 41
       },
       "cumulative": {
         "amount": 24840,
@@ -3453,12 +3790,16 @@
         "targetAmount": 8768,
         "completionRate": 0.911496
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 24840
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 24840
         }
       ]
@@ -3477,7 +3818,7 @@
         "tier1888": 1
       },
       "ranking": {
-        "cumulativeChallenge": 57,
+        "cumulativeChallenge": 58,
         "todayChallenge": 56
       },
       "cumulative": {
@@ -3504,12 +3845,16 @@
         "targetAmount": 3915,
         "completionRate": 0.702937
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11044
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 11044
         }
       ]
@@ -3528,8 +3873,8 @@
         "tier1888": 2
       },
       "ranking": {
-        "cumulativeChallenge": 58,
-        "todayChallenge": 2
+        "cumulativeChallenge": 59,
+        "todayChallenge": 3
       },
       "cumulative": {
         "amount": 11696,
@@ -3555,12 +3900,16 @@
         "targetAmount": 4197,
         "completionRate": 2.089111
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11696
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 11696
         }
       ]
@@ -3579,8 +3928,8 @@
         "tier1888": 7
       },
       "ranking": {
-        "cumulativeChallenge": 59,
-        "todayChallenge": 35
+        "cumulativeChallenge": 60,
+        "todayChallenge": 37
       },
       "cumulative": {
         "amount": 22072,
@@ -3606,64 +3955,17 @@
         "targetAmount": 8028,
         "completionRate": 0.940708
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 22072
-        }
-      ]
-    },
-    {
-      "id": "store-1rkfzwq",
-      "name": "南平建阳万晟皇庭店",
-      "regionId": "region-od1ly6",
-      "regionName": "闽北区域",
-      "status": "未完成对赌目标",
-      "bonus": 50,
-      "tierOrders": {
-        "tier388": 3,
-        "tier688": 7,
-        "tier1288": 1,
-        "tier1888": 3
-      },
-      "ranking": {
-        "cumulativeChallenge": 60,
-        "todayChallenge": 46
-      },
-      "cumulative": {
-        "amount": 12932,
-        "orderCount": 14,
-        "targetOrderCount": 95,
-        "orderCompletionRate": 0.147368,
-        "targets": {
-          "bet": 69422,
-          "drive": 74812,
-          "challenge": 85592
         },
-        "rates": {
-          "bet": 0.186281,
-          "drive": 0.17286,
-          "challenge": 0.151089
-        }
-      },
-      "today": {
-        "amount": 3828,
-        "orderCount": 6,
-        "targetOrderCount": 5,
-        "orderCompletionRate": 1.2,
-        "targetAmount": 4743,
-        "completionRate": 0.807084
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 12932
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 22072
         }
       ]
     },
@@ -3682,7 +3984,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 61,
-        "todayChallenge": 103
+        "todayChallenge": 104
       },
       "cumulative": {
         "amount": 14520,
@@ -3708,12 +4010,16 @@
         "targetAmount": 5931,
         "completionRate": 0.29742
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14520
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 14520
         }
       ]
@@ -3733,7 +4039,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 62,
-        "todayChallenge": 43
+        "todayChallenge": 44
       },
       "cumulative": {
         "amount": 12720,
@@ -3759,12 +4065,16 @@
         "targetAmount": 4781,
         "completionRate": 0.845012
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 12720
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 12720
         }
       ]
@@ -3810,12 +4120,16 @@
         "targetAmount": 4064,
         "completionRate": 0.80315
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10692
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 10692
         }
       ]
@@ -3835,7 +4149,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 64,
-        "todayChallenge": 33
+        "todayChallenge": 35
       },
       "cumulative": {
         "amount": 13444,
@@ -3861,12 +4175,16 @@
         "targetAmount": 5136,
         "completionRate": 0.961838
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13444
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 13444
         }
       ]
@@ -3886,7 +4204,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 65,
-        "todayChallenge": 79
+        "todayChallenge": 82
       },
       "cumulative": {
         "amount": 20872,
@@ -3912,12 +4230,16 @@
         "targetAmount": 7988,
         "completionRate": 0.494742
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 20872
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 20872
         }
       ]
@@ -3963,12 +4285,16 @@
         "targetAmount": 8853,
         "completionRate": 1.702022
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 22760
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 22760
         }
       ]
@@ -3988,7 +4314,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 67,
-        "todayChallenge": 30
+        "todayChallenge": 33
       },
       "cumulative": {
         "amount": 5804,
@@ -4014,12 +4340,16 @@
         "targetAmount": 2295,
         "completionRate": 0.991721
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 5804
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 5804
         }
       ]
@@ -4039,7 +4369,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 68,
-        "todayChallenge": 73
+        "todayChallenge": 76
       },
       "cumulative": {
         "amount": 8380,
@@ -4065,12 +4395,16 @@
         "targetAmount": 3340,
         "completionRate": 0.528144
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 8380
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 8380
         }
       ]
@@ -4116,12 +4450,16 @@
         "targetAmount": 7595,
         "completionRate": 0.678341
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 18896
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 18896
         }
       ]
@@ -4167,12 +4505,16 @@
         "targetAmount": 5043,
         "completionRate": 0.237954
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 12492
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 12492
         }
       ]
@@ -4192,7 +4534,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 71,
-        "todayChallenge": 68
+        "todayChallenge": 71
       },
       "cumulative": {
         "amount": 10992,
@@ -4218,12 +4560,16 @@
         "targetAmount": 4440,
         "completionRate": 0.58018
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10992
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 10992
         }
       ]
@@ -4243,7 +4589,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 72,
-        "todayChallenge": 41
+        "todayChallenge": 42
       },
       "cumulative": {
         "amount": 32268,
@@ -4269,13 +4615,72 @@
         "targetAmount": 13271,
         "completionRate": 0.900008
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 32268
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 32268
+        }
+      ]
+    },
+    {
+      "id": "store-1vvk11r",
+      "name": "莆田秀屿万达店",
+      "regionId": "region-2qwevo",
+      "regionName": "莆田区域",
+      "status": "未完成对赌目标",
+      "bonus": 80,
+      "tierOrders": {
+        "tier388": 15,
+        "tier688": 12,
+        "tier1288": 1,
+        "tier1888": 5
+      },
+      "ranking": {
+        "cumulativeChallenge": 73,
+        "todayChallenge": 95
+      },
+      "cumulative": {
+        "amount": 24804,
+        "orderCount": 33,
+        "targetOrderCount": 213,
+        "orderCompletionRate": 0.15493,
+        "targets": {
+          "bet": 152793,
+          "drive": 164656,
+          "challenge": 188381
+        },
+        "rates": {
+          "bet": 0.162337,
+          "drive": 0.150641,
+          "challenge": 0.131669
+        }
+      },
+      "today": {
+        "amount": 3916,
+        "orderCount": 7,
+        "targetOrderCount": 12,
+        "orderCompletionRate": 0.583333,
+        "targetAmount": 10439,
+        "completionRate": 0.375132
+      },
+      "delta30": 1076,
+      "todayDelta30": 1076,
+      "rankChange30": 2,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 23728
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 24804
         }
       ]
     },
@@ -4293,8 +4698,8 @@
         "tier1888": 5
       },
       "ranking": {
-        "cumulativeChallenge": 73,
-        "todayChallenge": 98
+        "cumulativeChallenge": 74,
+        "todayChallenge": 99
       },
       "cumulative": {
         "amount": 19372,
@@ -4320,13 +4725,72 @@
         "targetAmount": 8482,
         "completionRate": 0.324452
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 19372
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 19372
+        }
+      ]
+    },
+    {
+      "id": "store-prrihr",
+      "name": "龙岩新罗中山路旗舰店",
+      "regionId": "region-1ipya1f",
+      "regionName": "闽西二区",
+      "status": "未完成对赌目标",
+      "bonus": 58,
+      "tierOrders": {
+        "tier388": 4,
+        "tier688": 6,
+        "tier1288": 1,
+        "tier1888": 4
+      },
+      "ranking": {
+        "cumulativeChallenge": 75,
+        "todayChallenge": 89
+      },
+      "cumulative": {
+        "amount": 14520,
+        "orderCount": 15,
+        "targetOrderCount": 128,
+        "orderCompletionRate": 0.117188,
+        "targets": {
+          "bet": 93156,
+          "drive": 100389,
+          "challenge": 114854
+        },
+        "rates": {
+          "bet": 0.155868,
+          "drive": 0.144637,
+          "challenge": 0.126421
+        }
+      },
+      "today": {
+        "amount": 2840,
+        "orderCount": 5,
+        "targetOrderCount": 7,
+        "orderCompletionRate": 0.714286,
+        "targetAmount": 6365,
+        "completionRate": 0.44619
+      },
+      "delta30": 388,
+      "todayDelta30": 388,
+      "rankChange30": 4,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14132
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 14520
         }
       ]
     },
@@ -4344,7 +4808,7 @@
         "tier1888": 3
       },
       "ranking": {
-        "cumulativeChallenge": 74,
+        "cumulativeChallenge": 76,
         "todayChallenge": 48
       },
       "cumulative": {
@@ -4371,64 +4835,17 @@
         "targetAmount": 4636,
         "completionRate": 0.787748
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -2,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 10568
-        }
-      ]
-    },
-    {
-      "id": "store-1vvk11r",
-      "name": "莆田秀屿万达店",
-      "regionId": "region-2qwevo",
-      "regionName": "莆田区域",
-      "status": "未完成对赌目标",
-      "bonus": 78,
-      "tierOrders": {
-        "tier388": 14,
-        "tier688": 11,
-        "tier1288": 1,
-        "tier1888": 5
-      },
-      "ranking": {
-        "cumulativeChallenge": 75,
-        "todayChallenge": 107
-      },
-      "cumulative": {
-        "amount": 23728,
-        "orderCount": 31,
-        "targetOrderCount": 213,
-        "orderCompletionRate": 0.14554,
-        "targets": {
-          "bet": 152793,
-          "drive": 164656,
-          "challenge": 188381
         },
-        "rates": {
-          "bet": 0.155295,
-          "drive": 0.144107,
-          "challenge": 0.125958
-        }
-      },
-      "today": {
-        "amount": 2840,
-        "orderCount": 5,
-        "targetOrderCount": 12,
-        "orderCompletionRate": 0.416667,
-        "targetAmount": 10439,
-        "completionRate": 0.272057
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 23728
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 10568
         }
       ]
     },
@@ -4446,8 +4863,8 @@
         "tier1888": 5
       },
       "ranking": {
-        "cumulativeChallenge": 76,
-        "todayChallenge": 81
+        "cumulativeChallenge": 77,
+        "todayChallenge": 84
       },
       "cumulative": {
         "amount": 10516,
@@ -4473,12 +4890,16 @@
         "targetAmount": 4679,
         "completionRate": 0.486429
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10516
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 10516
         }
       ]
@@ -4497,8 +4918,8 @@
         "tier1888": 5
       },
       "ranking": {
-        "cumulativeChallenge": 77,
-        "todayChallenge": 67
+        "cumulativeChallenge": 78,
+        "todayChallenge": 69
       },
       "cumulative": {
         "amount": 13868,
@@ -4524,12 +4945,16 @@
         "targetAmount": 6192,
         "completionRate": 0.589793
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13868
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 13868
         }
       ]
@@ -4548,8 +4973,8 @@
         "tier1888": 5
       },
       "ranking": {
-        "cumulativeChallenge": 78,
-        "todayChallenge": 85
+        "cumulativeChallenge": 79,
+        "todayChallenge": 87
       },
       "cumulative": {
         "amount": 17184,
@@ -4575,64 +5000,17 @@
         "targetAmount": 7723,
         "completionRate": 0.472873
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 17184
-        }
-      ]
-    },
-    {
-      "id": "store-prrihr",
-      "name": "龙岩新罗中山路旗舰店",
-      "regionId": "region-1ipya1f",
-      "regionName": "闽西二区",
-      "status": "未完成对赌目标",
-      "bonus": 58,
-      "tierOrders": {
-        "tier388": 3,
-        "tier688": 6,
-        "tier1288": 1,
-        "tier1888": 4
-      },
-      "ranking": {
-        "cumulativeChallenge": 79,
-        "todayChallenge": 92
-      },
-      "cumulative": {
-        "amount": 14132,
-        "orderCount": 14,
-        "targetOrderCount": 128,
-        "orderCompletionRate": 0.109375,
-        "targets": {
-          "bet": 93156,
-          "drive": 100389,
-          "challenge": 114854
         },
-        "rates": {
-          "bet": 0.151703,
-          "drive": 0.140772,
-          "challenge": 0.123043
-        }
-      },
-      "today": {
-        "amount": 2452,
-        "orderCount": 4,
-        "targetOrderCount": 7,
-        "orderCompletionRate": 0.571429,
-        "targetAmount": 6365,
-        "completionRate": 0.385232
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 14132
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 17184
         }
       ]
     },
@@ -4677,12 +5055,16 @@
         "targetAmount": 5203,
         "completionRate": 0.132231
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11504
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 11504
         }
       ]
@@ -4728,12 +5110,16 @@
         "targetAmount": 8906,
         "completionRate": 0.699304
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19672
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 19672
         }
       ]
@@ -4779,12 +5165,16 @@
         "targetAmount": 6492,
         "completionRate": 0.780037
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14308
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 14308
         }
       ]
@@ -4830,12 +5220,16 @@
         "targetAmount": 9078,
         "completionRate": 0.128222
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 19672
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 19672
         }
       ]
@@ -4855,7 +5249,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 84,
-        "todayChallenge": 100
+        "todayChallenge": 101
       },
       "cumulative": {
         "amount": 14608,
@@ -4881,12 +5275,16 @@
         "targetAmount": 6744,
         "completionRate": 0.319098
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14608
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 14608
         }
       ]
@@ -4932,13 +5330,72 @@
         "targetAmount": 5613,
         "completionRate": 0.741849
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 11980
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 11980
+        }
+      ]
+    },
+    {
+      "id": "store-1mrwx4q",
+      "name": "泉州石狮城东店",
+      "regionId": "region-1unc3aj",
+      "regionName": "闽南二区",
+      "status": "未完成对赌目标",
+      "bonus": 32,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 6,
+        "tier1288": 0,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 86,
+        "todayChallenge": 24
+      },
+      "cumulative": {
+        "amount": 9068,
+        "orderCount": 11,
+        "targetOrderCount": 89,
+        "orderCompletionRate": 0.123596,
+        "targets": {
+          "bet": 63282,
+          "drive": 68195,
+          "challenge": 78021
+        },
+        "rates": {
+          "bet": 0.143295,
+          "drive": 0.132972,
+          "challenge": 0.116225
+        }
+      },
+      "today": {
+        "amount": 4728,
+        "orderCount": 6,
+        "targetOrderCount": 5,
+        "orderCompletionRate": 1.2,
+        "targetAmount": 4324,
+        "completionRate": 1.093432
+      },
+      "delta30": 688,
+      "todayDelta30": 688,
+      "rankChange30": 7,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 8380
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 9068
         }
       ]
     },
@@ -4956,7 +5413,7 @@
         "tier1888": 3
       },
       "ranking": {
-        "cumulativeChallenge": 86,
+        "cumulativeChallenge": 87,
         "todayChallenge": 108
       },
       "cumulative": {
@@ -4983,12 +5440,16 @@
         "targetAmount": 6317,
         "completionRate": 0.265316
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13144
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 13144
         }
       ]
@@ -5007,7 +5468,7 @@
         "tier1888": 2
       },
       "ranking": {
-        "cumulativeChallenge": 87,
+        "cumulativeChallenge": 88,
         "todayChallenge": 53
       },
       "cumulative": {
@@ -5034,12 +5495,16 @@
         "targetAmount": 4997,
         "completionRate": 0.713228
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10268
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 10268
         }
       ]
@@ -5058,8 +5523,8 @@
         "tier1888": 5
       },
       "ranking": {
-        "cumulativeChallenge": 88,
-        "todayChallenge": 82
+        "cumulativeChallenge": 89,
+        "todayChallenge": 85
       },
       "cumulative": {
         "amount": 13392,
@@ -5085,12 +5550,16 @@
         "targetAmount": 6540,
         "completionRate": 0.485627
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 13392
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 13392
         }
       ]
@@ -5109,8 +5578,8 @@
         "tier1888": 6
       },
       "ranking": {
-        "cumulativeChallenge": 89,
-        "todayChallenge": 32
+        "cumulativeChallenge": 90,
+        "todayChallenge": 34
       },
       "cumulative": {
         "amount": 22036,
@@ -5136,12 +5605,16 @@
         "targetAmount": 10766,
         "completionRate": 0.965261
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 22036
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 22036
         }
       ]
@@ -5160,7 +5633,7 @@
         "tier1888": 4
       },
       "ranking": {
-        "cumulativeChallenge": 90,
+        "cumulativeChallenge": 91,
         "todayChallenge": 114
       },
       "cumulative": {
@@ -5187,12 +5660,16 @@
         "targetAmount": 5238,
         "completionRate": 0.205422
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10604
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 10604
         }
       ]
@@ -5211,7 +5688,7 @@
         "tier1888": 2
       },
       "ranking": {
-        "cumulativeChallenge": 91,
+        "cumulativeChallenge": 92,
         "todayChallenge": 113
       },
       "cumulative": {
@@ -5238,12 +5715,16 @@
         "targetAmount": 3315,
         "completionRate": 0.207541
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6528
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 6528
         }
       ]
@@ -5262,7 +5743,7 @@
         "tier1888": 3
       },
       "ranking": {
-        "cumulativeChallenge": 92,
+        "cumulativeChallenge": 93,
         "todayChallenge": 128
       },
       "cumulative": {
@@ -5289,64 +5770,17 @@
         "targetAmount": 5896,
         "completionRate": 0.065807
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 11556
-        }
-      ]
-    },
-    {
-      "id": "store-1mrwx4q",
-      "name": "泉州石狮城东店",
-      "regionId": "region-1unc3aj",
-      "regionName": "闽南二区",
-      "status": "未完成对赌目标",
-      "bonus": 30,
-      "tierOrders": {
-        "tier388": 3,
-        "tier688": 5,
-        "tier1288": 0,
-        "tier1888": 2
-      },
-      "ranking": {
-        "cumulativeChallenge": 93,
-        "todayChallenge": 36
-      },
-      "cumulative": {
-        "amount": 8380,
-        "orderCount": 10,
-        "targetOrderCount": 89,
-        "orderCompletionRate": 0.11236,
-        "targets": {
-          "bet": 63282,
-          "drive": 68195,
-          "challenge": 78021
         },
-        "rates": {
-          "bet": 0.132423,
-          "drive": 0.122883,
-          "challenge": 0.107407
-        }
-      },
-      "today": {
-        "amount": 4040,
-        "orderCount": 5,
-        "targetOrderCount": 5,
-        "orderCompletionRate": 1,
-        "targetAmount": 4324,
-        "completionRate": 0.93432
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 8380
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 11556
         }
       ]
     },
@@ -5365,7 +5799,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 94,
-        "todayChallenge": 23
+        "todayChallenge": 26
       },
       "cumulative": {
         "amount": 9632,
@@ -5391,12 +5825,16 @@
         "targetAmount": 5113,
         "completionRate": 1.076472
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9632
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 9632
         }
       ]
@@ -5416,7 +5854,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 95,
-        "todayChallenge": 99
+        "todayChallenge": 100
       },
       "cumulative": {
         "amount": 16496,
@@ -5442,12 +5880,16 @@
         "targetAmount": 9277,
         "completionRate": 0.3195
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 16496
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 16496
         }
       ]
@@ -5467,7 +5909,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 96,
-        "todayChallenge": 106
+        "todayChallenge": 107
       },
       "cumulative": {
         "amount": 11044,
@@ -5493,12 +5935,16 @@
         "targetAmount": 6225,
         "completionRate": 0.283373
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11044
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 11044
         }
       ]
@@ -5518,7 +5964,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 97,
-        "todayChallenge": 69
+        "todayChallenge": 72
       },
       "cumulative": {
         "amount": 8468,
@@ -5544,12 +5990,16 @@
         "targetAmount": 4780,
         "completionRate": 0.575732
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 8468
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 8468
         }
       ]
@@ -5595,12 +6045,16 @@
         "targetAmount": 6561,
         "completionRate": 0.196312
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11432
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 11432
         }
       ]
@@ -5620,7 +6074,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 99,
-        "todayChallenge": 78
+        "todayChallenge": 81
       },
       "cumulative": {
         "amount": 17732,
@@ -5646,12 +6100,16 @@
         "targetAmount": 10392,
         "completionRate": 0.504234
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 17732
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 17732
         }
       ]
@@ -5697,12 +6155,16 @@
         "targetAmount": 14608,
         "completionRate": 0.094195
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 24612
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 24612
         }
       ]
@@ -5722,7 +6184,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 101,
-        "todayChallenge": 89
+        "todayChallenge": 91
       },
       "cumulative": {
         "amount": 15896,
@@ -5748,12 +6210,16 @@
         "targetAmount": 9463,
         "completionRate": 0.417627
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15896
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 15896
         }
       ]
@@ -5773,7 +6239,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 102,
-        "todayChallenge": 75
+        "todayChallenge": 78
       },
       "cumulative": {
         "amount": 6316,
@@ -5799,13 +6265,72 @@
         "targetAmount": 3827,
         "completionRate": 0.516331
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 6316
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 6316
+        }
+      ]
+    },
+    {
+      "id": "store-193vre1",
+      "name": "漳州东山西埔店",
+      "regionId": "region-1wyuifr",
+      "regionName": "闽南一区",
+      "status": "未完成对赌目标",
+      "bonus": 36,
+      "tierOrders": {
+        "tier388": 1,
+        "tier688": 2,
+        "tier1288": 2,
+        "tier1888": 2
+      },
+      "ranking": {
+        "cumulativeChallenge": 103,
+        "todayChallenge": 61
+      },
+      "cumulative": {
+        "amount": 8116,
+        "orderCount": 7,
+        "targetOrderCount": 104,
+        "orderCompletionRate": 0.067308,
+        "targets": {
+          "bet": 72074,
+          "drive": 77670,
+          "challenge": 88862
+        },
+        "rates": {
+          "bet": 0.112606,
+          "drive": 0.104493,
+          "challenge": 0.091333
+        }
+      },
+      "today": {
+        "amount": 3264,
+        "orderCount": 3,
+        "targetOrderCount": 6,
+        "orderCompletionRate": 0.5,
+        "targetAmount": 4924,
+        "completionRate": 0.662876
+      },
+      "delta30": 1288,
+      "todayDelta30": 1288,
+      "rankChange30": 8,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6828
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 8116
         }
       ]
     },
@@ -5823,7 +6348,7 @@
         "tier1888": 2
       },
       "ranking": {
-        "cumulativeChallenge": 103,
+        "cumulativeChallenge": 104,
         "todayChallenge": 131
       },
       "cumulative": {
@@ -5850,12 +6375,16 @@
         "targetAmount": 7237,
         "completionRate": 0
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 11556
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 11556
         }
       ]
@@ -5874,8 +6403,8 @@
         "tier1888": 1
       },
       "ranking": {
-        "cumulativeChallenge": 104,
-        "todayChallenge": 102
+        "cumulativeChallenge": 105,
+        "todayChallenge": 103
       },
       "cumulative": {
         "amount": 9668,
@@ -5901,12 +6430,16 @@
         "targetAmount": 6094,
         "completionRate": 0.309813
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9668
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 9668
         }
       ]
@@ -5925,7 +6458,7 @@
         "tier1888": 1
       },
       "ranking": {
-        "cumulativeChallenge": 105,
+        "cumulativeChallenge": 106,
         "todayChallenge": 120
       },
       "cumulative": {
@@ -5952,12 +6485,16 @@
         "targetAmount": 4731,
         "completionRate": 0.145424
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7392
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 7392
         }
       ]
@@ -5976,8 +6513,8 @@
         "tier1888": 2
       },
       "ranking": {
-        "cumulativeChallenge": 106,
-        "todayChallenge": 34
+        "cumulativeChallenge": 107,
+        "todayChallenge": 36
       },
       "cumulative": {
         "amount": 7216,
@@ -6003,12 +6540,16 @@
         "targetAmount": 4709,
         "completionRate": 0.947972
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7216
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 7216
         }
       ]
@@ -6027,8 +6568,8 @@
         "tier1888": 0
       },
       "ranking": {
-        "cumulativeChallenge": 107,
-        "todayChallenge": 71
+        "cumulativeChallenge": 108,
+        "todayChallenge": 74
       },
       "cumulative": {
         "amount": 3740,
@@ -6054,12 +6595,16 @@
         "targetAmount": 2504,
         "completionRate": 0.549521
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 3740
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 3740
         }
       ]
@@ -6078,8 +6623,8 @@
         "tier1888": 0
       },
       "ranking": {
-        "cumulativeChallenge": 108,
-        "todayChallenge": 74
+        "cumulativeChallenge": 109,
+        "todayChallenge": 77
       },
       "cumulative": {
         "amount": 5892,
@@ -6105,12 +6650,16 @@
         "targetAmount": 4082,
         "completionRate": 0.527193
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 5892
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 5892
         }
       ]
@@ -6129,8 +6678,8 @@
         "tier1888": 5
       },
       "ranking": {
-        "cumulativeChallenge": 109,
-        "todayChallenge": 88
+        "cumulativeChallenge": 110,
+        "todayChallenge": 90
       },
       "cumulative": {
         "amount": 15244,
@@ -6156,12 +6705,16 @@
         "targetAmount": 10629,
         "completionRate": 0.419983
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 15244
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 15244
         }
       ]
@@ -6180,8 +6733,8 @@
         "tier1888": 2
       },
       "ranking": {
-        "cumulativeChallenge": 110,
-        "todayChallenge": 94
+        "cumulativeChallenge": 111,
+        "todayChallenge": 96
       },
       "cumulative": {
         "amount": 15384,
@@ -6207,64 +6760,17 @@
         "targetAmount": 10855,
         "completionRate": 0.364072
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 15384
-        }
-      ]
-    },
-    {
-      "id": "store-193vre1",
-      "name": "漳州东山西埔店",
-      "regionId": "region-1wyuifr",
-      "regionName": "闽南一区",
-      "status": "未完成对赌目标",
-      "bonus": 30,
-      "tierOrders": {
-        "tier388": 1,
-        "tier688": 2,
-        "tier1288": 1,
-        "tier1888": 2
-      },
-      "ranking": {
-        "cumulativeChallenge": 111,
-        "todayChallenge": 90
-      },
-      "cumulative": {
-        "amount": 6828,
-        "orderCount": 6,
-        "targetOrderCount": 104,
-        "orderCompletionRate": 0.057692,
-        "targets": {
-          "bet": 72074,
-          "drive": 77670,
-          "challenge": 88862
         },
-        "rates": {
-          "bet": 0.094736,
-          "drive": 0.08791,
-          "challenge": 0.076838
-        }
-      },
-      "today": {
-        "amount": 1976,
-        "orderCount": 2,
-        "targetOrderCount": 6,
-        "orderCompletionRate": 0.333333,
-        "targetAmount": 4924,
-        "completionRate": 0.4013
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 6828
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 15384
         }
       ]
     },
@@ -6309,12 +6815,16 @@
         "targetAmount": 7721,
         "completionRate": 0.756379
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10480
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 10480
         }
       ]
@@ -6334,7 +6844,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 113,
-        "todayChallenge": 91
+        "todayChallenge": 93
       },
       "cumulative": {
         "amount": 14008,
@@ -6360,12 +6870,16 @@
         "targetAmount": 10397,
         "completionRate": 0.388574
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 14008
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 14008
         }
       ]
@@ -6385,7 +6899,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 114,
-        "todayChallenge": 62
+        "todayChallenge": 63
       },
       "cumulative": {
         "amount": 7728,
@@ -6411,12 +6925,16 @@
         "targetAmount": 5809,
         "completionRate": 0.650026
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7728
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 7728
         }
       ]
@@ -6436,7 +6954,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 115,
-        "todayChallenge": 105
+        "todayChallenge": 106
       },
       "cumulative": {
         "amount": 10180,
@@ -6462,12 +6980,16 @@
         "targetAmount": 7835,
         "completionRate": 0.290491
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10180
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 10180
         }
       ]
@@ -6513,12 +7035,16 @@
         "targetAmount": 8307,
         "completionRate": 0.082822
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10568
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 10568
         }
       ]
@@ -6564,13 +7090,72 @@
         "targetAmount": 3308,
         "completionRate": 0.688029
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 4164
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 4164
+        }
+      ]
+    },
+    {
+      "id": "store-1av3cps",
+      "name": "福州连江万家城市广场店",
+      "regionId": "region-4cvvqb",
+      "regionName": "福州三区",
+      "status": "未完成对赌目标",
+      "bonus": 42,
+      "tierOrders": {
+        "tier388": 3,
+        "tier688": 6,
+        "tier1288": 0,
+        "tier1888": 3
+      },
+      "ranking": {
+        "cumulativeChallenge": 118,
+        "todayChallenge": 92
+      },
+      "cumulative": {
+        "amount": 10956,
+        "orderCount": 12,
+        "targetOrderCount": 181,
+        "orderCompletionRate": 0.066298,
+        "targets": {
+          "bet": 132304,
+          "drive": 142576,
+          "challenge": 163120
+        },
+        "rates": {
+          "bet": 0.082809,
+          "drive": 0.076843,
+          "challenge": 0.067165
+        }
+      },
+      "today": {
+        "amount": 3652,
+        "orderCount": 4,
+        "targetOrderCount": 10,
+        "orderCompletionRate": 0.4,
+        "targetAmount": 9039,
+        "completionRate": 0.404027
+      },
+      "delta30": 388,
+      "todayDelta30": 388,
+      "rankChange30": 2,
+      "trend": [
+        {
+          "at": "2026-08-06T15:18:38+08:00",
+          "amount": 10568
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 10956
         }
       ]
     },
@@ -6588,8 +7173,8 @@
         "tier1888": 0
       },
       "ranking": {
-        "cumulativeChallenge": 118,
-        "todayChallenge": 77
+        "cumulativeChallenge": 119,
+        "todayChallenge": 80
       },
       "cumulative": {
         "amount": 9032,
@@ -6615,12 +7200,16 @@
         "targetAmount": 7545,
         "completionRate": 0.507356
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9032
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 9032
         }
       ]
@@ -6639,7 +7228,7 @@
         "tier1888": 1
       },
       "ranking": {
-        "cumulativeChallenge": 119,
+        "cumulativeChallenge": 120,
         "todayChallenge": 121
       },
       "cumulative": {
@@ -6666,64 +7255,17 @@
         "targetAmount": 4886,
         "completionRate": 0.14081
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": -1,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
           "amount": 5716
-        }
-      ]
-    },
-    {
-      "id": "store-1av3cps",
-      "name": "福州连江万家城市广场店",
-      "regionId": "region-4cvvqb",
-      "regionName": "福州三区",
-      "status": "未完成对赌目标",
-      "bonus": 42,
-      "tierOrders": {
-        "tier388": 2,
-        "tier688": 6,
-        "tier1288": 0,
-        "tier1888": 3
-      },
-      "ranking": {
-        "cumulativeChallenge": 120,
-        "todayChallenge": 95
-      },
-      "cumulative": {
-        "amount": 10568,
-        "orderCount": 11,
-        "targetOrderCount": 181,
-        "orderCompletionRate": 0.060773,
-        "targets": {
-          "bet": 132304,
-          "drive": 142576,
-          "challenge": 163120
         },
-        "rates": {
-          "bet": 0.079877,
-          "drive": 0.074122,
-          "challenge": 0.064787
-        }
-      },
-      "today": {
-        "amount": 3264,
-        "orderCount": 3,
-        "targetOrderCount": 10,
-        "orderCompletionRate": 0.3,
-        "targetAmount": 9039,
-        "completionRate": 0.361102
-      },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
-      "trend": [
         {
-          "at": "2026-08-06T15:18:38+08:00",
-          "amount": 10568
+          "at": "2026-08-06T16:08:00+08:00",
+          "amount": 5716
         }
       ]
     },
@@ -6768,12 +7310,16 @@
         "targetAmount": 4400,
         "completionRate": 0.088182
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 5116
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 5116
         }
       ]
@@ -6793,7 +7339,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 122,
-        "todayChallenge": 65
+        "todayChallenge": 67
       },
       "cumulative": {
         "amount": 7604,
@@ -6819,12 +7365,16 @@
         "targetAmount": 6660,
         "completionRate": 0.625225
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7604
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 7604
         }
       ]
@@ -6870,12 +7420,16 @@
         "targetAmount": 5719,
         "completionRate": 0.188145
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6016
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 6016
         }
       ]
@@ -6921,12 +7475,16 @@
         "targetAmount": 6216,
         "completionRate": 0.221364
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 5716
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 5716
         }
       ]
@@ -6946,7 +7504,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 125,
-        "todayChallenge": 104
+        "todayChallenge": 105
       },
       "cumulative": {
         "amount": 6492,
@@ -6972,12 +7530,16 @@
         "targetAmount": 6717,
         "completionRate": 0.294179
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6492
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 6492
         }
       ]
@@ -6997,7 +7559,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 126,
-        "todayChallenge": 97
+        "todayChallenge": 98
       },
       "cumulative": {
         "amount": 9668,
@@ -7023,12 +7585,16 @@
         "targetAmount": 10060,
         "completionRate": 0.324453
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 9668
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 9668
         }
       ]
@@ -7074,12 +7640,16 @@
         "targetAmount": 8765,
         "completionRate": 0.044267
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 7816
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 7816
         }
       ]
@@ -7099,7 +7669,7 @@
       },
       "ranking": {
         "cumulativeChallenge": 128,
-        "todayChallenge": 96
+        "todayChallenge": 97
       },
       "cumulative": {
         "amount": 6404,
@@ -7125,12 +7695,16 @@
         "targetAmount": 7692,
         "completionRate": 0.334893
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 6404
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 6404
         }
       ]
@@ -7176,12 +7750,16 @@
         "targetAmount": 4822,
         "completionRate": 0.223144
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 4004
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 4004
         }
       ]
@@ -7227,12 +7805,16 @@
         "targetAmount": 4262,
         "completionRate": 0.161427
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 3264
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 3264
         }
       ]
@@ -7278,12 +7860,16 @@
         "targetAmount": 3312,
         "completionRate": 0
       },
-      "delta30": null,
-      "todayDelta30": null,
-      "rankChange30": null,
+      "delta30": 0,
+      "todayDelta30": 0,
+      "rankChange30": 0,
       "trend": [
         {
           "at": "2026-08-06T15:18:38+08:00",
+          "amount": 1764
+        },
+        {
+          "at": "2026-08-06T16:08:00+08:00",
           "amount": 1764
         }
       ]

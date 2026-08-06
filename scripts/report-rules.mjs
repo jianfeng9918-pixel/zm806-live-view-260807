@@ -45,6 +45,14 @@ export function findThirtyMinuteSnapshot(snapshots, timestamp) {
     .sort((a, b) => Math.abs(a.ageMinutes - 30) - Math.abs(b.ageMinutes - 30))[0]?.snapshot ?? null;
 }
 
+export function findLatestPriorSnapshot(snapshots, timestamp, maxAgeMinutes = 120) {
+  const current = Date.parse(timestamp);
+  return snapshots
+    .map((snapshot) => ({ snapshot, ageMinutes: (current - Date.parse(snapshot.generatedAt)) / 60000 }))
+    .filter(({ ageMinutes }) => ageMinutes > 0 && ageMinutes <= maxAgeMinutes)
+    .sort((a, b) => a.ageMinutes - b.ageMinutes)[0]?.snapshot ?? null;
+}
+
 export function differenceRate(official, calculated) {
   return official > 0 ? Math.abs(official - calculated) / official : calculated === 0 ? 0 : 1;
 }

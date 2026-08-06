@@ -123,6 +123,8 @@ type Report = {
   };
   summary: {
     deltaBasis: string;
+    comparisonMinutes: number | null;
+    comparisonFrom: string | null;
     fastestStoreIds: string[];
     attentionStoreIds: string[];
     completedRegionIds: string[];
@@ -219,7 +221,7 @@ export default function Prototype() {
               />
             ) : null}
             <footer className="report-footer">
-              <span>数据每30分钟同步 · 正式数据以BI快照为准</span>
+              <span>V1人工更新 · 建议每30分钟一次</span>
               <span>内部查看 · 不提供导出</span>
             </footer>
           </>
@@ -242,7 +244,7 @@ function ReportHeader({ report }: { report: Report }) {
             <span className="status-dot" />
             {formatTime(report.generatedAt)}更新
             <span aria-hidden="true">·</span>
-            {stale ? "数据已延迟" : `下次${nextHalfHour(report.generatedAt)}`}
+            {stale ? "数据已延迟" : "V1人工更新"}
           </p>
         </div>
         <span className="readonly-mark">内部只读</span>
@@ -329,6 +331,7 @@ function HeadquartersView({ report, mode, onNavigate }: {
   const completion = mode === "today" ? report.hq.today.completionRate : report.hq.cumulative.rates.challenge;
   const target = mode === "today" ? report.hq.today.targetAmount : report.hq.cumulative.targets.challenge;
   const delta = mode === "today" ? report.hq.todayDelta30 : report.hq.delta30;
+  const deltaLabel = comparisonWindowLabel(report.summary);
 
   return (
     <>
@@ -345,7 +348,7 @@ function HeadquartersView({ report, mode, onNavigate }: {
           </div>
         </div>
         <div className="hq-kpis">
-          <Kpi label="近30分钟" value={signedMoney(delta)} tone={delta == null || delta >= 0 ? "green" : "red"} />
+          <Kpi label={deltaLabel} value={signedMoney(delta)} tone={delta == null || delta >= 0 ? "green" : "red"} />
           <Kpi label="参与门店" value={`${report.hq.activeStoreCount}/${report.hq.storeCount}家`} />
           <Kpi label="距离目标" value={`¥${money(Math.max(target - amount, 0))}`} />
         </div>
@@ -369,6 +372,7 @@ function RegionAchievement({ report, onNavigate }: {
   const ranked = [...report.regions].sort((a, b) => b.today.completionRate - a.today.completionRate);
   const visible = expanded ? ranked : ranked.slice(0, 6);
   const noGrowth = report.summary.noGrowthRegionCount;
+  const deltaLabel = comparisonWindowLabel(report.summary);
 
   return (
     <section className="section-block region-achievement" data-testid="region-achievement">
@@ -384,7 +388,7 @@ function RegionAchievement({ report, onNavigate }: {
         <p>
           已达标 <strong>{completed.length}</strong> 个区域；最低为 <strong>{lowest?.name ?? "—"}</strong>；
           还差 <strong>¥{money(lowest ? Math.max(lowest.today.targetAmount - lowest.today.amount, 0) : 0)}</strong>；
-          近30分钟无增长 <strong>{noGrowth == null ? "待下次快照" : `${noGrowth}个区域`}</strong>。
+          {deltaLabel}无增长 <strong>{noGrowth == null ? "待下次快照" : `${noGrowth}个区域`}</strong>。
         </p>
       </div>
       <div className="region-callouts">
@@ -442,6 +446,7 @@ function RegionView({ report, region, mode, onNavigate }: {
   const completion = mode === "today" ? region.today.completionRate : region.cumulative.rates.challenge;
   const rank = mode === "today" ? region.ranking.todayChallenge : region.ranking.cumulativeChallenge;
   const delta = mode === "today" ? region.todayDelta30 : region.delta30;
+  const deltaLabel = comparisonWindowLabel(report.summary);
 
   return (
     <>
@@ -456,7 +461,7 @@ function RegionView({ report, region, mode, onNavigate }: {
           <div className="hero-rate"><strong>{percent(completion)}</strong><span>挑战目标达成率</span></div>
         </div>
         <div className="hq-kpis">
-          <Kpi label="近30分钟" value={signedMoney(delta)} tone={delta == null || delta >= 0 ? "green" : "red"} />
+          <Kpi label={deltaLabel} value={signedMoney(delta)} tone={delta == null || delta >= 0 ? "green" : "red"} />
           <Kpi label="目标" value={`¥${money(target)}`} />
           <Kpi label="目标差额" value={`¥${money(Math.max(target - amount, 0))}`} />
         </div>
@@ -481,6 +486,7 @@ function StoreView({ report, store, mode, onNavigate }: {
   const rank = mode === "today" ? store.ranking.todayChallenge : store.ranking.cumulativeChallenge;
   const delta = mode === "today" ? store.todayDelta30 : store.delta30;
   const target = mode === "today" ? store.today.targetAmount : store.cumulative.targets.challenge;
+  const deltaLabel = comparisonWindowLabel(report.summary);
 
   return (
     <>
@@ -494,7 +500,7 @@ function StoreView({ report, store, mode, onNavigate }: {
             <span className="hero-caption">{mode === "today" ? "今日" : "累计"}储值金额</span>
           </div>
           <div className="rank-display large">第<strong>{rank ?? "—"}</strong>名<small>/{report.hq.storeCount}家</small>
-            <p>近30分钟 <span>{signedMoney(delta)}</span>{store.rankChange30 ? ` · 排名上升${store.rankChange30}位` : ""}</p>
+            <p>{deltaLabel} <span>{signedMoney(delta)}</span>{store.rankChange30 ? ` · 排名上升${store.rankChange30}位` : ""}</p>
           </div>
         </div>
       </section>
@@ -585,6 +591,7 @@ function BattleBoards({ report, scopeStores, onNavigate, compact = false }: {
   onNavigate: (type: ScopeType, id: string | null) => void;
   compact?: boolean;
 }) {
+  const deltaLabel = comparisonWindowLabel(report.summary);
   const scopeIds = new Set(scopeStores.map((store) => store.id));
   const summaryFastest = report.summary.fastestStoreIds
     .map((id) => report.stores.find((store) => store.id === id))
@@ -606,7 +613,7 @@ function BattleBoards({ report, scopeStores, onNavigate, compact = false }: {
   return (
     <section className={compact ? "section-block battle-section compact-battle" : "section-block battle-section"}>
       <div className="section-title-row compact-title">
-        <h2>总部战况 <span>· 近30分钟</span></h2>
+        <h2>总部战况 <span>· {deltaLabel}</span></h2>
         <span className="today-total">全品牌今日储值 ¥{money(report.hq.today.amount)}</span>
       </div>
       <div className="battle-grid">
@@ -617,7 +624,7 @@ function BattleBoards({ report, scopeStores, onNavigate, compact = false }: {
               <b>{index + 1}</b><span>{store.name}</span><strong>{signedMoney(store.delta30)}</strong>
             </button>
           )) : (
-            <div className="waiting-delta"><ClockIcon /><span>等待下一次30分钟快照</span></div>
+            <div className="waiting-delta"><ClockIcon /><span>等待下一次人工更新</span></div>
           )}
         </div>
         <div className="battle-column attention">
@@ -689,7 +696,7 @@ function StoreDirectory({ report, stores, mode, onNavigate, title = "全部门�
           <select value={sortBy} onChange={(event) => setSortBy(event.target.value as typeof sortBy)} aria-label="门店排序">
             <option value="challenge">按挑战目标达成率</option>
             <option value="amount">按储值金额</option>
-            <option value="delta">按近30分钟增量</option>
+            <option value="delta">按{comparisonWindowLabel(report.summary)}增量</option>
           </select>
           <ChevronDownIcon />
         </div>
@@ -769,6 +776,12 @@ function signedMoney(value: number | null) {
   return `${value > 0 ? "+" : "−"}¥${money(Math.abs(value))}`;
 }
 
+function comparisonWindowLabel(summary: Report["summary"]) {
+  if (summary.comparisonMinutes == null) return "近30分钟";
+  if (summary.comparisonMinutes >= 20 && summary.comparisonMinutes <= 40) return "近30分钟";
+  return `近${Math.round(summary.comparisonMinutes)}分钟`;
+}
+
 function percent(value: number) {
   return `${(value * 100).toFixed(1)}%`;
 }
@@ -780,10 +793,4 @@ function compactMoney(value: number) {
 
 function formatTime(value: string) {
   return new Intl.DateTimeFormat("zh-CN", { timeZone: "Asia/Shanghai", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date(value));
-}
-
-function nextHalfHour(value: string) {
-  const date = new Date(value);
-  date.setMinutes(date.getMinutes() < 30 ? 30 : 60, 0, 0);
-  return formatTime(date.toISOString());
 }

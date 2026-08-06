@@ -49,7 +49,8 @@
 
 ## 摘要 `summary`
 
-- `deltaBasis`：`waiting-for-next-snapshot` 或 `snapshot-comparison`
+- `deltaBasis`：`waiting-for-next-snapshot`、`closest-snapshot-to-30-minutes` 或 `latest-available-snapshot`
+- `comparisonMinutes`、`comparisonFrom`：实际对比分钟数及基准快照时间；人工更新偏离30分钟时用于真实标注
 - `fastestStoreIds`：近30分钟增长最快3家门店ID
 - `attentionStoreIds`：重点督促3家门店ID
 - `completedRegionIds`：今日目标已达成区域ID
