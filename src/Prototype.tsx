@@ -8,6 +8,7 @@ import {
   ExclamationTriangleIcon,
   MagnifyingGlassIcon,
   RocketIcon,
+  StarFilledIcon,
 } from "@radix-ui/react-icons";
 import {
   CartesianGrid,
@@ -19,6 +20,13 @@ import {
   YAxis,
 } from "recharts";
 import { KeyboardInput, MobileScroll, useKeyboard } from "./mobile";
+import {
+  calculateOvertakeGap,
+  rankChangeForMode,
+  rankWithinScope,
+  type OvertakeResult,
+  type RankChanges30,
+} from "./ranking";
 
 type Mode = "today" | "cumulative";
 type ScopeType = "hq" | "region" | "store";
@@ -33,6 +41,7 @@ type SavedViewPreference = {
 type TargetSet = { bet: number; drive: number; challenge: number };
 type RateSet = { bet: number; drive: number; challenge: number };
 type TrendPoint = { at: string; amount: number };
+type BonusGoal = { label: string; targetAmount: number; totalBonus: number };
 
 type Store = {
   id: string;
@@ -41,6 +50,7 @@ type Store = {
   regionName: string;
   status: string | null;
   bonus: number;
+  bonusGoal?: BonusGoal;
   tierOrders: { tier388: number; tier688: number; tier1288: number; tier1888: number };
   ranking: { cumulativeChallenge: number | null; todayChallenge: number | null };
   cumulative: {
@@ -62,6 +72,7 @@ type Store = {
   delta30: number | null;
   todayDelta30: number | null;
   rankChange30: number | null;
+  rankChanges30?: RankChanges30;
   trend: TrendPoint[];
 };
 
@@ -70,6 +81,7 @@ type Region = {
   name: string;
   managerName: string | null;
   storeCount: number;
+  bonusGoal?: BonusGoal;
   ranking: { cumulativeChallenge: number | null; todayChallenge: number | null };
   cumulative: {
     amount: number;
@@ -87,6 +99,7 @@ type Region = {
   };
   delta30: number | null;
   todayDelta30: number | null;
+  rankChanges30?: RankChanges30;
   trend: TrendPoint[];
 };
 
@@ -318,21 +331,15 @@ function ScopeControls({
   return (
     <section className="scope-panel" aria-label="战报筛选">
       <div className="scope-panel-heading">
-        <div>
-          <h2>选择查看范围</h2>
-          <p>当前：<strong>{activeLabel}</strong></p>
-        </div>
-        <span>记住本机选择</span>
+        <p><span>正在查看</span><strong>{activeLabel}</strong></p>
+        <span>本机已记住</span>
       </div>
 
-      <div className="scope-step">
-        <label htmlFor="primary-scope-select">
-          <b>1</b>
-          <span>先选择总部或区域</span>
-        </label>
+      <div className={selectedRegion ? "scope-select-grid has-secondary" : "scope-select-grid"}>
         <div className="select-shell primary-select">
           <select
             id="primary-scope-select"
+            aria-label="1 先选择总部或区域"
             value={primaryValue}
             onChange={(event) => {
               if (event.target.value === "hq") onNavigate("hq", null);
@@ -348,17 +355,12 @@ function ScopeControls({
           </select>
           <ChevronDownIcon aria-hidden="true" />
         </div>
-      </div>
 
-      {selectedRegion ? (
-        <div className="scope-step secondary-step">
-          <label htmlFor="store-scope-select">
-            <b>2</b>
-            <span>再选择区域总览或门店</span>
-          </label>
+        {selectedRegion ? (
           <div className="select-shell secondary-select">
             <select
               id="store-scope-select"
+              aria-label="2 再选择区域总览或门店"
               value={secondaryValue}
               onChange={(event) => {
                 if (event.target.value === "region-overview") onNavigate("region", selectedRegion.id);
@@ -374,16 +376,11 @@ function ScopeControls({
             </select>
             <ChevronDownIcon aria-hidden="true" />
           </div>
-        </div>
-      ) : (
-        <p className="hq-scope-note">总部总览已选定，无需再选择门店</p>
-      )}
+        ) : null}
+      </div>
 
       <div className="mode-panel">
-        <div className="mode-heading">
-          <strong>数据口径</strong>
-          <span>点击按钮切换</span>
-        </div>
+        <strong className="mode-label">口径</strong>
         <div className="mode-switch" role="tablist" aria-label="数据口径">
           <button
             type="button"
@@ -393,7 +390,7 @@ function ScopeControls({
             onClick={() => onModeChange("today")}
           >
             <span>今日</span>
-            <small>当天进度</small>
+            <small>当天</small>
           </button>
           <button
             type="button"
@@ -447,7 +444,7 @@ function HeadquartersView({ report, mode, onNavigate }: {
       <RegionAchievement report={report} onNavigate={onNavigate} />
       <BattleBoards report={report} scopeStores={report.stores} onNavigate={onNavigate} />
       <TrendSection title="全品牌储值趋势" points={report.hq.trend} />
-      <StoreDirectory report={report} stores={report.stores} mode={mode} onNavigate={onNavigate} />
+      <StoreDirectory report={report} stores={report.stores} mode={mode} />
     </>
   );
 }
@@ -537,14 +534,20 @@ function RegionView({ report, region, mode, onNavigate }: {
   const rank = mode === "today" ? region.ranking.todayChallenge : region.ranking.cumulativeChallenge;
   const delta = mode === "today" ? region.todayDelta30 : region.delta30;
   const deltaLabel = comparisonWindowLabel(report.summary);
+  const rankChange = rankChangeForMode(region, mode);
+  const overtake = calculateOvertakeGap(report.regions, region.id, mode);
+  const championLabels = regionChampionLabels(region);
+  const rankComparison = rankingComparisonText(region.ranking.todayChallenge, region.ranking.cumulativeChallenge);
 
   return (
     <>
-      <section className="hero-card">
+      <section className={`hero-card entity-hero${championLabels.length ? " champion-hero" : ""}`}>
+        {championLabels.length ? <ChampionWatermark /> : null}
+        <ChampionStrip labels={championLabels} />
         <p className="eyebrow">区域视角 · {mode === "today" ? "今日" : "累计"}</p>
         <div className="entity-heading">
           <div><h2>{region.name}</h2><span className="region-tag">{region.storeCount}家门店</span></div>
-          <div className="rank-display">第<strong>{rank ?? "—"}</strong>名<small>/{report.regions.length}区</small></div>
+          <div className={rank === 1 ? "rank-display rank-leader" : "rank-display"}>第<strong>{rank ?? "—"}</strong>名<small>/{report.regions.length}区</small></div>
         </div>
         <div className="hero-heading compact">
           <div><strong className="hero-amount">¥ {money(amount)}</strong><span className="hero-caption">储值金额</span></div>
@@ -555,13 +558,23 @@ function RegionView({ report, region, mode, onNavigate }: {
           <Kpi label="目标" value={`¥${money(target)}`} />
           <Kpi label="目标差额" value={`¥${money(Math.max(target - amount, 0))}`} />
         </div>
+        <MotivationCard
+          championLabels={championLabels}
+          rank={rank}
+          rankChange={rankChange}
+          overtake={overtake}
+          overtakeLabel="上一名区域"
+          rankComparison={rankComparison}
+          deltaLabel={deltaLabel}
+          delta={delta}
+        />
       </section>
       {mode === "cumulative" ? (
-        <TargetProgressGrid amount={region.cumulative.amount} targets={region.cumulative.targets} rates={region.cumulative.rates} bonus={region.cumulative.bonus} />
+        <TargetProgressGrid amount={region.cumulative.amount} targets={region.cumulative.targets} rates={region.cumulative.rates} bonus={region.cumulative.bonus} bonusGoal={region.bonusGoal} />
       ) : null}
       <TrendSection title={`${region.name}储值趋势`} points={region.trend} />
       <BattleBoards report={report} scopeStores={stores} onNavigate={onNavigate} />
-      <StoreDirectory report={report} stores={stores} mode={mode} onNavigate={onNavigate} title={`${region.name}门店`} />
+      <StoreDirectory report={report} stores={stores} mode={mode} title={`${region.name}门店`} />
     </>
   );
 }
@@ -577,10 +590,20 @@ function StoreView({ report, store, mode, onNavigate }: {
   const delta = mode === "today" ? store.todayDelta30 : store.delta30;
   const target = mode === "today" ? store.today.targetAmount : store.cumulative.targets.challenge;
   const deltaLabel = comparisonWindowLabel(report.summary);
+  const regionStores = report.stores.filter((candidate) => candidate.regionId === store.regionId);
+  const regionalTodayRank = rankWithinScope(regionStores, store.id, "today");
+  const regionalCumulativeRank = rankWithinScope(regionStores, store.id, "cumulative");
+  const regionalRank = mode === "today" ? regionalTodayRank : regionalCumulativeRank;
+  const rankChange = rankChangeForMode(store, mode);
+  const overtake = calculateOvertakeGap(report.stores, store.id, mode);
+  const championLabels = storeChampionLabels(store, regionalTodayRank, regionalCumulativeRank);
+  const rankComparison = rankingComparisonText(store.ranking.todayChallenge, store.ranking.cumulativeChallenge);
 
   return (
     <>
-      <section className="store-hero">
+      <section className={`store-hero entity-hero${championLabels.length ? " champion-hero" : ""}`}>
+        {championLabels.length ? <ChampionWatermark /> : null}
+        <ChampionStrip labels={championLabels} />
         <div className="entity-heading">
           <div><h2>{store.name}</h2><button type="button" className="region-tag" onClick={() => onNavigate("region", store.regionId)}>{store.regionName}</button></div>
         </div>
@@ -589,13 +612,24 @@ function StoreView({ report, store, mode, onNavigate }: {
             <strong className="hero-amount">¥ {money(amount)}</strong>
             <span className="hero-caption">{mode === "today" ? "今日" : "累计"}储值金额</span>
           </div>
-          <div className="rank-display large">第<strong>{rank ?? "—"}</strong>名<small>/{report.hq.storeCount}家</small>
-            <p>{deltaLabel} <span>{signedMoney(delta)}</span>{store.rankChange30 ? ` · 排名上升${store.rankChange30}位` : ""}</p>
+          <div className={rank === 1 ? "rank-display large rank-leader" : "rank-display large"}>
+            <div>第<strong>{rank ?? "—"}</strong>名<small>/{report.hq.storeCount}家</small></div>
+            <span className="regional-rank-note">本区域第{regionalRank ?? "—"}名</span>
           </div>
         </div>
+        <MotivationCard
+          championLabels={championLabels}
+          rank={rank}
+          rankChange={rankChange}
+          overtake={overtake}
+          overtakeLabel="全国上一名"
+          rankComparison={rankComparison}
+          deltaLabel={deltaLabel}
+          delta={delta}
+        />
       </section>
 
-      <TargetProgressGrid amount={store.cumulative.amount} targets={store.cumulative.targets} rates={store.cumulative.rates} bonus={store.bonus} />
+      <TargetProgressGrid amount={store.cumulative.amount} targets={store.cumulative.targets} rates={store.cumulative.rates} bonus={store.bonus} bonusGoal={store.bonusGoal} />
 
       {mode === "today" ? (
         <section className="single-target-card">
@@ -608,16 +642,109 @@ function StoreView({ report, store, mode, onNavigate }: {
       <TrendSection title="近2小时储值走势" points={store.trend} comparison="本时段增长与区域同步" />
       <BattleBoards report={report} scopeStores={report.stores} onNavigate={onNavigate} compact />
       <StoreDetails store={store} mode={mode} />
-      <StoreDirectory report={report} stores={report.stores} mode={mode} onNavigate={onNavigate} selectedStoreId={store.id} />
+      <StoreDirectory report={report} stores={report.stores} mode={mode} selectedStoreId={store.id} />
     </>
   );
 }
 
-function TargetProgressGrid({ amount, targets, rates, bonus }: {
+function ChampionStrip({ labels }: { labels: string[] }) {
+  if (!labels.length) return null;
+  return (
+    <div className="champion-strip" aria-label={`冠军头衔：${labels.join("、")}`}>
+      <span className="champion-emblem"><StarFilledIcon /><b>冠军</b></span>
+      {labels.map((label) => (
+        <span className="champion-badge" key={label}>{label}</span>
+      ))}
+    </div>
+  );
+}
+
+function ChampionWatermark() {
+  return (
+    <img
+      className="champion-watermark"
+      src={`${import.meta.env.BASE_URL}brand/logo-zhoumapo.png`}
+      alt=""
+      aria-hidden="true"
+    />
+  );
+}
+
+function MotivationCard({
+  championLabels,
+  rank,
+  rankChange,
+  overtake,
+  overtakeLabel,
+  rankComparison,
+  deltaLabel,
+  delta,
+}: {
+  championLabels: string[];
+  rank: number | null;
+  rankChange: number | null;
+  overtake: OvertakeResult;
+  overtakeLabel: string;
+  rankComparison: string | null;
+  deltaLabel: string;
+  delta: number | null;
+}) {
+  const movement = rankMovementLabel(rankChange);
+  const tone = rankChange == null || rankChange === 0 ? "steady" : rankChange > 0 ? "rising" : "falling";
+  const primary = rank === 1
+    ? "当前领先，守住第1"
+    : overtake.status === "available" && overtake.amount != null
+      ? `再储值 ¥${money(overtake.amount)} 即可超越${overtakeLabel}`
+      : "暂时无法计算反超金额";
+
+  return (
+    <div className={`motivation-card ${championLabels.length ? "champion" : tone}`} role="status">
+      <div className="motivation-main">
+        <strong>{primary}</strong>
+        <span className={`movement-pill ${tone}`}>{movement}</span>
+      </div>
+      {rankComparison ? <p>{rankComparison}</p> : null}
+      <small>{deltaLabel}储值变化 {signedMoney(delta)}</small>
+    </div>
+  );
+}
+
+function regionChampionLabels(region: Region) {
+  const labels: string[] = [];
+  if (region.ranking.todayChallenge === 1) labels.push("全国区域今日冠军");
+  if (region.ranking.cumulativeChallenge === 1) labels.push("全国区域累计冠军");
+  return labels;
+}
+
+function storeChampionLabels(store: Store, regionalTodayRank: number | null, regionalCumulativeRank: number | null) {
+  const labels: string[] = [];
+  if (store.ranking.todayChallenge === 1) labels.push("全国今日冠军");
+  else if (regionalTodayRank === 1) labels.push(`${store.regionName}今日冠军`);
+  if (store.ranking.cumulativeChallenge === 1) labels.push("全国累计冠军");
+  else if (regionalCumulativeRank === 1) labels.push(`${store.regionName}累计冠军`);
+  return labels;
+}
+
+function rankMovementLabel(rankChange: number | null) {
+  if (rankChange == null) return "待下次快照";
+  if (rankChange > 0) return `上升${rankChange}名 · 势头正好`;
+  if (rankChange < 0) return `下降${Math.abs(rankChange)}名 · 稳住节奏`;
+  return "排名暂稳";
+}
+
+function rankingComparisonText(todayRank: number | null, cumulativeRank: number | null) {
+  if (todayRank == null || cumulativeRank == null) return null;
+  if (todayRank < cumulativeRank) return `今日比总进度领先${cumulativeRank - todayRank}名 · 保持节奏`;
+  if (todayRank > cumulativeRank) return `今日比总进度落后${todayRank - cumulativeRank}名 · 下一名就在前面`;
+  return "今日与总进度排名持平";
+}
+
+function TargetProgressGrid({ amount, targets, rates, bonus, bonusGoal }: {
   amount: number;
   targets: TargetSet;
   rates: RateSet;
   bonus: number;
+  bonusGoal?: BonusGoal;
 }) {
   const items = [
     { key: "bet", label: "对赌目标", target: targets.bet, value: rates.bet },
@@ -636,8 +763,48 @@ function TargetProgressGrid({ amount, targets, rates, bonus }: {
           </div>
         ))}
       </div>
-      <p className="bonus-line">当前奖金 <strong>¥{money(bonus)}</strong><span> · 累计储值 ¥{money(amount)}</span></p>
+      <BonusGoalSummary amount={amount} challengeTarget={targets.challenge} currentBonus={bonus} bonusGoal={bonusGoal} />
     </section>
+  );
+}
+
+function BonusGoalSummary({ amount, challengeTarget, currentBonus, bonusGoal }: {
+  amount: number;
+  challengeTarget: number;
+  currentBonus: number;
+  bonusGoal?: BonusGoal;
+}) {
+  const targetAmount = bonusGoal && Number.isFinite(bonusGoal.targetAmount) && bonusGoal.targetAmount > 0
+    ? bonusGoal.targetAmount
+    : challengeTarget;
+  const gap = Math.max(Math.ceil(targetAmount - amount), 0);
+  const hasOfficialBonusGoal = Boolean(
+    bonusGoal
+    && Number.isFinite(bonusGoal.totalBonus)
+    && bonusGoal.totalBonus >= currentBonus,
+  );
+  const remainingBonus = hasOfficialBonusGoal ? Math.max((bonusGoal?.totalBonus ?? 0) - currentBonus, 0) : null;
+
+  return (
+    <div className="bonus-goal-card">
+      <div className="bonus-earned">
+        <span>已获得奖金</span>
+        <strong>¥{money(currentBonus)}</strong>
+      </div>
+      <div className="bonus-goal-copy">
+        <span>{bonusGoal?.label ?? "冲刺挑战目标"}</span>
+        <strong>
+          {hasOfficialBonusGoal
+            ? `总计可拿 ¥${money(bonusGoal?.totalBonus ?? 0)}`
+            : gap > 0 ? `还差 ¥${money(gap)}` : "目标已完成"}
+        </strong>
+        <small>
+          {hasOfficialBonusGoal
+            ? remainingBonus && remainingBonus > 0 ? `奖金还可增加 ¥${money(remainingBonus)} · 再储值 ¥${money(gap)}` : "奖金目标已完成"
+            : "总奖金按实际储值档位实时累计"}
+        </small>
+      </div>
+    </div>
   );
 }
 
@@ -755,11 +922,10 @@ function StoreDetails({ store, mode }: { store: Store; mode: Mode }) {
   );
 }
 
-function StoreDirectory({ report, stores, mode, onNavigate, title = "全部门店", selectedStoreId }: {
+function StoreDirectory({ report, stores, mode, title = "全部门店", selectedStoreId }: {
   report: Report;
   stores: Store[];
   mode: Mode;
-  onNavigate: (type: ScopeType, id: string | null) => void;
   title?: string;
   selectedStoreId?: string;
 }) {
@@ -791,6 +957,7 @@ function StoreDirectory({ report, stores, mode, onNavigate, title = "全部门�
           <ChevronDownIcon />
         </div>
       </div>
+      <p className="directory-readonly-note">总表仅供浏览 · 切换门店请使用上方选择框</p>
       <label className="search-box" htmlFor={`store-search-${title}`}>
         <MagnifyingGlassIcon />
         <KeyboardInput
@@ -806,18 +973,17 @@ function StoreDirectory({ report, stores, mode, onNavigate, title = "全部门�
         {visible.map((store) => {
           const rank = mode === "today" ? store.ranking.todayChallenge : store.ranking.cumulativeChallenge;
           return (
-            <button
+            <div
               key={store.id}
-              type="button"
               className={store.id === selectedStoreId ? "store-row selected" : "store-row"}
-              onClick={() => onNavigate("store", store.id)}
+              aria-current={store.id === selectedStoreId ? "true" : undefined}
             >
               <span className={rank && rank <= 3 ? `rank-badge top-${rank}` : "rank-badge"}>{rank ?? "—"}</span>
               <span className="row-main"><strong>{store.name}</strong><small>{signedMoney(metricDelta(store, mode))}</small></span>
               <span className="region-cell">{store.regionName}</span>
               <span className="money-cell">¥{money(metricAmount(store, mode))}</span>
               <span className="rate-cell">{percent(metricCompletion(store, mode))}</span>
-            </button>
+            </div>
           );
         })}
       </div>
