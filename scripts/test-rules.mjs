@@ -7,6 +7,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import XLSX from "xlsx";
 import {
+  calculateRankChange,
   differenceRate,
   findLatestPriorSnapshot,
   findThirtyMinuteSnapshot,
@@ -56,6 +57,9 @@ assert.equal(findLatestPriorSnapshot([{ generatedAt: "2026-08-06T13:59:00+08:00"
 assert.equal(differenceRate(100, 98), 0.02);
 assert.equal(differenceRate(0, 0), 0);
 assert.equal(differenceRate(0, 1), 1);
+assert.equal(calculateRankChange(10, 7), 3, "排名数字减小应记为上升");
+assert.equal(calculateRankChange(7, 10), -3, "排名数字增大应记为下降");
+assert.equal(calculateRankChange(null, 10), null, "无可比排名时不得伪造变化");
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const reportPath = path.join(projectRoot, "public", "data", "report.json");
@@ -80,7 +84,7 @@ fs.rmSync(tempDir, { recursive: true, force: true });
 
 console.log(JSON.stringify({
   status: "passed",
-  cases: ["no-completed-region", "multiple-completed-regions", "zero-target", "tied-lowest", "manual-window-fallback", "failed-update-preserves-report"],
+  cases: ["no-completed-region", "multiple-completed-regions", "zero-target", "tied-lowest", "manual-window-fallback", "rank-change", "failed-update-preserves-report"],
 }, null, 2));
 
 function region(id, name, targetAmount, completionRate) {
