@@ -33,8 +33,9 @@
 - 身份：`id`、`name`、`managerName`、`storeCount`
 - 排名：`ranking.cumulativeChallenge`、`ranking.todayChallenge`
 - 累计：`cumulative.amount/targets/rates/bonus`
+- 可选奖金目标：`bonusGoal.label/targetAmount/totalBonus`；只有官方规则给出固定达标总奖金时才返回
 - 今日：`today.amount/orderCount/targetOrderCount/orderCompletionRate/targetAmount/completionRate`
-- 变化：`delta30`、`todayDelta30`、`trend[]`
+- 变化：`delta30`、`todayDelta30`、`rankChanges30.cumulativeChallenge`、`rankChanges30.todayChallenge`、`trend[]`
 
 第一阶段没有可靠区域经理字段时，`managerName` 必须为 `null`，页面只按区域督促。
 
@@ -42,10 +43,26 @@
 
 - 身份：`id`、`name`、`regionId`、`regionName`、`status`
 - 奖励：`bonus`、`tierOrders`
+- 可选奖金目标：`bonusGoal.label/targetAmount/totalBonus`；没有官方固定总奖金时必须省略
 - 排名：`ranking.cumulativeChallenge`、`ranking.todayChallenge`
 - 累计：`cumulative.amount/orderCount/targetOrderCount/orderCompletionRate/targets/rates`
 - 今日：`today.amount/orderCount/targetOrderCount/orderCompletionRate/targetAmount/completionRate`
-- 变化：`delta30`、`todayDelta30`、`rankChange30`、`trend[]`
+- 变化：`delta30`、`todayDelta30`、`rankChanges30.cumulativeChallenge`、`rankChanges30.todayChallenge`、`trend[]`
+- 兼容：`rankChange30` 暂时保留，等于 `rankChanges30.cumulativeChallenge`；新页面必须优先读取 `rankChanges30`
+
+`rankChanges30` 的数值为“上一次可比快照排名 − 当前排名”：正数表示上升，负数表示下降，`0` 表示持平，`null` 表示暂无可比快照。该字段为 V1 的向后兼容扩展，`schemaVersion` 仍为 `1`。
+
+`bonusGoal` 同样是可选兼容字段。第一阶段BI只提供已经获得的 `bonus`，没有“挑战目标100%时固定总奖金”，页面因此只显示“已获得奖金＋距离挑战目标金额”，并注明总奖金按实际储值档位累计；不得按当前客单或档位占比估算。技术中心确认固定规则后再返回例如：
+
+```json
+{
+  "bonusGoal": {
+    "label": "完成挑战目标",
+    "targetAmount": 116475,
+    "totalBonus": 1200
+  }
+}
+```
 
 ## 摘要 `summary`
 
