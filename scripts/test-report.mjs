@@ -31,6 +31,14 @@ for (const store of report.stores) {
   assert.ok(store.cumulative.targets.challenge >= 0);
   assert.ok(store.cumulative.rates.challenge >= 0);
   assert.ok(Number.isFinite(store.today.amount));
+  assert.ok(store.rankChanges30 && "todayChallenge" in store.rankChanges30, "门店应包含今日排名变化字段");
+  assert.ok("cumulativeChallenge" in store.rankChanges30, "门店应包含累计排名变化字段");
+  assert.equal(store.rankChange30, store.rankChanges30.cumulativeChallenge, "旧排名字段应与累计变化保持一致");
+}
+
+for (const region of report.regions) {
+  assert.ok(region.rankChanges30 && "todayChallenge" in region.rankChanges30, "区域应包含今日排名变化字段");
+  assert.ok("cumulativeChallenge" in region.rankChanges30, "区域应包含累计排名变化字段");
 }
 
 console.log(JSON.stringify({
