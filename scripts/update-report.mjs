@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import XLSX from "xlsx";
 import {
+  calculateRankChange,
   differenceRate,
   findLatestPriorSnapshot,
   findThirtyMinuteSnapshot,
@@ -35,7 +36,7 @@ await fs.mkdir(path.dirname(reportPath), { recursive: true });
 await fs.mkdir(snapshotDir, { recursive: true });
 
 if (!args.dryRun) {
-  await fs.writeFile(reportPath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  await fs.writeFile(reportPath, `${JSON.stringify(data)}\n`, "utf8");
   const snapshotPath = path.join(snapshotDir, `${generatedAt.replaceAll(":", "-")}.json`);
   await fs.writeFile(snapshotPath, `${JSON.stringify(toSnapshot(data), null, 2)}\n`, "utf8");
 }
@@ -132,6 +133,10 @@ function buildReport(wb, timestamp, sourceFile) {
       delta30: null,
       todayDelta30: null,
       rankChange30: null,
+      rankChanges30: {
+        cumulativeChallenge: null,
+        todayChallenge: null,
+      },
       trend: [],
     };
   });
@@ -184,6 +189,10 @@ function buildReport(wb, timestamp, sourceFile) {
       },
       delta30: null,
       todayDelta30: null,
+      rankChanges30: {
+        cumulativeChallenge: null,
+        todayChallenge: null,
+      },
       trend: [],
     };
   });
@@ -296,9 +305,11 @@ function applySnapshotComparisons(report, previous, history, isThirtyMinuteCompa
     if (prior) {
       store.delta30 = store.cumulative.amount - prior.cumulativeAmount;
       store.todayDelta30 = store.today.amount - prior.todayAmount;
-      store.rankChange30 = prior.cumulativeRank && store.ranking.cumulativeChallenge
-        ? prior.cumulativeRank - store.ranking.cumulativeChallenge
-        : null;
+      store.rankChanges30 = {
+        cumulativeChallenge: calculateRankChange(prior.cumulativeRank, store.ranking.cumulativeChallenge),
+        todayChallenge: calculateRankChange(prior.todayRank, store.ranking.todayChallenge),
+      };
+      store.rankChange30 = store.rankChanges30.cumulativeChallenge;
     }
     store.trend = chronological
       .map((snapshot) => {
@@ -313,6 +324,10 @@ function applySnapshotComparisons(report, previous, history, isThirtyMinuteCompa
     if (prior) {
       region.delta30 = region.cumulative.amount - prior.cumulativeAmount;
       region.todayDelta30 = region.today.amount - prior.todayAmount;
+      region.rankChanges30 = {
+        cumulativeChallenge: calculateRankChange(prior.cumulativeRank, region.ranking.cumulativeChallenge),
+        todayChallenge: calculateRankChange(prior.todayRank, region.ranking.todayChallenge),
+      };
     }
     region.trend = chronological
       .map((snapshot) => {
