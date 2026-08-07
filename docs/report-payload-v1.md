@@ -21,12 +21,24 @@
 ## 总部 `hq`
 
 - `storeCount`、`activeStoreCount`、`bonus`
+- `functional.departmentCount`
+- `functional.cumulative.amount/orderCount/targetAmount/completionRate`
+- `functional.today.amount`
 - `cumulative.amount/orderCount/targetOrderCount/orderCompletionRate`
 - `cumulative.targets.bet/drive/challenge`
 - `cumulative.rates.bet/drive/challenge`
 - `today.amount/orderCount/targetOrderCount/orderCompletionRate/targetAmount/completionRate`
 - `delta30`、`todayDelta30`：不可计算时为 `null`
 - `trend[]`：最近5个成功快照的 `{ at, amount }`
+
+总部金额采用“门店端＋职能端”口径，但职能不作为虚拟门店或区域：
+
+- `hq.cumulative.amount = source.reconciliation.cumulative.storeSum + functionalSum`
+- `hq.today.amount = source.reconciliation.today.storeSum + functionalSum`
+- 总部累计挑战目标包含职能目标；职能BI尚无每日目标，`hq.today.targetAmount` 仍是门店端每日目标。
+- `source.aggregationVersion = "store-plus-functional-v1"`；切换口径后的首个总部快照不与旧门店口径计算增量。
+- `source.reconciliation` 的今日／累计分项新增 `functionalSum` 与 `combinedSum`，累计同时用集团总计交叉校验。
+- 区域、门店、排名和督促榜仍完全使用门店端数据。
 
 ## 区域 `Region`
 
