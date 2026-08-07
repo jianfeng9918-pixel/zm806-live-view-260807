@@ -4,7 +4,7 @@
 
 在线访问：https://jianfeng9918-pixel.github.io/zhoumapo-806-battle-report/
 
-当前公开数据快照：2026-08-06 16:08（Asia/Shanghai），共 131 家门店、13 个区域。与15:18快照实际相隔49.4分钟，页面据实显示“近49分钟”，总部本时段新增储值 ¥14,696。
+当前交付包示例数据快照：2026-08-07 10:26（Asia/Shanghai），共 130 家门店、13 个区域，今日储值 ¥44,020、累计储值 ¥3,280,684。该快照仅用于页面与字段验证；正式上线后应由技术中心接口持续提供最新数据。
 
 ## 当前包含
 
@@ -33,12 +33,15 @@ npm run verify
 
 第一阶段不是无人值守刷新。每半小时由用户保持 BI 登录并通知 Codex 更新，Codex完成以下流程：
 
-1. 在 BI 的“批量导出 Excel”中只选择操作手册指定的5张战报表，取得包含所有门店的完整工作簿。
-2. 将工作簿保存到忽略上传的 `data/raw/`。
+1. 从看板15只导出操作手册指定的5张门店／区域表，再从看板16只导出2张职能／集团校验表。
+2. 将两份工作簿保存到忽略上传的 `data/raw/`。
 3. 运行解析命令，生成本地历史快照和公开 `report.json`：
 
    ```bash
-   npm run data:update -- --input data/raw/806-export-YYYYMMDD-HHmm.xlsx --generated-at YYYY-MM-DDTHH:mm:ss+08:00
+   npm run data:update -- \
+     --input data/raw/806-store-export-YYYYMMDD-HHmm.xlsx \
+     --functional-input data/raw/806-functional-export-YYYYMMDD-HHmm.xlsx \
+     --generated-at YYYY-MM-DDTHH:mm:ss+08:00
    ```
 
 4. 运行 `npm run verify`。成功后提交并推送；GitHub Actions 自动发布。
@@ -59,6 +62,8 @@ npm run verify
 字段定义见 [docs/report-payload-v1.md](docs/report-payload-v1.md)，视觉验收见 [design-qa.md](design-qa.md)。
 
 日华／技术中心同步 V1.1 时，请同时查看 [docs/日华接入变更说明_V1.1.md](docs/日华接入变更说明_V1.1.md)。
+
+本次完整交接摘要见 [docs/日华交接说明_20260807.md](docs/日华交接说明_20260807.md)。
 
 ## 数据公开边界
 
