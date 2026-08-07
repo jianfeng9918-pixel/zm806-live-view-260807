@@ -57,9 +57,37 @@ export function differenceRate(official, calculated) {
   return official > 0 ? Math.abs(official - calculated) / official : calculated === 0 ? 0 : 1;
 }
 
+export function aggregateHeadquartersAmounts({
+  storeCumulative,
+  storeToday,
+  functionalCumulative,
+  functionalToday,
+  groupCumulativeOfficial,
+}) {
+  const cumulativeAmount = finite(storeCumulative) + finite(functionalCumulative);
+  const todayAmount = finite(storeToday) + finite(functionalToday);
+  const groupDifferenceRate = finite(groupCumulativeOfficial) > 0
+    ? differenceRate(finite(groupCumulativeOfficial), cumulativeAmount)
+    : 0;
+
+  return {
+    cumulativeAmount,
+    todayAmount,
+    groupDifferenceRate,
+  };
+}
+
+export function isComparableHeadquartersSnapshot(snapshot) {
+  return snapshot?.hq?.aggregationVersion === "store-plus-functional-v1";
+}
+
 export function calculateRankChange(previousRank, currentRank) {
   if (!Number.isInteger(previousRank) || previousRank < 1 || !Number.isInteger(currentRank) || currentRank < 1) {
     return null;
   }
   return previousRank - currentRank;
+}
+
+function finite(value) {
+  return Number.isFinite(value) ? value : 0;
 }
