@@ -7,10 +7,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import XLSX from "xlsx";
 import {
+  aggregateHeadquartersAmounts,
   calculateRankChange,
   differenceRate,
   findLatestPriorSnapshot,
   findThirtyMinuteSnapshot,
+  isComparableHeadquartersSnapshot,
   selectAttentionStoreIds,
   selectCompletedRegionIds,
   selectFastestStoreIds,
@@ -61,6 +63,27 @@ assert.equal(calculateRankChange(10, 7), 3, "排名数字减小应记为上升")
 assert.equal(calculateRankChange(7, 10), -3, "排名数字增大应记为下降");
 assert.equal(calculateRankChange(null, 10), null, "无可比排名时不得伪造变化");
 
+const headquartersAggregation = aggregateHeadquartersAmounts({
+  storeCumulative: 3_710_596,
+  storeToday: 473_932,
+  functionalCumulative: 277_004,
+  functionalToday: 26_976,
+  groupCumulativeOfficial: 3_986_912,
+});
+assert.equal(headquartersAggregation.cumulativeAmount, 3_987_600, "总部累计必须为门店端加职能端");
+assert.equal(headquartersAggregation.todayAmount, 500_908, "总部今日必须为门店端加职能端");
+assert.ok(headquartersAggregation.groupDifferenceRate < 0.01, "同期导出的小时间差不应触发错误告警");
+assert.equal(
+  isComparableHeadquartersSnapshot({ hq: { aggregationVersion: "store-plus-functional-v1" } }),
+  true,
+  "新口径快照应允许总部增量比较",
+);
+assert.equal(
+  isComparableHeadquartersSnapshot({ hq: { cumulativeAmount: 1 } }),
+  false,
+  "旧门店口径快照不得与新总部口径直接比较",
+);
+
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const reportPath = path.join(projectRoot, "public", "data", "report.json");
 const beforeHash = sha256(reportPath);
@@ -84,7 +107,7 @@ fs.rmSync(tempDir, { recursive: true, force: true });
 
 console.log(JSON.stringify({
   status: "passed",
-  cases: ["no-completed-region", "multiple-completed-regions", "zero-target", "tied-lowest", "manual-window-fallback", "rank-change", "failed-update-preserves-report"],
+  cases: ["no-completed-region", "multiple-completed-regions", "zero-target", "tied-lowest", "manual-window-fallback", "rank-change", "functional-hq-aggregation", "snapshot-migration", "failed-update-preserves-report"],
 }, null, 2));
 
 function region(id, name, targetAmount, completionRate) {
