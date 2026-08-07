@@ -3,10 +3,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import XLSX from "xlsx";
 import {
+  aggregateHeadquartersAmounts,
   calculateRankChange,
   differenceRate,
   findLatestPriorSnapshot,
   findThirtyMinuteSnapshot,
+  isComparableHeadquartersSnapshot,
   selectAttentionStoreIds,
   selectCompletedRegionIds,
   selectFastestStoreIds,
@@ -15,18 +17,27 @@ import {
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDir, "..");
-const rawDir = path.join(projectRoot, "data", "raw");
 const snapshotDir = path.join(projectRoot, "data", "snapshots");
 const reportPath = path.join(projectRoot, "public", "data", "report.json");
 const args = parseArgs(process.argv.slice(2));
 
-const inputPath = args.input
-  ? path.resolve(projectRoot, args.input)
-  : await findLatestWorkbook(rawDir);
+if (!args.input || !args.functionalInput) {
+  throw new Error("请同时使用 --input 和 --functional-input 指定门店区域与职能BI导出文件");
+}
+
+const inputPath = path.resolve(projectRoot, args.input);
+const functionalInputPath = path.resolve(projectRoot, args.functionalInput);
 const generatedAt = args.generatedAt ?? shanghaiIso(new Date());
 
 const workbook = XLSX.readFile(inputPath, { cellDates: true });
-const data = buildReport(workbook, generatedAt, path.basename(inputPath));
+const functionalWorkbook = XLSX.readFile(functionalInputPath, { cellDates: true });
+const data = buildReport(
+  workbook,
+  functionalWorkbook,
+  generatedAt,
+  path.basename(inputPath),
+  path.basename(functionalInputPath),
+);
 const previousSnapshots = await readSnapshots(snapshotDir);
 const thirtyMinuteSnapshot = findThirtyMinuteSnapshot(previousSnapshots, generatedAt);
 const previous = thirtyMinuteSnapshot ?? findLatestPriorSnapshot(previousSnapshots, generatedAt);
@@ -43,6 +54,7 @@ if (!args.dryRun) {
 
 console.log(JSON.stringify({
   input: path.relative(projectRoot, inputPath),
+  functionalInput: path.relative(projectRoot, functionalInputPath),
   output: path.relative(projectRoot, reportPath),
   generatedAt,
   stores: data.stores.length,
@@ -54,21 +66,29 @@ console.log(JSON.stringify({
   status: data.source.reconciliation.status,
 }, null, 2));
 
-function buildReport(wb, timestamp, sourceFile) {
+function buildReport(wb, functionalWb, timestamp, sourceFile, functionalSourceFile) {
   const cumulativeRows = rows(wb, "门店_总储值目标达成率");
   const todayRows = rows(wb, "门店_今日目标达成率排行");
   const targetRows = rows(wb, "门店_目标达成与奖金");
   const regionTodayRows = rows(wb, "销售地区_今日储值目标达成率");
   const regionTargetRows = rows(wb, "销售地区_目标达成与奖金");
+  const functionalRows = rows(functionalWb, "职能部门_储值目标达成率");
+  const groupRows = rows(functionalWb, "集团总目标_2026806");
 
   requireRows("门店_总储值目标达成率", cumulativeRows, 3);
   requireRows("门店_今日目标达成率排行", todayRows, 3);
   requireRows("门店_目标达成与奖金", targetRows, 3);
   requireRows("销售地区_今日储值目标达成率", regionTodayRows, 3);
   requireRows("销售地区_目标达成与奖金", regionTargetRows, 3);
+  requireRows("职能部门_储值目标达成率", functionalRows, 10);
+  requireRows("集团总目标_2026806", groupRows, 4);
 
   const hqCumulativeRow = cumulativeRows.find((row) => row[0] === "总计");
   const hqTodayRow = todayRows.find((row) => row[0] === "总计");
+  const functionalTotalRow = functionalRows.find((row) => row[0] === "总计");
+  const groupTotalRow = groupRows.find((row) => row[0] === "总计");
+  const groupStoreRow = groupRows.find((row) => row[0] === "门店端");
+  const groupFunctionalRow = groupRows.find((row) => row[0] === "职能端");
   const cumulativeRank = rankMap(cumulativeRows, 2);
   const todayRank = rankMap(todayRows, 2);
 
@@ -199,11 +219,38 @@ function buildReport(wb, timestamp, sourceFile) {
 
   const storeCumulativeSum = sum(stores.map((store) => store.cumulative.amount));
   const storeTodaySum = sum(stores.map((store) => store.today.amount));
-  const officialCumulative = number(hqCumulativeRow?.[5]);
-  const officialToday = number(hqTodayRow?.[5]);
-  const cumulativeDifferenceRate = differenceRate(officialCumulative, storeCumulativeSum);
-  const todayDifferenceRate = differenceRate(officialToday, storeTodaySum);
-  const reconciliationStatus = Math.max(cumulativeDifferenceRate, todayDifferenceRate) > 0.01
+  const storeOfficialCumulative = number(hqCumulativeRow?.[5]);
+  const storeOfficialToday = number(hqTodayRow?.[5]);
+  const functionalCumulative = number(functionalTotalRow?.[2]);
+  const functionalToday = number(functionalTotalRow?.[5]);
+  const functionalTarget = number(functionalTotalRow?.[3]);
+  const functionalOrderCount = number(functionalTotalRow?.[1]);
+  const functionalDetailRows = functionalRows.filter((row) => {
+    const name = text(row[0]);
+    return name && name !== "总计" && name !== "部门名称";
+  });
+  const functionalDetailCumulative = sum(functionalDetailRows.map((row) => number(row[2])));
+  const functionalDetailToday = sum(functionalDetailRows.map((row) => number(row[5])));
+  const groupCumulativeOfficial = number(groupTotalRow?.[2]);
+  const groupStoreOfficial = number(groupStoreRow?.[2]);
+  const groupFunctionalOfficial = number(groupFunctionalRow?.[2]);
+  const aggregation = aggregateHeadquartersAmounts({
+    storeCumulative: storeCumulativeSum,
+    storeToday: storeTodaySum,
+    functionalCumulative,
+    functionalToday,
+    groupCumulativeOfficial,
+  });
+  const reconciliationRates = [
+    differenceRate(storeOfficialCumulative, storeCumulativeSum),
+    differenceRate(storeOfficialToday, storeTodaySum),
+    differenceRate(functionalCumulative, functionalDetailCumulative),
+    differenceRate(functionalToday, functionalDetailToday),
+    aggregation.groupDifferenceRate,
+    differenceRate(groupStoreOfficial, storeCumulativeSum),
+    differenceRate(groupFunctionalOfficial, functionalCumulative),
+  ];
+  const reconciliationStatus = Math.max(...reconciliationRates) > 0.01
     ? "warning"
     : "matched";
 
@@ -213,7 +260,9 @@ function buildReport(wb, timestamp, sourceFile) {
 
   const hqBetTarget = sum(stores.map((store) => store.cumulative.targets.bet));
   const hqDriveTarget = sum(stores.map((store) => store.cumulative.targets.drive));
-  const hqChallengeTarget = number(hqCumulativeRow?.[6]) || sum(stores.map((store) => store.cumulative.targets.challenge));
+  const storeChallengeTarget = number(hqCumulativeRow?.[6])
+    || sum(stores.map((store) => store.cumulative.targets.challenge));
+  const hqChallengeTarget = storeChallengeTarget + functionalTarget;
 
   return {
     schemaVersion: 1,
@@ -228,18 +277,28 @@ function buildReport(wb, timestamp, sourceFile) {
     source: {
       type: "bi-excel",
       workbook: sourceFile,
+      functionalWorkbook: functionalSourceFile,
       dashboard: "15_2026版_806活动储值分析",
+      functionalDashboard: "16_26年版_806会员储值清单与职能目标",
+      aggregationVersion: "store-plus-functional-v1",
       reconciliation: {
         status: reconciliationStatus,
         cumulative: {
-          official: officialCumulative,
+          official: groupCumulativeOfficial || aggregation.cumulativeAmount,
           storeSum: storeCumulativeSum,
-          differenceRate: cumulativeDifferenceRate,
+          functionalSum: functionalCumulative,
+          combinedSum: aggregation.cumulativeAmount,
+          differenceRate: aggregation.groupDifferenceRate,
         },
         today: {
-          official: officialToday,
+          official: aggregation.todayAmount,
           storeSum: storeTodaySum,
-          differenceRate: todayDifferenceRate,
+          functionalSum: functionalToday,
+          combinedSum: aggregation.todayAmount,
+          differenceRate: Math.max(
+            differenceRate(storeOfficialToday, storeTodaySum),
+            differenceRate(functionalToday, functionalDetailToday),
+          ),
         },
       },
     },
@@ -252,25 +311,37 @@ function buildReport(wb, timestamp, sourceFile) {
       storeCount: stores.length,
       activeStoreCount: stores.filter((store) => store.today.amount > 0).length,
       bonus: sum(stores.map((store) => store.bonus)),
+      functional: {
+        departmentCount: functionalDetailRows.filter((row) => text(row[0]) !== "其他门店").length,
+        cumulative: {
+          amount: functionalCumulative,
+          orderCount: functionalOrderCount,
+          targetAmount: functionalTarget,
+          completionRate: ratio(functionalCumulative, functionalTarget),
+        },
+        today: {
+          amount: functionalToday,
+        },
+      },
       cumulative: {
-        amount: officialCumulative || storeCumulativeSum,
-        orderCount: number(hqCumulativeRow?.[2]),
+        amount: aggregation.cumulativeAmount,
+        orderCount: number(hqCumulativeRow?.[2]) + functionalOrderCount,
         targetOrderCount: number(hqCumulativeRow?.[3]),
         orderCompletionRate: rate(hqCumulativeRow?.[4]),
         targets: { bet: hqBetTarget, drive: hqDriveTarget, challenge: hqChallengeTarget },
         rates: {
-          bet: ratio(officialCumulative || storeCumulativeSum, hqBetTarget),
-          drive: ratio(officialCumulative || storeCumulativeSum, hqDriveTarget),
-          challenge: rate(hqCumulativeRow?.[7]) || ratio(officialCumulative || storeCumulativeSum, hqChallengeTarget),
+          bet: ratio(storeCumulativeSum, hqBetTarget),
+          drive: ratio(storeCumulativeSum, hqDriveTarget),
+          challenge: ratio(aggregation.cumulativeAmount, hqChallengeTarget),
         },
       },
       today: {
-        amount: officialToday || storeTodaySum,
+        amount: aggregation.todayAmount,
         orderCount: number(hqTodayRow?.[2]),
         targetOrderCount: number(hqTodayRow?.[3]),
         orderCompletionRate: rate(hqTodayRow?.[4]),
         targetAmount: number(hqTodayRow?.[6]),
-        completionRate: rate(hqTodayRow?.[7]),
+        completionRate: ratio(aggregation.todayAmount, number(hqTodayRow?.[6])),
       },
       delta30: null,
       todayDelta30: null,
@@ -338,8 +409,10 @@ function applySnapshotComparisons(report, previous, history, isThirtyMinuteCompa
   }
 
   if (previous) {
-    report.hq.delta30 = report.hq.cumulative.amount - previous.hq.cumulativeAmount;
-    report.hq.todayDelta30 = report.hq.today.amount - previous.hq.todayAmount;
+    if (isComparableHeadquartersSnapshot(previous)) {
+      report.hq.delta30 = report.hq.cumulative.amount - previous.hq.cumulativeAmount;
+      report.hq.todayDelta30 = report.hq.today.amount - previous.hq.todayAmount;
+    }
     report.summary.deltaBasis = isThirtyMinuteComparison
       ? "closest-snapshot-to-30-minutes"
       : "latest-available-snapshot";
@@ -355,18 +428,23 @@ function applySnapshotComparisons(report, previous, history, isThirtyMinuteCompa
       .filter((region) => Number.isFinite(region.delta30) && region.delta30 <= 0).length;
   }
 
-  report.hq.trend = chronological.map((snapshot) => ({
-    at: snapshot.generatedAt,
-    amount: snapshot.hq.cumulativeAmount,
-  }));
+  report.hq.trend = chronological
+    .filter(isComparableHeadquartersSnapshot)
+    .map((snapshot) => ({
+      at: snapshot.generatedAt,
+      amount: snapshot.hq.cumulativeAmount,
+    }));
 }
 
 function toSnapshot(report) {
   return {
     generatedAt: report.generatedAt,
     hq: {
+      aggregationVersion: report.source.aggregationVersion,
       cumulativeAmount: report.hq.cumulative.amount,
       todayAmount: report.hq.today.amount,
+      functionalCumulativeAmount: report.hq.functional.cumulative.amount,
+      functionalTodayAmount: report.hq.functional.today.amount,
     },
     regions: report.regions.map((region) => ({
       id: region.id,
@@ -475,25 +553,12 @@ function shanghaiIso(date) {
   return `${parts.year}-${parts.month}-${parts.day}T${parts.hour}:${parts.minute}:${parts.second}+08:00`;
 }
 
-async function findLatestWorkbook(dir) {
-  const entries = await fs.readdir(dir, { withFileTypes: true });
-  const workbooks = [];
-  for (const entry of entries) {
-    if (!entry.isFile() || !/\.xlsx?$/i.test(entry.name)) continue;
-    const filePath = path.join(dir, entry.name);
-    const stat = await fs.stat(filePath);
-    workbooks.push({ filePath, modified: stat.mtimeMs });
-  }
-  const latest = workbooks.sort((a, b) => b.modified - a.modified)[0];
-  if (!latest) throw new Error(`未在 ${dir} 找到BI导出的Excel文件`);
-  return latest.filePath;
-}
-
 function parseArgs(values) {
-  const parsed = { input: null, generatedAt: null, dryRun: false };
+  const parsed = { input: null, functionalInput: null, generatedAt: null, dryRun: false };
   for (let index = 0; index < values.length; index += 1) {
     const value = values[index];
     if (value === "--input") parsed.input = values[++index];
+    else if (value === "--functional-input") parsed.functionalInput = values[++index];
     else if (value === "--generated-at") parsed.generatedAt = values[++index];
     else if (value === "--dry-run") parsed.dryRun = true;
   }
