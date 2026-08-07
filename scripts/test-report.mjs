@@ -11,9 +11,27 @@ assert.equal(new Set(report.stores.map((store) => store.id)).size, report.stores
 assert.equal(new Set(report.regions.map((region) => region.id)).size, report.regions.length, "区域ID不能重复");
 assert.ok(report.hq.today.amount > 0, "总部今日金额应大于0");
 assert.ok(report.hq.cumulative.amount >= report.hq.today.amount, "累计金额不能小于今日金额");
+assert.ok(report.hq.functional?.cumulative.amount > 0, "总部汇总必须包含职能累计金额");
+assert.ok(report.hq.functional?.today.amount >= 0, "总部汇总必须包含职能今日金额");
+assert.equal(
+  report.hq.cumulative.amount,
+  report.source.reconciliation.cumulative.storeSum + report.source.reconciliation.cumulative.functionalSum,
+  "总部累计应等于门店端加职能端",
+);
+assert.equal(
+  report.hq.today.amount,
+  report.source.reconciliation.today.storeSum + report.source.reconciliation.today.functionalSum,
+  "总部今日应等于门店端加职能端",
+);
+assert.equal(report.source.aggregationVersion, "store-plus-functional-v1", "应标记总部新汇总口径");
 
 const regionStoreCount = report.regions.reduce((total, region) => total + region.storeCount, 0);
 assert.equal(regionStoreCount, report.stores.length, "区域门店数量应与门店总数一致");
+assert.equal(
+  report.stores.reduce((total, store) => total + store.cumulative.amount, 0),
+  report.source.reconciliation.cumulative.storeSum,
+  "门店排名数据不得混入职能金额",
+);
 
 const completedRegions = report.regions.filter((region) => region.today.targetAmount > 0 && region.today.completionRate >= 1);
 assert.deepEqual(
