@@ -110,10 +110,23 @@ type Report = {
   timezone: string;
   freshness: { status: string; staleAfterMinutes: number; message: string | null };
   source: {
+    aggregationVersion: string;
     reconciliation: {
       status: "matched" | "warning";
-      cumulative: { official: number; storeSum: number; differenceRate: number };
-      today: { official: number; storeSum: number; differenceRate: number };
+      cumulative: {
+        official: number;
+        storeSum: number;
+        functionalSum: number;
+        combinedSum: number;
+        differenceRate: number;
+      };
+      today: {
+        official: number;
+        storeSum: number;
+        functionalSum: number;
+        combinedSum: number;
+        differenceRate: number;
+      };
     };
   };
   defaults: { scope: ScopeType; mode: Mode; featuredStoreId: string | null };
@@ -121,6 +134,16 @@ type Report = {
     storeCount: number;
     activeStoreCount: number;
     bonus: number;
+    functional: {
+      departmentCount: number;
+      cumulative: {
+        amount: number;
+        orderCount: number;
+        targetAmount: number;
+        completionRate: number;
+      };
+      today: { amount: number };
+    };
     cumulative: {
       amount: number;
       orderCount: number;
@@ -242,7 +265,7 @@ export default function Prototype() {
             />
             {report.source.reconciliation.status === "warning" ? (
               <div className="data-warning" role="status">
-                <ExclamationTriangleIcon /> BI汇总与门店合计存在差异，当前保留BI官方汇总值。
+                <ExclamationTriangleIcon /> BI集团汇总与门店端＋职能端分项存在差异，请核对两次导出时间。
               </div>
             ) : null}
             {scopeType === "hq" ? (
